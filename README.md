@@ -1,5 +1,3 @@
-{AVATAR}
-
 # *Geometric Deep Learning for Quantitative Finance*
 
 
