@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Anastasis Kratsios"
-  avatar           : " avatar.jpg "
-  bio              : "I develop efficient geometric deep learning architectures and meta-procedures that leverage non-Euclidean structure permeating the contemporary financial landscape."
+  avatar           : "avatar.jpg"
+  bio              : "Geometric Deep Learning and Stochsatics."
   location         : "Zurich"
   employer         :
   pubmed           : 
