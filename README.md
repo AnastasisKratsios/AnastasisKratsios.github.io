@@ -1,31 +1,46 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+{AVATAR}
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+# *Geometric Deep Learning for Quantitative Finance*
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
 
-# Instructions
+## Perspective
+I develop efficient geometric deep learning architectures and meta-procedures that leverage non-Euclidean structure permeating the contemporary financial landscape.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
-See more info at https://academicpages.github.io/
+## Topics of Interest
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+My research focuses on geometric deep learning methods, foundations of learning theory such as universal approximation, and implications in architecture construction and applications of those tools to mathematical finance problems.  As a mathematician, under the hood of each of my research papers, you'll find a medley of geometric topology, non-linear functional analysis, Γ-convergence methods, and stochastic analysis.  As a scientist, every research project addresses a pointed practical problem.  
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Select Papers
+- A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
+- A. Kratsios, [P. Casgrain](https://p-casgrain.github.io/): [Optimizing Optimizers: Regret-optimal gradient descent algorithms](https://arxiv.org/abs/2101.00041), COLT - 34th Conference on Learning Theory, 2021.
+- A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
-# Changelog -- bugfixes and enhancements
+## Select Preprints
+- A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://arxiv.org/abs/2101.05390), *submitted*, 2021.
+- A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://arxiv.org/abs/2105.07743), *submitted*, 2021.
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+## Select Contributions
+### Geometric Deep Learning
+- Introduced the universal first class of UAP (Universal Approximation Property)-Invariant feature maps *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
+- Developed a simple framework for building universal approximators between any differentiable manifold *with* [L. Papon](https://people.epfl.ch/leonie.papon) and [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
+- Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+### Foundations of Machine Learning
+- Developed the first probability-measure valued universal approximator and showed that it can approximate any regular conditional distribution. 
+- Proved that universal approximation implies universal classification *with* [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
+- Identified connections between optimization and stochastic control and used it to build the first regret-optimal online meta-optimization procedure *with* [P. Casgrain](https://p-casgrain.github.io/).
+- Developed the first deep neural model capable of uniformly approximating any piecewise continuous function with finitely many pieces *with* [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html),
+- Derived the first known characterization of the universal approximation property.
+
+### Machine Learning for Mathematical Finance
+- Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
+
+
+#### Links:
+- [Google Scholar](https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en)
+- [Github](https://github.com/AnastasisKratsios)
+- [Researchgate](https://www.researchgate.net/profile/Anastasis_Kratsios3)
+- [MathOverflow](https://mathoverflow.net/users/284090/anastasis)
+- [ArXiv](https://arxiv.org/search/?searchtype=author&query=Kratsios%2C+A)
+- [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
