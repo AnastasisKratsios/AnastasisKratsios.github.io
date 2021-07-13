@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Anastasis Kratsios"
-  avatar           : "avatar.png"
+  avatar           : "https://raw.githubusercontent.com/AnastasisKratsios/AnastasisKratsios.github.io/master/avatar.png"
   bio              : "Geometric Deep Learning and Stochsatics."
   location         : "Zurich"
   employer         :
