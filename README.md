@@ -44,5 +44,5 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
 
 
-#### Sample Talks
-[![Sample Talk](view-source:https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
+#### Sample Talk
+[![ML Explained - Aggregate Intellect - AI.SCIENCE: Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
