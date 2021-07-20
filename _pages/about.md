@@ -44,7 +44,6 @@ My research focuses on geometric deep learning methods, foundations of learning 
 ### Machine Learning for Mathematical Finance
 - Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
 
-
 #### Links:
 - [Google Scholar](https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en)
 - [Github](https://github.com/AnastasisKratsios)
@@ -52,3 +51,7 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - [MathOverflow](https://mathoverflow.net/users/284090/anastasis)
 - [ArXiv](https://arxiv.org/search/?searchtype=author&query=Kratsios%2C+A)
 - [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
+
+
+#### Sample Talk:
+[![Sample Talk](view-source:https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
