@@ -1,4 +1,4 @@
-# *Geometric Deep Learning for Quantitative Finance*
+# *Geometric Deep Learning and Foundations of AI*
 
 
 ## Perspective
@@ -32,7 +32,7 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - Derived the first known characterization of the universal approximation property.
 
 ### Machine Learning for Mathematical Finance
-- Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
+- Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
 
 
 #### Links:
@@ -42,3 +42,7 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - [MathOverflow](https://mathoverflow.net/users/284090/anastasis)
 - [ArXiv](https://arxiv.org/search/?searchtype=author&query=Kratsios%2C+A)
 - [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
+
+
+#### Sample Talks
+[![Sample Talk](view-source:https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
