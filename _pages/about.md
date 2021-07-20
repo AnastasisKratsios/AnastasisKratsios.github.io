@@ -54,4 +54,4 @@ My research focuses on geometric deep learning methods, foundations of learning 
 
 
 #### Sample Talk:
-[![Sample Talk](view-source:https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
+[![ML Explained - Aggregate Intellect - AI.SCIENCE: Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
