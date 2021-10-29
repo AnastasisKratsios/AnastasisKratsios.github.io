@@ -30,7 +30,7 @@ author_profile: true
 - [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman), A. Kratsios, and [R. Wang](https://www.linkedin.com/in/renjie-wang-405045a4): [The Entropic Measure Transform](https://onlinelibrary.wiley.com/doi/pdf/10.1002/cjs.11537) *The Canadian Journal of Statistics*, 2020.
 - A. Kratsios, et al.: [Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)](http://www.crm.math.ca/pub/Rapports/3300-3399/3369.pdf) *Huitième Atelier De Résolution De Problèmes Industriels De Montréal, CRM*, 2017.
 
-## Non-Commutative Algebraic Geometry and Homological Algebra
+## Non-Commutative Geometry
 - A. Kratsios: [Lower-Estimates on the Hochschild (Co)Homological Dimension of Commutative Algebras and Applications to Smooth Affine Schemes and Quasi-Free Algebras](https://www.mdpi.com/2227-7390/9/3/251): *Mathematics:* [Special Issue: New Trends in Algebraic Geometry and Its Applications](https://www.mdpi.com/journal/mathematics/special_issues/new_trends_in_algebraic_geometry_and_its_applications), 2021.
 - A. Kratsios: [Hochschild Cohomological Dimension is Not Upper Semi-Continuous](https://arxiv.org/pdf/1407.4825.pdf), (white paper) 2014.
 
