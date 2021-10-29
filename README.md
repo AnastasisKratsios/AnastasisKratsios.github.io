@@ -27,8 +27,9 @@ Geometric deep learning, deep learning, meta-learning.
 - Developed a simple framework for building universal approximators between any differentiable manifold *with* [L. Papon](https://people.epfl.ch/leonie.papon) and [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
 - Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
 
-
-
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dlKUQHnIoe0?start=524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 ### Foundations of Data Science
 - Developed the first probability-measure valued universal approximator and showed that it can approximate any regular conditional distribution. 
@@ -42,7 +43,7 @@ Geometric deep learning, deep learning, meta-learning.
 ### Machine Learning for Mathematical Finance
 - Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
 
-<p align="center>
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wToOsW90QBk?start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
