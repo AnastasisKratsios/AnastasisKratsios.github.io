@@ -1,4 +1,4 @@
-# *Geometric Deep Learning and Foundations of AI*
+# *Geometric Deep Learning for Mathematical Finance*
 
 
 ## Specialization
