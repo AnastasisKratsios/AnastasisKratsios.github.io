@@ -1,4 +1,4 @@
-# *Geometric Deep Learning and Foundations of AI*
+# *Geometric Deep Learning for Mathematical Finance*
 
 
 ## Specialization
@@ -27,15 +27,25 @@ Geometric deep learning, deep learning, meta-learning.
 - Developed a simple framework for building universal approximators between any differentiable manifold *with* [L. Papon](https://people.epfl.ch/leonie.papon) and [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
 - Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
 
-### Foundations of Machine Learning
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dlKUQHnIoe0?start=524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+### Foundations of Data Science
 - Developed the first probability-measure valued universal approximator and showed that it can approximate any regular conditional distribution. 
 - Proved that universal approximation implies universal classification *with* [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
 - Identified connections between optimization and stochastic control and used it to build the first regret-optimal online meta-optimization procedure *with* [P. Casgrain](https://p-casgrain.github.io/).
 - Developed the first deep neural model capable of uniformly approximating any piecewise continuous function with finitely many pieces *with* [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html),
 - Derived the first known characterization of the universal approximation property.
 
+
+
 ### Machine Learning for Mathematical Finance
 - Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wToOsW90QBk?start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 
 #### Links:
@@ -45,7 +55,3 @@ Geometric deep learning, deep learning, meta-learning.
 - [MathOverflow](https://mathoverflow.net/users/284090/anastasis)
 - [ArXiv](https://arxiv.org/search/?searchtype=author&query=Kratsios%2C+A)
 - [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
-
-
-#### Sample Talk
-[![ML Explained - Aggregate Intellect - AI.SCIENCE: Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
