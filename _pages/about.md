@@ -1,23 +1,16 @@
----
-permalink: /
-title: "Anastasis Kratsios"
-excerpt: "Geometric Deep Learning"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
-
-# *Geometric Deep Learning for Quantitative Finance*
+# *Geometric Deep Learning and Foundations of AI*
 
 
-## Perspective
-I develop efficient geometric deep learning architectures and meta-procedures that leverage non-Euclidean structure permeating the contemporary financial landscape.
+## Specialization
+I introduce and study universally deep learning models capable of leveraging geometric structures in mathematical finance and data science problems.
 
 
-## Topics of Interest
+## Expertise:
+### Mathematics:
+Approximation theory, mathematical finance, geometric topology, analysis on metric spaces, optimal transport.
+### Data Science and ML:
+Geometric deep learning, deep learning, meta-learning.  
 
-My research focuses on geometric deep learning methods, foundations of learning theory such as universal approximation, and implications in architecture construction and applications of those tools to mathematical finance problems.  As a mathematician, under the hood of each of my research papers, you'll find a medley of analytic, topological, variational, and optimal transport methods.  As a scientist, every research project addresses a pointed practical problem.  
 
 ## Select Papers
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
@@ -25,10 +18,8 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
 ## Select Preprints
-- A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://arxiv.org/abs/2101.05390), *submitted*, 2021.
-- A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://arxiv.org/abs/2105.07743), *submitted*, 2021.
+- A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.researchgate.net/publication/352823759_Universal_Approximation_Theorems_for_Differentiable_Geometric_Deep_Learning), *submitted*, 2021.
 - A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformersg](https://www.researchgate.net/publication/355081831_Universal_Approximation_Under_Constraints_is_Possible_with_Transformers), *submitted*, 2021.
-
 
 ## Select Contributions
 ### Geometric Deep Learning
@@ -44,7 +35,8 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - Derived the first known characterization of the universal approximation property.
 
 ### Machine Learning for Mathematical Finance
-- Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
+- Developed the first penalty for arbitrage-free machine learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
+
 
 #### Links:
 - [Google Scholar](https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en)
@@ -55,5 +47,5 @@ My research focuses on geometric deep learning methods, foundations of learning 
 - [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
 
 
-#### Sample Talk:
+#### Sample Talk
 [![ML Explained - Aggregate Intellect - AI.SCIENCE: Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://i.ytimg.com/vi/dlKUQHnIoe0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dlKUQHnIoe0)
