@@ -17,7 +17,7 @@ I develop efficient geometric deep learning architectures and meta-procedures th
 
 ## Topics of Interest
 
-My research focuses on geometric deep learning methods, foundations of learning theory such as universal approximation, and implications in architecture construction and applications of those tools to mathematical finance problems.  As a mathematician, under the hood of each of my research papers, you'll find a medley of geometric topology, non-linear functional analysis, Γ-convergence methods, and stochastic analysis.  As a scientist, every research project addresses a pointed practical problem.  
+My research focuses on geometric deep learning methods, foundations of learning theory such as universal approximation, and implications in architecture construction and applications of those tools to mathematical finance problems.  As a mathematician, under the hood of each of my research papers, you'll find a medley of analytic, topological, variational, and optimal transport methods.  As a scientist, every research project addresses a pointed practical problem.  
 
 ## Select Papers
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
