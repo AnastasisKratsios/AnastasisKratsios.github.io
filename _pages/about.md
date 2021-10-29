@@ -27,6 +27,8 @@ My research focuses on geometric deep learning methods, foundations of learning 
 ## Select Preprints
 - A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://arxiv.org/abs/2101.05390), *submitted*, 2021.
 - A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://arxiv.org/abs/2105.07743), *submitted*, 2021.
+- A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformersg](https://www.researchgate.net/publication/355081831_Universal_Approximation_Under_Constraints_is_Possible_with_Transformers), *submitted*, 2021.
+
 
 ## Select Contributions
 ### Geometric Deep Learning
