@@ -34,6 +34,6 @@ A little picture I painted, a little song I wrote and programmed, and a little g
 ### More
 [My favourite films](http://www.imdb.com/list/ls002704424/) my favourite directors are Maya Deren, Jennifer Reeves, and Béla Tarr.
 
-[Some music I own](https://bandcamp.com/whererealityends) favourites include Elina Duni (balkan folk + cool jazz fusion), Black-Moth Super Rainbow (psychadelia), and Giacinto Scelsi (micrononalism).
+[Some music I own](https://bandcamp.com/whererealityends) favourites include Elina Duni (balkan folk + cool jazz fusion), Black Moth Super Rainbow (psychadelia), Giacinto Scelsi (micrononalism - classical), Aesop Rock (lyrical rap), and Altin Gün (funk + turkish folk).  
 
 Favourite reads: [Les Fleurs du Mal](https://fr.wikisource.org/wiki/Les_Fleurs_du_mal/1861/Texte_entier) by Charles Baudelaire and Junji Ito's reimagination of Osamu Dazai's masterpiece [人間失格](https://www.goodreads.com/en/book/show/43909397-no-longer-human).
