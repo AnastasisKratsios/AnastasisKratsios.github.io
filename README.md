@@ -38,6 +38,11 @@ Geometric deep learning, deep learning, meta-learning.
 - Developed the first deep neural model capable of uniformly approximating any piecewise continuous function with finitely many pieces *with* [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html),
 - Derived the first known characterization of the universal approximation property.
 
+<p align="center">
+<iframe frameborder="0"
+                    src="https://miniconf.sloppy.zone/channel/paper_84?layout=embedded"
+                    height="700px" width="100%"></iframe>
+</p>
 
 
 ### Machine Learning for Mathematical Finance
