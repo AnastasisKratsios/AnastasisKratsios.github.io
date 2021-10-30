@@ -33,7 +33,3 @@ author_profile: true
 ## Non-Commutative Geometry
 - A. Kratsios: [Lower-Estimates on the Hochschild (Co)Homological Dimension of Commutative Algebras and Applications to Smooth Affine Schemes and Quasi-Free Algebras](https://www.mdpi.com/2227-7390/9/3/251): *Mathematics:* [Special Issue: New Trends in Algebraic Geometry and Its Applications](https://www.mdpi.com/journal/mathematics/special_issues/new_trends_in_algebraic_geometry_and_its_applications), 2021.
 - A. Kratsios: [Hochschild Cohomological Dimension is Not Upper Semi-Continuous](https://arxiv.org/pdf/1407.4825.pdf), (white paper) 2014.
-
-
-
-Follow: [Researchgate](https://www.researchgate.net/profile/Anastasis_Kratsios3).
