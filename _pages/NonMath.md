@@ -31,4 +31,5 @@ A little picture I painted, a little song I wrote and programmed, and a little g
 </p>
 
 ### More
-My favourite films: http://www.imdb.com/list/ls002704424/
+[My favourite films](http://www.imdb.com/list/ls002704424/)
+[Some music I own](https://bandcamp.com/whererealityends)
