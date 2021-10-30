@@ -33,3 +33,4 @@ A little picture I painted, a little song I wrote and programmed, and a little g
 ### More
 [My favourite films](http://www.imdb.com/list/ls002704424/)
 [Some music I own](https://bandcamp.com/whererealityends)
+Favourite reads: [Les Fleurs du Mal](https://fr.wikisource.org/wiki/Les_Fleurs_du_mal/1861/Texte_entier) by Charles Baudelaire and [Junji Ito](https://en.wikipedia.org/wiki/Junji_Ito)'s reimagination of Osamu Dazai's masterpiece [人間失格](https://www.goodreads.com/en/book/show/43909397-no-longer-human).
