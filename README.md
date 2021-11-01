@@ -42,8 +42,9 @@ Geometric deep learning, deep learning, meta-learning.
 
 ### Machine Learning for Mathematical Finance
 - Introduced the first penalty for arbitrage-free learning  in mathematical finance, during PhD *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
+- Introduce fastest matrix completion algorithm for rapid low-rank + sparse decomposition of asset's covariance matrices *with* [J. Teichmann](https://people.math.ethz.ch/~jteichma/), [C. Herrera](https://people.math.ethz.ch/~cherrera/), [F. Krach](https://people.math.ethz.ch/~fkrach/about), and [P. Ruyssen](https://scholar.google.com/citations?user=euY7T4wAAAAJ&hl=fr).
 
-![Long Horizon Time-Series Prediction](/Anastasiskratsios.github.io/images/Finance_prediction.png)
+![Long Horizon Time-Series Prediction](/images/Finance_prediction.png)
 
 #### Links:
 - [Google Scholar](https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en)
