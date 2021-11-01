@@ -25,3 +25,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
+
+
+gem 'jekyll-titles-from-headings'
