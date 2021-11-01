@@ -43,9 +43,9 @@ Geometric deep learning, deep learning, meta-learning.
 ### Machine Learning for Mathematical Finance
 - Introduced the first penalty for arbitrage-free learning  in mathematical finance, during PhD *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
 
-![Long Horizon Time-Series Prediction](/images/Finance_prediction.pdf)
+![Long Horizon Time-Series Prediction](/Anastasiskratsios.github.io/images/Finance_prediction.pdf)
 
-![Long Horizon Time-Series Prediction](/images/Finance_prediction.png)
+![Long Horizon Time-Series Prediction](/Anastasiskratsios.github.io/images/Finance_prediction.png)
 
 #### Links:
 - [Google Scholar](https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en)
