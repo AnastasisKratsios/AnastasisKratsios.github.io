@@ -1,4 +1,4 @@
-
+# Snapshot
 
 ## Specialization
 I develop and study universal deep learning models capable of leveraging geometric structures in mathematical finance and data science problems.  
