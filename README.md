@@ -12,15 +12,16 @@ Geometric deep learning, deep learning, meta-learning.
 
 
 ## Select Papers
+- A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformersg](https://openreview.net/forum?id=JGO8CvG5S9), ICLR, 2022 *(Top 3%)*.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
-- A. Kratsios, [P. Casgrain](https://p-casgrain.github.io/): [Optimizing Optimizers: Regret-optimal gradient descent algorithms](https://arxiv.org/abs/2101.00041), COLT - 34th Conference on Learning Theory, 2021.
 - A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
 ## Select Preprints
 - A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.researchgate.net/publication/352823759_Universal_Approximation_Theorems_for_Differentiable_Geometric_Deep_Learning), *Second Round at JMLR - Journal of Machine Learning Research*, 2021.
-- A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformersg](https://www.researchgate.net/publication/355081831_Universal_Approximation_Under_Constraints_is_Possible_with_Transformers), *Top 3% at ICLR (2022) after second round*, 2021.
+- A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://www.researchgate.net/publication/352854719_Universal_Regular_Conditional_Distributions), *submitted*, 2021.
 
 ## Most Recent Publication
+- A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformersg](https://openreview.net/forum?id=JGO8CvG5S9), ICLR, 2022 *(Top 3%)*.
 - A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://arxiv.org/abs/2010.15571), *Neurocomputing*, (forthcoming) 2022.
 
 ## Select Contributions
