@@ -25,8 +25,9 @@ Geometric deep learning, deep learning, meta-learning.
 
 ## Select Contributions
 ### Geometric Deep Learning
-- Introduced the universal first class of UAP (Universal Approximation Property)-Invariant feature maps *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
+- Developed the first neural model which can proveably approximate any function while implementing exact constraint satisfaction *with* [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com).
 - Developed a simple framework for building universal approximators between any differentiable manifold *with* [L. Papon](https://people.epfl.ch/leonie.papon) and [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
+- Introduced the universal first class of universal feature maps which preserve the universal approximation property (UAP-Invariance) *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
 - Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
 
 <p align="center">
@@ -35,7 +36,6 @@ Geometric deep learning, deep learning, meta-learning.
 
 ### Foundations of Data Science
 - Developed the first probability-measure valued universal approximator and showed that it can approximate any regular conditional distribution. 
-- Proved that universal approximation implies universal classification *with* [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
 - Identified connections between optimization and stochastic control and used it to build the first regret-optimal online meta-optimization procedure *with* [P. Casgrain](https://p-casgrain.github.io/).
 - Developed the first deep neural model capable of uniformly approximating any piecewise continuous function with finitely many pieces *with* [B. Zamanlooy](https://bzamanlooy.github.io/),
 
