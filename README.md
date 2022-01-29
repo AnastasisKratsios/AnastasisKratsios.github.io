@@ -6,13 +6,13 @@ I develop and study universal deep learning models capable of leveraging geometr
 
 ## Expertise:
 ### Mathematics:
-Approximation theory, mathematical finance, geometric topology, analysis on metric spaces, optimal transport.
+Approximation theory, analysis on metric spaces, geometric topology, mathematical finance, optimal transport.
 ### Data Science and ML:
-Geometric deep learning, deep learning, meta-learning.  
+Geometric deep learning, approximation theory of deep neural networks, meta-learning.  
 
 
 ## Select Papers
-- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 *(Top 3%)*.
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 **Spotlight**.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
 - A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
@@ -21,7 +21,7 @@ Geometric deep learning, deep learning, meta-learning.
 - A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://www.researchgate.net/publication/352854719_Universal_Regular_Conditional_Distributions), *submitted*, 2021.
 
 ## Most Recent Publication
-- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://arxiv.org/abs/2010.15571), *Neurocomputing*, (forthcoming) 2022.
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, (forthcoming) 2022.
 
 ## Select Contributions
 ### Geometric Deep Learning
