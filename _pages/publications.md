@@ -9,7 +9,7 @@ author_profile: true
 ## Machine Learning
 
 ### Geometric Deep Learning 
-- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), 2022.
+- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *submitted*, 2022.
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 **Spotlight**.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
 - A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.researchgate.net/publication/352823759_Universal_Approximation_Theorems_for_Differentiable_Geometric_Deep_Learning), *Second Round at JMLR - Journal of Machine Learning Research*, 2021.
