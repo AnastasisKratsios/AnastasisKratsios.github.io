@@ -17,8 +17,8 @@ Geometric deep learning, approximation theory of deep neural networks, meta-lear
 - A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
 ## Select Preprints
+-- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), 2022.
 - A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.researchgate.net/publication/352823759_Universal_Approximation_Theorems_for_Differentiable_Geometric_Deep_Learning), *Second Round at JMLR - Journal of Machine Learning Research*, 2021.
-- A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://www.researchgate.net/publication/352854719_Universal_Regular_Conditional_Distributions), *submitted*, 2021.
 
 ## Most Recent Publication
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, (forthcoming) 2022.

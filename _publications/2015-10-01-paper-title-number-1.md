@@ -3,6 +3,7 @@
 ## Machine Learning
 
 ### Geometric Deep Learning 
+- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), 2022.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
 - A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), *NeurIPS - 33rd Conference on Neural Information Processing Systems*, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 - C. Herrera, F. Krach, A. Kratsios, P. Ruyssen, J. Teichmann: [Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices](https://arxiv.org/pdf/2004.13612.pdf), *submitted*, 2021.
