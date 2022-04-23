@@ -24,6 +24,9 @@ Geometric deep learning, deep learning, meta-learning.
 ## Most Recent Publication
 - A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://arxiv.org/abs/2010.15571), *Neurocomputing*, (forthcoming) 2022.
 
+## Most Recent Preprint
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Piecewise-Linear Activations or Analytic Activation Functions: Which Produce More Expressive Neural Networks?](https://www.researchgate.net/publication/360137104_Piecewise-Linear_Activations_or_Analytic_Activation_Functions_Which_Produce_More_Expressive_Neural_Networks), *submitted*, 2022.
+
 ## Select Contributions
 ### Geometric Deep Learning
 - Introduced the universal first class of UAP (Universal Approximation Property)-Invariant feature maps *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
