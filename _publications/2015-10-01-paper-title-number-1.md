@@ -10,6 +10,7 @@
 - A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://arxiv.org/abs/2101.05390), *submitted*, 2021.
 
 ### Universal Approximation
+
 - A. Kratsios: [The Universal Approximation Property](https://link.springer.com/article/10.1007/s10472-020-09723-1), *Annals of Mathematics and Artificial Intelligence*, 2021.
 - A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://arxiv.org/abs/2105.07743), *submitted*, 2021.
 - A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://arxiv.org/abs/2010.15571), *submitted*, 2021.
