@@ -11,17 +11,15 @@ Approximation theory, analysis on metric spaces, geometric topology, mathematica
 Geometric deep learning, approximation theory of deep neural networks, meta-learning.  
 
 
+
 ## Select Papers
+- A. Kratsios, [L. Papon](https://www.durham.ac.uk/staff/leonie-b-papon/): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.jmlr.org/papers/v23/21-0716.html), *JMLR - Journal of Machine Learning Research*, 2022.
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 **Spotlight**.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
-- A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
-## Select Preprints
-- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *submitted*, 2022.
-- A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.researchgate.net/publication/352823759_Universal_Approximation_Theorems_for_Differentiable_Geometric_Deep_Learning), *Second Round at JMLR - Journal of Machine Learning Research*, 2021.
+## News: Hot off the press
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?](https://openreview.net/forum?id=sNxNi54B8b), *TMLR - Transactions of Machine Learning Research*, 2022.
 
-## Most Recent Publication
-- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, (forthcoming) 2022.
 
 ## Select Contributions
 ### Geometric Deep Learning
