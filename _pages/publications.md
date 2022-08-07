@@ -22,11 +22,11 @@ author_profile: true
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, (forthcoming) 2022.
 - A. Kratsios: [The Universal Approximation Property](https://link.springer.com/article/10.1007/s10472-020-09723-1), *Annals of Mathematics and Artificial Intelligence*, 2021.
 
-## Machine Learning in Mathematical Finance
+### Machine Learning for/in Mathematical Finance
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [Arbitrage-Free Regularization](https://www.mdpi.com/2227-9091/8/2/40), *Risks*: [Special Issue: Machine Learning in Finance, Insurance and Risk Management](https://www.mdpi.com/journal/risks/special_issues/Machine_Learning_Finance_Insurance_Risk_Management), 2020.
 - A. Kratsios, et al.: [Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)](http://www.crm.math.ca/pub/Rapports/3300-3399/3369.pdf) *Huitième Atelier De Résolution De Problèmes Industriels De Montréal, CRM*, 2017.
 
-### Optimal Control
+## Optimal Control
 - A. Kratsios, [P. Casgrain](https://p-casgrain.github.io/): [Optimizing Optimizers: Regret-optimal gradient descent algorithms](https://arxiv.org/abs/2101.00041), *COLT - 34th Conference on Learning Theory*, 2021.
 - [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman), A. Kratsios, and [R. Wang](https://www.linkedin.com/in/renjie-wang-405045a4): [The Entropic Measure Transform](https://onlinelibrary.wiley.com/doi/pdf/10.1002/cjs.11537) *The Canadian Journal of Statistics*, 2020.
 

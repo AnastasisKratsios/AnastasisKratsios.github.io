@@ -13,19 +13,17 @@ Geometric deep learning, deep learning, meta-learning.
 
 
 ## Select Papers
+- A. Kratsios, [L. Papon](https://www.durham.ac.uk/staff/leonie-b-papon/): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.jmlr.org/papers/v23/21-0716.html), *JMLR - Journal of Machine Learning Research*, 2022.
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 **Spotlight**.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
-- A. Kratsios, [P. Casgrain](https://p-casgrain.github.io/): [Optimizing Optimizers: Regret-optimal gradient descent algorithms](https://arxiv.org/abs/2101.00041), COLT - 34th Conference on Learning Theory, 2021.
-- A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), NeurIPS - 33rd Conference on Neural Information Processing Systems, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 
 ## Select Preprints
-- A. Kratsios, [L. Papon](https://people.epfl.ch/leonie.papon): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.researchgate.net/publication/352823759_Universal_Approximation_Theorems_for_Differentiable_Geometric_Deep_Learning), *submitted*, 2021.
-- A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformersg](https://www.researchgate.net/publication/355081831_Universal_Approximation_Under_Constraints_is_Possible_with_Transformers), *submitted*, 2021.
+- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *submitted*, 2022.
 
-## Most Recent Publication
-- A. Kratsios, [B. Zamanlooy](https://www.ifi.uzh.ch/en/ce/people/zamanlooy.html): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://arxiv.org/abs/2010.15571), *Neurocomputing*, (forthcoming) 2022.
 
-## Most Recent Preprint
-- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Piecewise-Linear Activations or Analytic Activation Functions: Which Produce More Expressive Neural Networks?](https://www.researchgate.net/publication/360137104_Piecewise-Linear_Activations_or_Analytic_Activation_Functions_Which_Produce_More_Expressive_Neural_Networks), *submitted*, 2022.
+## News: Newest Publication
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?](https://openreview.net/forum?id=sNxNi54B8b), *TMLR - Transactions of Machine Learning Research*, 2022.
+
 
 ## Select Contributions
 ### Geometric Deep Learning
