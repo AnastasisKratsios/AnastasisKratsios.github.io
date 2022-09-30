@@ -22,7 +22,7 @@ author_profile: true
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, 2022.
 - A. Kratsios: [The Universal Approximation Property](https://link.springer.com/article/10.1007/s10472-020-09723-1), *Annals of Mathematics and Artificial Intelligence*, 2021.
 
-### Machine Learning in Stochastic Processes and Finance
+### Deep Learning Theory for Stochastic Processes and in Finance
 - [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *(revision)* Mathematical Finance, 2022.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [Arbitrage-Free Regularization](https://www.mdpi.com/2227-9091/8/2/40), *Risks*: [Special Issue: Machine Learning in Finance, Insurance and Risk Management](https://www.mdpi.com/journal/risks/special_issues/Machine_Learning_Finance_Insurance_Risk_Management), 2020.
 - A. Kratsios, et al.: [Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)](http://www.crm.math.ca/pub/Rapports/3300-3399/3369.pdf) *Huitième Atelier De Résolution De Problèmes Industriels De Montréal, CRM*, 2017.
