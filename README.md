@@ -18,7 +18,8 @@ Geometric deep learning, approximation theory of deep neural networks, meta-lear
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
 
 ## News: Hot off the press
-- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?](https://openreview.net/forum?id=sNxNi54B8b), *TMLR - Transactions of Machine Learning Research*, 2022.
+- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *(small revision)* Mathematical Finance, 2022.
+- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?](https://openreview.net/forum?id=sNxNi54B8b), *TMLR (Transactions of Machine Learning Research)*, 2022.
 
 
 ## Select Contributions
