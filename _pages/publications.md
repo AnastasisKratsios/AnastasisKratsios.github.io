@@ -9,16 +9,17 @@ author_profile: true
 ## Machine Learning
 
 ### Geometric Deep Learning 
+- L. Galimberti, G. Livieri, A. Kratsios: [Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis](https://www.researchgate.net/publication/364639293_Designing_Universal_Causal_Deep_Learning_Models_The_Case_of_Infinite-Dimensional_Dynamical_Systems_from_Stochastic_Analysis), *submitted*, 2022.
 - A Kratsios, V Debarnot, I Dokmanić: [Small Transformers Compute Universal Metric Embeddings](https://www.researchgate.net/publication/363539494_Small_Transformers_Compute_Universal_Metric_Embeddings), *submitted*, 2022.
 - A. Kratsios, [L. Papon](https://www.durham.ac.uk/staff/leonie-b-papon/): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.jmlr.org/papers/v23/21-0716.html), *JMLR - Journal of Machine Learning Research*, 2022.
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 **Spotlight**.
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
+- A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://www.researchgate.net/publication/352854719_Universal_Regular_Conditional_Distributions), *Minor Revisions - Constructive Approximation*, 2021.
 - A. Kratsios, [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X): [Non-Euclidean Universal Approximation](https://proceedings.neurips.cc/paper/2020/file/786ab8c4d7ee758f80d57e65582e609d-Paper.pdf), *NeurIPS - 33rd Conference on Neural Information Processing Systems*, 2020.  [poster](https://www.dropbox.com/s/yy4rkkjrtyw1kk2/NeurIPS2020_Poster.pdf?dl=0).
 - C. Herrera, F. Krach, A. Kratsios, P. Ruyssen, J. Teichmann: [Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices](https://arxiv.org/pdf/2004.13612.pdf), *submitted*, 2021.
 
 ### Foundations of AI
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?](https://openreview.net/forum?id=sNxNi54B8b), *TMLR - Transactions of Machine Learning Research*, 2022.
-- A. Kratsios: [Universal Regular Conditional Distributions via Probability Measure-Valued Deep Neural Models](https://www.researchgate.net/publication/352854719_Universal_Regular_Conditional_Distributions), *Minor Revisions - Constructive Approximation*, 2021.
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, 2022.
 - A. Kratsios: [The Universal Approximation Property](https://link.springer.com/article/10.1007/s10472-020-09723-1), *Annals of Mathematics and Artificial Intelligence*, 2021.
 
