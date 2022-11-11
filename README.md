@@ -31,7 +31,7 @@ Geometric deep learning, approximation theory of deep neural networks, meta-lear
 - Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dlKUQHnIoe0?start=524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/4mCE12zsOoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 ### Foundations of Data Science
@@ -40,7 +40,7 @@ Geometric deep learning, approximation theory of deep neural networks, meta-lear
 - Developed the first deep neural model capable of uniformly approximating any piecewise continuous function with finitely many pieces *with* [B. Zamanlooy](https://bzamanlooy.github.io/),
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wToOsW90QBk?start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dlKUQHnIoe0?start=524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 ### Machine Learning for Mathematical Finance
