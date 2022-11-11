@@ -19,6 +19,7 @@ author_profile: true
 - C. Herrera, F. Krach, A. Kratsios, P. Ruyssen, J. Teichmann: [Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices](https://arxiv.org/pdf/2004.13612.pdf), *submitted*, 2021.
 
 ### Foundations of AI
+- A. Kratsios, S. Hou, P. Kassraie, J. Rothfuss, A. Krause, [Instance-Dependent Generalization Bounds via Optimal Transport](https://www.researchgate.net/publication/365014059_Instance-Dependent_Generalization_Bounds_via_Optimal_Transport), *Submitted*, 2023.
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?](https://openreview.net/forum?id=sNxNi54B8b), *TMLR - Transactions of Machine Learning Research*, 2022.
 - A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/): [Learning Sub-Patterns in Piece-Wise Continuous Functions](https://www.sciencedirect.com/science/article/abs/pii/S092523122200056X), *Neurocomputing*, 2022.
 - A. Kratsios: [The Universal Approximation Property](https://link.springer.com/article/10.1007/s10472-020-09723-1), *Annals of Mathematics and Artificial Intelligence*, 2021.
