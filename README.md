@@ -18,6 +18,7 @@ Geometric deep learning, approximation theory of deep neural networks, meta-lear
 - A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
 
 ## News: Hot off the press
+- A. Kratsios, S. Hou, P. Kassraie, J. Rothfuss, A. Krause, [Instance-Dependent Generalization Bounds via Optimal Transport](https://www.researchgate.net/publication/365014059_Instance-Dependent_Generalization_Bounds_via_Optimal_Transport), *Submitted*, 2022.
 - L. Galimberti, G. Livieri, A. Kratsios: [Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis](https://www.researchgate.net/publication/364639293_Designing_Universal_Causal_Deep_Learning_Models_The_Case_of_Infinite-Dimensional_Dynamical_Systems_from_Stochastic_Analysis), *submitted*, 2022.
 - [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Metric Hypertransformers are Universal Adapted Maps](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *(small revision)* Mathematical Finance, 2022.
 
