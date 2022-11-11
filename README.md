@@ -31,7 +31,7 @@ Geometric deep learning, approximation theory of deep neural networks, meta-lear
 - Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
 
 <p align="center">
-<iframe width="560" height="315" src="https://youtu.be/4mCE12zsOoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4mCE12zsOoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 ### Foundations of Data Science
