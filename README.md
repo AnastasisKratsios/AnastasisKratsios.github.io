@@ -1,7 +1,7 @@
-**Geometric Deep Learning in Mathematical Finance**
+**Geometric Deep Learning and Stochastics**
 
 ## Specialization
-I develop and study universal deep learning models capable of leveraging geometric structures in mathematical finance and data science problems.  
+I develop and study universal deep learning models that leverage the infinite-dimensional curved geometries arising in stochastic analysis and mathematical finance.  
 
 
 ## Expertise:
