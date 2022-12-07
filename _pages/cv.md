@@ -9,5 +9,5 @@ redirect_from:
 
 {% include base_path %}
 
-<a href="https://drive.google.com/file/d/18HTHJlN68HIyXUNgUr7XMhdbKPnVzXd6/view?usp=sharing" target="_blank">CV.</a>
+<a href="https://drive.google.com/file/d/1qumekaUom3XngaWUq9HyaRQ2gwQw122z/view?usp=sharing" target="_blank">CV.</a>
 
