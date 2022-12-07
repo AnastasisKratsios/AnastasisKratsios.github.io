@@ -1,5 +1,15 @@
-Contributions are welcome! Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
+All contributions, including merge requests, feature requests, ideas, design tweaks, etc. are welcome. 
+I welcome all input, from sharing your own implementations of code to general thoughts and ideas. Just open a new issue!
 
-Fork from master and go from there. This repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
+## Feature Requests
 
-If you make a pull request and change code, please make sure there is a closed issue tagged with 'code change' that has some comment linking to either the single commit (if the change was just one commit) or a diff comparing before/after the change (see [issue 21](https://github.com/academicpages/academicpages.github.io/issues/21) for example). This is so that those who have forked this repo and modified it for their purposes can more easily patch bugs and new features.
+Feature requests are always welcome! If Jekyll can do it and if the theme's design would work well with it, then I would love to add it. Of course, 
+code submission via a merge/pull request is great, but not necessary.
+
+## Bug Reports
+
+If you encounter any issues with these themes on any devices, please submit a bug report with the device type and a detailed description of what 
+the issue that you're encountering is.
+<br /><br />
+
+*Thank you*

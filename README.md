@@ -1,62 +1,66 @@
-**Geometric Deep Learning and Stochastics**
+# Forty - Jekyll Theme
 
-## Specialization
-I develop and study universal deep learning models that leverage the infinite-dimensional curved geometries arising in stochastic analysis and mathematical finance.  
+A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
 
+![Forty Theme](assets/images/forty.jpg "Forty Theme")
 
-## Expertise:
-### Mathematics:
-Approximation theory, analysis on metric spaces, geometric topology, mathematical finance, optimal transport.
-### Data Science and ML:
-Geometric deep learning, approximation theory of deep neural networks, meta-learning.  
+# How to Use
 
+For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
+or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
+and [creating pages](https://jekyllrb.com/docs/pages/).
 
+Simply fork this repository and start editing the `_config.yml` file!
 
-## Select Papers
-- A. Kratsios, [L. Papon](https://www.durham.ac.uk/staff/leonie-b-papon/): [Universal Approximation Theorems for Differentiable Geometric Deep Learning](https://www.jmlr.org/papers/v23/21-0716.html), *JMLR - Journal of Machine Learning Research*, 2022.
-- A. Kratsios, [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com/): [Universal Approximation Under Constraints is Possible with Transformers](https://openreview.net/forum?id=JGO8CvG5S9), ICLR - International Conference on Learning Representations, 2022 **Spotlight**.
-- A. Kratsios and [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman): [NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation](https://www.jmlr.org/papers/v22/18-803.html), JMLR - Journal of Machine Learning Research - Volume 22, 2021.
+> NOTE: GitHub Actions is required to deploy to GitHub Pages because GitHub [refuses to update their version of Jekyll](https://github.com/github/pages-gem/issues/651).
 
-## News: Hot off the press
-- A. Kratsios, S. Hou, P. Kassraie, J. Rothfuss, A. Krause, [Instance-Dependent Generalization Bounds via Optimal Transport](https://www.researchgate.net/publication/365014059_Instance-Dependent_Generalization_Bounds_via_Optimal_Transport), *Submitted*, 2022.
-- L. Galimberti, G. Livieri, A. Kratsios: [Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis](https://www.researchgate.net/publication/364639293_Designing_Universal_Causal_Deep_Learning_Models_The_Case_of_Infinite-Dimensional_Dynamical_Systems_from_Stochastic_Analysis), *submitted*, 2022.
-- [A. Acciaio](https://people.math.ethz.ch/~beacciaio/), A. Kratsios, and [G. Pammer](https://people.math.ethz.ch/~gpammer/): [Designing Universal Causal Deep Learning Models: The Geometric (Hyper)Transformer](https://www.researchgate.net/publication/358232084_Metric_Hypertransformers_are_Universal_Adapted_Maps), *(small revision)* Mathematical Finance, 2022.
+# Added Features
 
-## (Co-)Supervision Papers:
-- T. Liu, C. Shi, A. Kratsios, I. Dokmanic: [SinkGAT: Doubly-Stochastic Graph Attention](https://www.researchgate.net/publication/365645034_SinkGAT_Doubly-Stochastic_Graph_Attention), SLowDNN, 2022.
+* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
+* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* Set **featured images** in front matter.
 
-## Select Contributions
+# Credits
 
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4mCE12zsOoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+Original README from HTML5 UP:
 
-### Geometric Deep Learning
-- Developed the first neural model which can proveably approximate any function while implementing exact constraint satisfaction *with* [B. Zamanlooy](https://bzamanlooy.github.io/), [I. Dokmanic](https://dmi.unibas.ch/de/personen/ivan-dokmanic/), [T. Liu](http://tianlinliu.com).
-- Developed a simple framework for building universal approximators between any differentiable manifold *with* [L. Papon](https://people.epfl.ch/leonie.papon) and [E. Bilokopytov](https://orcid.org/0000-0001-7075-886X).
-- Introduced the universal first class of universal feature maps which preserve the universal approximation property (UAP-Invariance) *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman).  
-- Identified the first known homotopic obstructions to non-Euclidean universal approximation *with* [L. Papon](https://people.epfl.ch/leonie.papon).
-
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dlKUQHnIoe0?start=524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-
-### Foundations of Data Science
-- Developed the first probability-measure valued universal approximator and showed that it can approximate any regular conditional distribution. 
-- Identified connections between optimization and stochastic control and used it to build the first regret-optimal online meta-optimization procedure *with* [P. Casgrain](https://p-casgrain.github.io/).
-- Developed the first deep neural model capable of uniformly approximating any piecewise continuous function with finitely many pieces *with* [B. Zamanlooy](https://bzamanlooy.github.io/),
-
-![Long Horizon Time-Series Prediction](/images/Finance_prediction.png)
-
-### Machine Learning for Mathematical Finance
-- Introduced the first penalty for arbitrage-free learning *with* [C. Hyndman](https://www.concordia.ca/artsci/math-stats/faculty.html?fpid=cody-hyndman). 
-- Introduce fastest matrix completion algorithm for rapid low-rank + sparse decomposition of asset's covariance matrices *with* [J. Teichmann](https://people.math.ethz.ch/~jteichma/), [C. Herrera](https://people.math.ethz.ch/~cherrera/), [F. Krach](https://people.math.ethz.ch/~fkrach/about), and [P. Ruyssen](https://scholar.google.com/citations?user=euY7T4wAAAAJ&hl=fr).
+```
+Forty by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-#### Links:
-- [Google Scholar](https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en)
-- [Github](https://github.com/AnastasisKratsios)
-- [Researchgate](https://www.researchgate.net/profile/Anastasis_Kratsios3)
-- [MathOverflow](https://mathoverflow.net/users/284090/anastasis)
-- [ArXiv](https://arxiv.org/search/?searchtype=author&query=Kratsios%2C+A)
-- [LinkedIn](https://www.linkedin.com/in/anastasiskratsios/)
+This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
+creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
+set up to smoothly transition to secondary landing pages (for which a separate page
+template is provided), and includes a number of neat effects (check out the menu!),
+extra features, and all the usual stuff you'd expect. Hope you dig it!
+
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
+
+(* = not included)
+
+AJ
+aj@lkn.io | @ajlkn
+
+
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		background-size polyfill (github.com/louisremi)
+		Misc. Sass functions (@HugoGiraudel)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
+```
+
+Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
