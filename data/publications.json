@@ -1,0 +1,683 @@
+{
+  "generated_at": "seed",
+  "source": "Seed data from the previous website. The scheduled GitHub Action refreshes this from Google Scholar and enriches abstracts/metadata when available.",
+  "scholar_profile": "https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en",
+  "papers": [
+    {
+      "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+      "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+      "authors": "R. Saqur, A. Kratsios, F. Krach, Y. Limmer, J. J. Tian, J. Willes, B. Horvath, F. Rudzicz",
+      "year": 2025,
+      "venue": "International Conference on Learning Representations",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Control & Optimization",
+        "PDEs"
+      ],
+      "primary_topic": "Control & Optimization",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "neural-spacetimes-for-dag-representation-learning",
+      "title": "Neural Spacetimes for DAG Representation Learning",
+      "authors": "H. Borde, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
+      "year": 2025,
+      "venue": "International Conference on Learning Representations",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Geometric Deep Learning",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
+      "title": "Approximation Rates and VC-Dimension Bounds for (P)ReLU MLP Mixture of Experts",
+      "authors": "A. Kratsios, H. Sáez de Ocáriz Borde, T. Furuya, M. T. Law",
+      "year": 2025,
+      "venue": "Transactions on Machine Learning Research",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "is-in-context-universality-enough-mlps-are-also-universal-in-context",
+      "title": "Is In-Context Universality Enough? MLPs are Also Universal In-Context",
+      "authors": "A. Kratsios, T. Furuya",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Reasoning & Computation",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
+      "title": "Guiding Two-Layer Neural Networks toward Lipschitzness via Gradient Descent Learning Rate Constraints",
+      "authors": "K. Sung, A. Kratsios, N. Forman",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Control & Optimization",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Control & Optimization",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "keep-it-light-simplifying-image-clustering-via-text-free-adapters",
+      "title": "Keep it Light! Simplifying Image Clustering via Text-Free Adapters",
+      "authors": "Y. Li, H. Sáez de Ocáriz Borde, A. Kratsios, P. McNicholas",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Misc."
+      ],
+      "primary_topic": "Misc.",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "neural-snowflakes-universal-latent-graph-inference-via-trainable-latent-",
+      "title": "Neural Snowflakes: Universal Latent Graph Inference via Trainable Latent Geometries",
+      "authors": "A. Kratsios, H. Sáez de Ocáriz Borde",
+      "year": 2024,
+      "venue": "NeurIPS",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Geometric Deep Learning",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "a-comprehensive-analysis-on-the-learning-curve-in-kernel-ridge-regressio",
+      "title": "A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression",
+      "authors": "T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius",
+      "year": 2024,
+      "venue": "NeurIPS",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "energy-guided-continuous-entropic-barycenter-estimation-for-general-cost",
+      "title": "Energy-Guided Continuous Entropic Barycenter Estimation for General Costs",
+      "authors": "A. Kolesov, P. Mokrov, I. Udovichenko, M. Gazdieva, G. Pammer, A. Kratsios, A. Korotin, E. Burnaev",
+      "year": 2024,
+      "venue": "NeurIPS Spotlight",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Control & Optimization"
+      ],
+      "primary_topic": "Control & Optimization",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "characterizing-overfitting-in-kernel-ridgeless-regression-through-the-ei",
+      "title": "Characterizing Overfitting in Kernel Ridgeless Regression through the Eigenspectrum",
+      "authors": "T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius",
+      "year": 2024,
+      "venue": "ICLR",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+      "title": "Out-of-distributional Risk Bounds for Neural Operators with Applications to the Helmholtz Equation",
+      "authors": "J. A. L. Benitez, T. Furuya, F. Faucher, A. Kratsios, X. Tricoche, M. V. de Hoop",
+      "year": 2024,
+      "venue": "Journal of Computational Physics",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory",
+        "Operator Learning",
+        "Finance",
+        "PDEs",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
+      "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
+      "authors": "A. Kratsios, R. Hong, H. Sáez de Ocáriz Borde",
+      "year": 2024,
+      "venue": "Neural Networks",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Geometric Deep Learning",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "neural-operators-can-play-dynamic-stackelberg-games",
+      "title": "Neural Operators Can Play Dynamic Stackelberg Games",
+      "authors": "G. A. Alvarez, I. Ekren, A. Kratsios, X. Yang",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://www.researchgate.net/publication/385823419_Neural_Operators_Can_Play_Dynamic_Stackelberg_Games",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Operator Learning",
+        "Games & BSDEs",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Operator Learning",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
+      "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
+      "authors": "H. Borde, A. Lukoianov, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Geometric Deep Learning",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+      "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+      "authors": "M. Persiianov, A. Asadulaev, N. Andreev, N. Starodubcev, D. Baranchuk, A. Kratsios, E. Burnaev, A. Korotin",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "bridging-the-gap-between-approximation-and-learning-via-optimal-approxim",
+      "title": "Bridging the Gap Between Approximation and Learning via Optimal Approximation by ReLU MLPs of Maximal Regularity",
+      "authors": "R. Hong, A. Kratsios",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://www.researchgate.net/publication/384189642_Bridging_the_Gap_Between_Approximation_and_Learning_via_Optimal_Approximation_by_ReLU_MLPs_of_Maximal_Regularity",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
+      "title": "Low-dimensional Approximations of the Conditional Law of Volterra Processes: A Non-positive Curvature Approach",
+      "authors": "R. Arabpour, J. Armstrong, L. Galimberti, A. Kratsios, G. Livieri",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "PDEs"
+      ],
+      "primary_topic": "PDEs",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "reality-only-happens-once-single-path-generalization-bounds-for-transfor",
+      "title": "Reality Only Happens Once: Single-Path Generalization Bounds for Transformers",
+      "authors": "Y. Limmer, A. Kratsios, X. Yang, R. Saqur, B. Horvath",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Reasoning & Computation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
+      "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+      "authors": "A. Kratsios, T. Furuya, J. A. Lara Benitez, M. Lassas, M. de Hoop",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Operator Learning"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "tighter-generalization-bounds-on-digital-computers-via-discrete-optimal-",
+      "title": "Tighter Generalization Bounds on Digital Computers via Discrete Optimal Transport",
+      "authors": "A. Kratsios, A. M. Neuman, G. Pammer",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory",
+        "Reasoning & Computation",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "instance-dependent-generalization-bounds-via-optimal-transport",
+      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
+      "authors": "P. Kassraie, S. Hou, A. Kratsios, A. Krause, J. Rothfuss",
+      "year": 2023,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v24/22-1293.html",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "a-theoretical-analysis-of-the-test-error-of-finite-rank-kernel-ridge-reg",
+      "title": "A Theoretical Analysis of the Test Error of Finite-Rank Kernel Ridge Regression",
+      "authors": "T. S. Cheng, A. Kratsios, A. Lucchi, I. Dokmanić, D. Belius",
+      "year": 2023,
+      "venue": "NeurIPS",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Statistical Learning Theory",
+        "Operator Learning",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "small-transformers-compute-universal-metric-embeddings",
+      "title": "Small Transformers Compute Universal Metric Embeddings",
+      "authors": "A. Kratsios, V. Debarnot, I. Dokmanić",
+      "year": 2023,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v24/22-1246.html",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Reasoning & Computation",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "designing-universal-causal-deep-learning-models-the-geometric-hyper-tran",
+      "title": "Designing Universal Causal Deep Learning Models: The Geometric (Hyper) Transformer",
+      "authors": "B. Acciaio, A. Kratsios, G. Pammer",
+      "year": 2023,
+      "venue": "Mathematical Finance",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12389",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Finance",
+        "Geometric Deep Learning",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "universal-regular-conditional-distributions-via-probabilistic-transforme",
+      "title": "Universal Regular Conditional Distributions via Probabilistic Transformers",
+      "authors": "A. Kratsios",
+      "year": 2023,
+      "venue": "Constructive Approximation",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "denise-deep-robust-principal-component-analysis-for-positive-semidefinit",
+      "title": "Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices",
+      "authors": "C. Herrera, F. Krach, A. Kratsios, P. Ruyssen, J. Teichmann",
+      "year": 2023,
+      "venue": "Transactions on Machine Learning Research",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Misc."
+      ],
+      "primary_topic": "Misc.",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "deep-kalman-filters-can-filter",
+      "title": "Deep Kalman Filters Can Filter",
+      "authors": "B. Horvath, A. Kratsios, Y. Limmer, X. Yang",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "PDEs"
+      ],
+      "primary_topic": "PDEs",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+      "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+      "authors": "A. Kratsios, C. Liu, M. Lassas, M. V. de Hoop, I. Dokmanić",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Geometric Deep Learning",
+        "Approximation Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
+      "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
+      "authors": "X. Yang, A. Kratsios, F. Krach, M. Grasselli, A. Lucchi",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Control & Optimization",
+        "Finance"
+      ],
+      "primary_topic": "Control & Optimization",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
+      "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
+      "authors": "L. Papon, A. Kratsios",
+      "year": 2022,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v23/21-0716.html",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Geometric Deep Learning"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "universal-approximation-under-constraints-is-possible-with-transformers",
+      "title": "Universal Approximation under Constraints Is Possible with Transformers",
+      "authors": "A. Kratsios, B. Zamanlooy, I. Dokmanić, T. Liu",
+      "year": 2022,
+      "venue": "ICLR Spotlight",
+      "url": "https://openreview.net/forum?id=JGO8CvG5S9",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "do-relu-networks-have-an-edge-when-approximating-compactly-supported-fun",
+      "title": "Do ReLU Networks Have an Edge When Approximating Compactly-Supported Functions?",
+      "authors": "B. Zamanlooy, A. Kratsios",
+      "year": 2022,
+      "venue": "Transactions on Machine Learning Research",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "learning-sub-patterns-in-piecewise-continuous-functions",
+      "title": "Learning Sub-patterns in Piecewise Continuous Functions",
+      "authors": "B. Zamanlooy, A. Kratsios",
+      "year": 2022,
+      "venue": "Neurocomputing",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
+      "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
+      "authors": "L. Galimberti, A. Kratsios, G. Livieri",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "PDEs",
+        "Approximation Theory",
+        "Finance"
+      ],
+      "primary_topic": "PDEs",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "neu-a-meta-algorithm-for-universal-uap-invariant-feature-representation",
+      "title": "NEU: A Meta-algorithm for Universal UAP-invariant Feature Representation",
+      "authors": "C. Hyndman, A. Kratsios",
+      "year": 2021,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v22/18-803.html",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Approximation Theory",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Approximation Theory",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "optimizing-optimizers-regret-optimal-gradient-descent-algorithms",
+      "title": "Optimizing Optimizers: Regret-optimal Gradient Descent Algorithms",
+      "authors": "P. Casgrain, A. Kratsios",
+      "year": 2021,
+      "venue": "Conference on Learning Theory",
+      "url": "https://proceedings.mlr.press/v134/casgrain21a.html",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Control & Optimization",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Control & Optimization",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "lower-estimates-on-the-hochschild-co-homological-dimension-of-commutativ",
+      "title": "Lower-estimates on the Hochschild (Co)Homological Dimension of Commutative Algebras and Applications to Smooth Affine Schemes and Quasi-Free Algebras",
+      "authors": "A. Kratsios",
+      "year": 2021,
+      "venue": "Mathematics",
+      "url": "",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Misc."
+      ],
+      "primary_topic": "Misc.",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
+      "title": "Deep Arbitrage-Free Learning in a Generalized HJM Framework via Arbitrage-Regularization",
+      "authors": "A. Kratsios, C. Hyndman",
+      "year": 2020,
+      "venue": "Risks",
+      "url": "https://www.mdpi.com/2227-9091/8/2/40",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Finance"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "the-entropic-measure-transform",
+      "title": "The Entropic Measure Transform",
+      "authors": "C. Hyndman, A. Kratsios, R. Wang",
+      "year": 2020,
+      "venue": "The Canadian Journal of Statistics",
+      "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cjs.11537",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Misc."
+      ],
+      "primary_topic": "Misc.",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    },
+    {
+      "id": "replication-of-a-real-estate-market-index-teranet-national-bank-of-canad",
+      "title": "Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)",
+      "authors": "A. Kratsios et al.",
+      "year": 2017,
+      "venue": "CRM Industrial Problem Solving Workshop",
+      "url": "http://www.crm.math.ca/pub/Rapports/3300-3399/3369.pdf",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Finance"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+    }
+  ]
+}

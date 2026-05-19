@@ -1,0 +1,198 @@
+{
+  "roots": [
+    "AI Theory",
+    "Applications"
+  ],
+  "nodes": [
+    {
+      "id": "AI Theory",
+      "label": "AI Theory",
+      "root": "AI Theory",
+      "level": 0,
+      "x": 0.24,
+      "y": 0.13,
+      "kind": "root"
+    },
+    {
+      "id": "Applications",
+      "label": "Applications",
+      "root": "Applications",
+      "level": 0,
+      "x": 0.76,
+      "y": 0.13,
+      "kind": "root"
+    },
+    {
+      "id": "Approximation Theory",
+      "label": "Approximation Theory",
+      "root": "AI Theory",
+      "level": 1,
+      "x": 0.15,
+      "y": 0.34,
+      "kind": "topic"
+    },
+    {
+      "id": "Statistical Learning Theory",
+      "label": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "level": 1,
+      "x": 0.34,
+      "y": 0.34,
+      "kind": "topic"
+    },
+    {
+      "id": "Reasoning & Computation",
+      "label": "Reasoning & Computation",
+      "root": "AI Theory",
+      "level": 1,
+      "x": 0.52,
+      "y": 0.34,
+      "kind": "topic"
+    },
+    {
+      "id": "PDEs",
+      "label": "PDEs",
+      "root": "Applications",
+      "level": 1,
+      "x": 0.61,
+      "y": 0.34,
+      "kind": "topic"
+    },
+    {
+      "id": "Control & Optimization",
+      "label": "Control & Optimization",
+      "root": "Applications",
+      "level": 1,
+      "x": 0.74,
+      "y": 0.34,
+      "kind": "topic"
+    },
+    {
+      "id": "Games & BSDEs",
+      "label": "Games & BSDEs",
+      "root": "Applications",
+      "level": 1,
+      "x": 0.88,
+      "y": 0.34,
+      "kind": "topic"
+    },
+    {
+      "id": "Finance",
+      "label": "Finance",
+      "root": "Applications",
+      "level": 1,
+      "x": 0.8,
+      "y": 0.55,
+      "kind": "topic"
+    },
+    {
+      "id": "Misc.",
+      "label": "Misc.",
+      "root": "Applications",
+      "level": 1,
+      "x": 0.94,
+      "y": 0.55,
+      "kind": "topic"
+    },
+    {
+      "id": "Operator Learning",
+      "label": "Operator Learning",
+      "root": "AI Theory",
+      "level": 2,
+      "x": 0.23,
+      "y": 0.55,
+      "kind": "topic"
+    },
+    {
+      "id": "Geometric Deep Learning",
+      "label": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "level": 2,
+      "x": 0.43,
+      "y": 0.55,
+      "kind": "topic"
+    }
+  ],
+  "edges": [
+    {
+      "source": "AI Theory",
+      "target": "Approximation Theory",
+      "type": "hierarchy"
+    },
+    {
+      "source": "AI Theory",
+      "target": "Statistical Learning Theory",
+      "type": "hierarchy"
+    },
+    {
+      "source": "AI Theory",
+      "target": "Reasoning & Computation",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Applications",
+      "target": "PDEs",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Applications",
+      "target": "Control & Optimization",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Applications",
+      "target": "Games & BSDEs",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Applications",
+      "target": "Finance",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Applications",
+      "target": "Misc.",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Approximation Theory",
+      "target": "Operator Learning",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Approximation Theory",
+      "target": "Geometric Deep Learning",
+      "type": "hierarchy"
+    },
+    {
+      "source": "Operator Learning",
+      "target": "PDEs",
+      "type": "bridge"
+    },
+    {
+      "source": "Operator Learning",
+      "target": "Games & BSDEs",
+      "type": "bridge"
+    },
+    {
+      "source": "Geometric Deep Learning",
+      "target": "Finance",
+      "type": "bridge"
+    },
+    {
+      "source": "Statistical Learning Theory",
+      "target": "Finance",
+      "type": "bridge"
+    },
+    {
+      "source": "Control & Optimization",
+      "target": "Finance",
+      "type": "bridge"
+    },
+    {
+      "source": "Games & BSDEs",
+      "target": "Finance",
+      "type": "bridge"
+    }
+  ]
+}
