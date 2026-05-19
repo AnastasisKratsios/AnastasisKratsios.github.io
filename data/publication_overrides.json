@@ -1,31 +1,87 @@
 {
-  "notes": "Optional manual corrections keyed by normalized title. The update script applies these after automatic Scholar/Semantic Scholar/OpenAlex ingestion.",
+  "notes": "Optional manual corrections keyed by normalized title. The update script applies these after automatic Scholar/arXiv/Semantic Scholar/OpenAlex ingestion.",
   "topic_overrides": {
+    "sanos smooth strictly arbitrage free non parametric option surfaces": [
+      "Finance"
+    ],
+    "filtered not mixed stochastic filtering based online gating for mixture of large language models": [
+      "Finance",
+      "PDEs",
+      "Control & Optimization",
+      "Reasoning & Computation"
+    ],
     "small transformers compute universal metric embeddings": [
       "Reasoning & Computation",
       "Geometric Deep Learning",
-      "Approximation Theory"
+      "Universal Neural Approximation"
+    ],
+    "designing universal causal deep learning models the case of infinite dimensional dynamical systems from stochastic analysis": [
+      "Operator Learning",
+      "PDEs",
+      "Finance",
+      "Universal Neural Approximation"
     ],
     "designing universal causal deep learning models the geometric hyper transformer": [
       "Finance",
       "Geometric Deep Learning",
-      "Approximation Theory"
+      "Universal Neural Approximation"
     ],
     "deep arbitrage free learning in a generalized hjm framework via arbitrage regularization": [
       "Finance",
       "PDEs"
     ],
     "neural operators can play dynamic stackelberg games": [
-      "Operator Learning",
       "Games & BSDEs",
-      "Control & Optimization"
+      "Operator Learning",
+      "Control & Optimization",
+      "Finance"
     ],
     "regret optimal federated transfer learning for kernel regression with applications in american option pricing": [
       "Finance",
       "Control & Optimization",
       "Statistical Learning Theory"
+    ],
+    "one model to solve them all 2bsde families via neural operators": [
+      "Games & BSDEs",
+      "Operator Learning",
+      "PDEs",
+      "Finance"
+    ],
+    "polynomial scaling is possible for neural operator approximations of structured families of bsdes": [
+      "Games & BSDEs",
+      "Operator Learning",
+      "PDEs",
+      "Finance"
+    ],
+    "generative neural operators of log complexity can simultaneously solve infinitely many convex programs": [
+      "Operator Learning",
+      "Control & Optimization",
+      "Finance",
+      "PDEs"
+    ],
+    "simultaneously solving infinitely many lq mean field games in hilbert spaces the power of neural operators": [
+      "Games & BSDEs",
+      "Operator Learning",
+      "Control & Optimization",
+      "Finance"
+    ],
+    "generative market equilibrium models with stable adversarial learning via reinforcement": [
+      "Finance",
+      "Games & BSDEs",
+      "Control & Optimization"
+    ],
+    "generative ornstein uhlenbeck markets via geometric deep learning": [
+      "Finance",
+      "Geometric Deep Learning",
+      "Universal Neural Approximation"
+    ],
+    "low dimensional approximations of the conditional law of volterra processes a non positive curvature approach": [
+      "Finance",
+      "Geometric Deep Learning",
+      "PDEs"
     ]
   },
   "url_overrides": {},
-  "venue_overrides": {}
+  "venue_overrides": {},
+  "arxiv_category_overrides": {}
 }

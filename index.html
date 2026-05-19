@@ -319,23 +319,33 @@
 					<div class="inner">
 						<h1>Research Map</h1>
 						<p class="research-map-intro">
-							A dynamically updated map of publications and preprints, organized as a directed research graph.
-							Publication metadata is cached in <code>data/publications.json</code> and refreshed automatically from the Google Scholar profile.
+							A dynamically updated directed map of publications and preprints, organized by arXiv subjects and topic keywords, then aligned with the high-level AI Theory / Applications hierarchy.
 						</p>
+
+						<div class="research-map-layout">
+							<div class="research-map-canvas-wrap">
+								<svg id="research-map-canvas" role="img" aria-label="Interactive publication DAG"></svg>
+							</div>
+						</div>
+
+						<div class="research-map-bottom-panel" id="research-map-details">
+							<h3>Click a paper node to read its title here.</h3>
+							<p>Topic nodes summarize visible papers; paper nodes are automatically classified from arXiv subjects, titles, and metadata.</p>
+						</div>
 
 						<div class="research-map-controls" aria-label="Research map filters">
 							<button type="button" class="is-active" data-research-filter="all">All</button>
 							<button type="button" data-research-filter="AI Theory">AI Theory</button>
 							<button type="button" data-research-filter="Applications">Applications</button>
 							<button type="button" data-research-filter="Finance">Finance</button>
-							<button type="button" data-research-filter="Approximation Theory">Approximation</button>
+							<button type="button" data-research-filter="Universal Neural Approximation">Universal Neural Approximation</button>
 							<button type="button" data-research-filter="Statistical Learning Theory">Learning Theory</button>
 							<button type="button" data-research-filter="Operator Learning">Operator Learning</button>
 							<button type="button" data-research-filter="Geometric Deep Learning">Geometric DL</button>
 							<select id="research-map-year" aria-label="Filter by year">
 								<option value="all">All years</option>
 							</select>
-							<input id="research-map-search" type="search" placeholder="Search title, author, venue, or topic" aria-label="Search publications" />
+							<input id="research-map-search" type="search" placeholder="Search title, author, venue, topic, or arXiv subject" aria-label="Search publications" />
 						</div>
 
 						<p class="research-map-status" id="research-map-status">Loading publication map...</p>
@@ -344,16 +354,6 @@
 							<span class="legend-root">root topic</span>
 							<span class="legend-topic">research topic</span>
 							<span class="legend-paper">paper; size grows with citations</span>
-						</div>
-
-						<div class="research-map-layout">
-							<div class="research-map-canvas-wrap">
-								<svg id="research-map-canvas" role="img" aria-label="Interactive publication DAG"></svg>
-							</div>
-							<aside class="research-map-sidepanel" id="research-map-details">
-								<h3>Research Map</h3>
-								<p>Click a topic or paper node to inspect details. Use the Finance tab to isolate finance-facing work.</p>
-							</aside>
 						</div>
 
 						<div class="publication-list-fallback" id="publication-list" aria-live="polite"></div>

@@ -6,7 +6,7 @@
   const TOPIC_COLORS = {
     "AI Theory": "#2f4f9f",
     "Applications": "#91551f",
-    "Approximation Theory": "#4768c5",
+    "Universal Neural Approximation": "#4768c5",
     "Statistical Learning Theory": "#5c72b8",
     "Reasoning & Computation": "#6a61a8",
     "Operator Learning": "#26839b",
@@ -17,6 +17,16 @@
     "Finance": "#b14e49",
     "Misc.": "#777777"
   };
+
+  const AI_TOPICS = [
+    "Universal Neural Approximation",
+    "Statistical Learning Theory",
+    "Reasoning & Computation",
+    "Operator Learning",
+    "Geometric Deep Learning"
+  ];
+  const APPLICATION_TOPICS = ["PDEs", "Control & Optimization", "Games & BSDEs", "Finance", "Misc."];
+  const TOPIC_ALIASES = {"Approximation Theory": "Universal Neural Approximation", "Learning Theory": "Statistical Learning Theory"};
 
   const state = {
     filter: "all",
@@ -37,14 +47,31 @@
     return String(str || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
+  function canonicalTopic(topic) {
+    return TOPIC_ALIASES[topic] || topic;
+  }
+
+  function canonicalizePaper(p) {
+    const topics = (p.topics || []).map(canonicalTopic);
+    const primary = canonicalTopic(p.primary_topic || topics[0] || "Misc.");
+    return {...p, topics: Array.from(new Set(topics.length ? topics : [primary])), primary_topic: primary};
+  }
+
   function paperMatches(p) {
     const q = normalize(state.search).trim();
-    const text = normalize([p.title, p.authors, p.venue, (p.topics || []).join(" ")].join(" "));
+    const text = normalize([
+      p.title,
+      p.authors,
+      p.venue,
+      (p.topics || []).join(" "),
+      (p.arxiv_categories || []).join(" "),
+      p.arxiv_id || ""
+    ].join(" "));
     if (q && !text.includes(q)) return false;
     if (state.year !== "all" && String(p.year || "") !== String(state.year)) return false;
     if (state.filter === "all") return true;
-    if (state.filter === "AI Theory") return (p.topics || []).some(t => ["Approximation Theory", "Statistical Learning Theory", "Reasoning & Computation", "Operator Learning", "Geometric Deep Learning"].includes(t));
-    if (state.filter === "Applications") return (p.topics || []).some(t => ["PDEs", "Control & Optimization", "Games & BSDEs", "Finance", "Misc."].includes(t));
+    if (state.filter === "AI Theory") return (p.topics || []).some(t => AI_TOPICS.includes(t));
+    if (state.filter === "Applications") return (p.topics || []).some(t => APPLICATION_TOPICS.includes(t));
     return (p.topics || []).includes(state.filter) || p.primary_topic === state.filter;
   }
 
@@ -52,7 +79,7 @@
     const el = byId("research-map-status");
     if (!el) return;
     const papers = state.publications.filter(paperMatches);
-    const generated = state.generatedAt && state.generatedAt !== "seed" ? ` Last updated: ${state.generatedAt}.` : " Seed data shown until the first scheduled Scholar refresh succeeds.";
+    const generated = state.generatedAt && state.generatedAt !== "seed" ? ` Last updated: ${state.generatedAt}.` : "";
     el.textContent = `${papers.length} papers shown.${generated}`;
   }
 
@@ -76,18 +103,26 @@
     }
   }
 
+  function topicBadges(topics) {
+    return (topics || []).map(t => `<span class="research-topic-badge">${escapeHtml(t)}</span>`).join(" ");
+  }
+
+  function subjectBadges(categories) {
+    const cats = (categories || []).filter(Boolean);
+    if (!cats.length) return "";
+    return `<div><strong>Subjects:</strong> ${cats.map(c => `<span class="research-subject-badge">${escapeHtml(c)}</span>`).join(" ")}</div>`;
+  }
+
   function showPaper(p) {
     state.selected = p;
     const panel = byId("research-map-details");
     if (!panel) return;
-    const topics = (p.topics || []).map(t => `<span class="research-topic-badge">${escapeHtml(t)}</span>`).join(" ");
-    const link = p.url ? `<p><a class="paper-link" href="${escapeHtml(p.url)}" target="_blank" rel="noopener">Open paper/source</a></p>` : "";
-    const abstract = p.abstract ? `<p class="paper-abstract">${escapeHtml(p.abstract)}</p>` : `<p class="paper-abstract">No abstract was available in the cached metadata. The updater will fill this when Scholar/Semantic Scholar/OpenAlex returns it.</p>`;
+    const link = p.url ? `<a class="paper-link" href="${escapeHtml(p.url)}" target="_blank" rel="noopener">Open paper/source</a>` : "";
     panel.innerHTML = `
       <h3>${escapeHtml(p.title)}</h3>
-      <p class="paper-meta">${escapeHtml(p.authors || "")}<br>${escapeHtml([p.venue, p.year].filter(Boolean).join(" · "))}${p.citations ? ` · ${escapeHtml(p.citations)} citations` : ""}</p>
-      <div>${topics}</div>
-      ${abstract}
+      <p class="paper-meta">${escapeHtml(p.authors || "")}${p.authors ? "<br>" : ""}${escapeHtml([p.venue, p.year].filter(Boolean).join(" · "))}${p.citations ? ` · ${escapeHtml(p.citations)} citations` : ""}</p>
+      <div>${topicBadges(p.topics)}</div>
+      ${subjectBadges(p.arxiv_categories)}
       ${link}
     `;
   }
@@ -99,7 +134,6 @@
       <h3>${escapeHtml(t.label || t.id)}</h3>
       <p class="paper-meta">${escapeHtml(t.root || "Root topic")} ${t.level ? `· level ${escapeHtml(t.level)}` : ""}</p>
       <p>${count} visible paper${count === 1 ? "" : "s"} currently attach to this topic.</p>
-      <p>Use the tabs, year selector, and search box to isolate a research thread. The arrows encode the DAG-level organization; paper placement is updated from the cached publication metadata.</p>
     `;
   }
 
@@ -118,7 +152,8 @@
       html += `<details ${String(year) === String(new Date().getFullYear()) ? "open" : ""}><summary>${escapeHtml(year)} · ${items.length} paper${items.length === 1 ? "" : "s"}</summary><ul>`;
       items.forEach(p => {
         const title = p.url ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>` : escapeHtml(p.title);
-        html += `<li>${title}. <em>${escapeHtml(p.venue || "")}</em>${p.citations ? ` · ${escapeHtml(p.citations)} citations` : ""}<br><small>${(p.topics || []).map(escapeHtml).join(" · ")}</small></li>`;
+        const subjects = (p.arxiv_categories || []).length ? ` · subjects: ${(p.arxiv_categories || []).map(escapeHtml).join(" · ")}` : "";
+        html += `<li>${title}. <em>${escapeHtml(p.venue || "")}</em>${p.citations ? ` · ${escapeHtml(p.citations)} citations` : ""}<br><small>${(p.topics || []).map(escapeHtml).join(" · ")}${subjects}</small></li>`;
       });
       html += `</ul></details>`;
     });
@@ -127,7 +162,7 @@
 
   function nodeRadius(d) {
     if (d.kind === "root") return 25;
-    if (d.kind === "topic") return 17;
+    if (d.kind === "topic") return 18;
     const c = Math.max(0, Number(d.citations || 0));
     return Math.max(5.5, Math.min(15, 5.5 + Math.sqrt(c + 1) * 1.4));
   }
@@ -145,8 +180,8 @@
     renderList();
 
     const wrap = svgEl.parentElement;
-    const width = Math.max(680, wrap ? wrap.clientWidth : 960);
-    const height = Math.max(500, svgEl.clientHeight || 576);
+    const width = Math.max(760, wrap ? wrap.clientWidth : 1040);
+    const height = Math.max(560, svgEl.clientHeight || 672);
     const svg = d3.select(svgEl).attr("viewBox", `0 0 ${width} ${height}`);
     svg.selectAll("*").remove();
 
@@ -154,7 +189,7 @@
     defs.append("marker")
       .attr("id", "arrow")
       .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 22)
+      .attr("refX", 23)
       .attr("refY", 0)
       .attr("markerWidth", 6)
       .attr("markerHeight", 6)
@@ -172,7 +207,7 @@
     const paperNodes = visiblePapers.map((p, i) => {
       const parent = topicMap.get(p.primary_topic) || topicMap.get((p.topics || [])[0]) || topicMap.get("Misc.") || topicNodes[0];
       const angle = (i * 137.508) * Math.PI / 180;
-      const radius = 38 + (i % 9) * 9;
+      const radius = 40 + (i % 9) * 10;
       return {
         ...p,
         kind: "paper",
@@ -180,7 +215,6 @@
         y: parent.fy + Math.sin(angle) * radius
       };
     });
-    const paperMap = new Map(paperNodes.map(p => [p.id, p]));
     const nodes = [...topicNodes, ...paperNodes];
 
     const topicEdges = state.topics.edges.map(e => ({...e, source: e.source, target: e.target, kind: "topic-link"}));
@@ -200,8 +234,8 @@
       .data(links)
       .join("line")
       .attr("class", d => `research-link ${d.kind} ${d.type || ""}`)
-      .attr("stroke", d => d.kind === "topic-link" ? "rgba(0,0,0,0.38)" : "rgba(0,0,0,0.13)")
-      .attr("stroke-width", d => d.type === "hierarchy" ? 1.8 : d.type === "bridge" ? 1.1 : d.type === "primary" ? 0.8 : 0.45)
+      .attr("stroke", d => d.kind === "topic-link" ? "rgba(0,0,0,0.38)" : "rgba(0,0,0,0.12)")
+      .attr("stroke-width", d => d.type === "hierarchy" ? 1.8 : d.type === "bridge" ? 1.1 : d.type === "primary" ? 0.75 : 0.4)
       .attr("stroke-dasharray", d => d.type === "bridge" || d.type === "secondary" ? "4 4" : null)
       .attr("marker-end", d => d.kind === "topic-link" ? "url(#arrow)" : null);
 
@@ -227,24 +261,25 @@
       })
       .attr("stroke", d => d.kind === "paper" ? "rgba(255,255,255,0.95)" : "rgba(0,0,0,0.28)")
       .attr("stroke-width", d => d.kind === "paper" ? 1.4 : 1.1)
-      .attr("opacity", d => d.kind === "paper" ? 0.86 : 0.96);
+      .attr("opacity", d => d.kind === "paper" ? 0.88 : 0.96);
 
-    node.append("title").text(d => d.kind === "paper" ? `${d.title}\n${d.year || ""} · ${(d.topics || []).join(" · ")}` : d.label || d.id);
+    node.append("title").text(d => d.kind === "paper" ? `${d.title}\n${d.year || ""} · ${(d.topics || []).join(" · ")}\n${(d.arxiv_categories || []).join(" · ")}` : d.label || d.id);
 
-    node.append("text")
-      .attr("dy", d => d.kind === "paper" ? -nodeRadius(d) - 4 : nodeRadius(d) + 15)
+    node.filter(d => d.kind !== "paper")
+      .append("text")
+      .attr("dy", d => nodeRadius(d) + 15)
       .attr("text-anchor", "middle")
-      .attr("font-size", d => d.kind === "root" ? 14 : d.kind === "topic" ? 11.5 : 9.5)
-      .attr("font-weight", d => d.kind === "paper" ? 400 : 700)
+      .attr("font-size", d => d.kind === "root" ? 14 : 11.5)
+      .attr("font-weight", 700)
       .attr("fill", "rgba(0,0,0,0.76)")
-      .each(function(d) { wrapSvgText(d3.select(this), d.kind === "paper" ? shortTitle(d.title) : (d.label || d.id), d.kind === "root" ? 145 : d.kind === "topic" ? 130 : 82, d.kind === "paper" ? 2 : 2); });
+      .each(function(d) { wrapSvgText(d3.select(this), d.label || d.id, d.kind === "root" ? 145 : 150, 2); });
 
     const simulation = d3.forceSimulation(nodes)
-      .force("link", d3.forceLink(links).id(d => d.id).distance(d => d.kind === "topic-link" ? 90 : d.type === "primary" ? 52 : 78).strength(d => d.kind === "topic-link" ? 0.12 : d.type === "primary" ? 0.20 : 0.045))
-      .force("charge", d3.forceManyBody().strength(d => d.kind === "paper" ? -45 : -260))
-      .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + (d.kind === "paper" ? 8 : 20)).iterations(2))
-      .force("x", d3.forceX(d => d.kind === "paper" ? ((topicMap.get(d.primary_topic) || topicMap.get("Misc.") || topicNodes[0]).fx) : d.fx).strength(d => d.kind === "paper" ? 0.04 : 0.5))
-      .force("y", d3.forceY(d => d.kind === "paper" ? ((topicMap.get(d.primary_topic) || topicMap.get("Misc.") || topicNodes[0]).fy + 70) : d.fy).strength(d => d.kind === "paper" ? 0.04 : 0.5));
+      .force("link", d3.forceLink(links).id(d => d.id).distance(d => d.kind === "topic-link" ? 96 : d.type === "primary" ? 54 : 80).strength(d => d.kind === "topic-link" ? 0.12 : d.type === "primary" ? 0.22 : 0.045))
+      .force("charge", d3.forceManyBody().strength(d => d.kind === "paper" ? -48 : -280))
+      .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + (d.kind === "paper" ? 5 : 22)).iterations(2))
+      .force("x", d3.forceX(d => d.kind === "paper" ? ((topicMap.get(d.primary_topic) || topicMap.get("Misc.") || topicNodes[0]).fx) : d.fx).strength(d => d.kind === "paper" ? 0.045 : 0.5))
+      .force("y", d3.forceY(d => d.kind === "paper" ? ((topicMap.get(d.primary_topic) || topicMap.get("Misc.") || topicNodes[0]).fy + 76) : d.fy).strength(d => d.kind === "paper" ? 0.045 : 0.5));
 
     simulation.on("tick", () => {
       nodes.forEach(d => {
@@ -272,11 +307,6 @@
       if (!event.active) simulation.alphaTarget(0);
       if (d.kind === "paper") { d.fx = null; d.fy = null; }
     }
-  }
-
-  function shortTitle(title) {
-    const s = String(title || "");
-    return s.length > 54 ? s.slice(0, 52) + "…" : s;
   }
 
   function wrapSvgText(textSelection, text, width, maxLines) {
@@ -313,11 +343,11 @@
       if (!pubResp.ok || !topicResp.ok) throw new Error("Could not load publication data.");
       const pubData = await pubResp.json();
       const topicData = await topicResp.json();
-      state.publications = (pubData.papers || []).filter(p => p && p.title);
+      state.publications = (pubData.papers || []).filter(p => p && p.title).map(canonicalizePaper);
       state.generatedAt = pubData.generated_at || "";
       state.topics = topicData;
       populateControls();
-      showTopic({id: "Research Map", label: "Research Map", root: "Scholar-synced publication graph"}, state.publications.length);
+      showTopic({id: "Research Map", label: "Research Map", root: "Scholar/arXiv-synced publication graph"}, state.publications.length);
       render();
       window.addEventListener("resize", () => window.requestAnimationFrame(render));
     } catch (err) {
@@ -329,4 +359,3 @@
 
   document.addEventListener("DOMContentLoaded", init);
 })();
-
