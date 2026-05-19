@@ -1,0 +1,31 @@
+{
+  "notes": "Optional manual corrections keyed by normalized title. The update script applies these after automatic Scholar/Semantic Scholar/OpenAlex ingestion.",
+  "topic_overrides": {
+    "small transformers compute universal metric embeddings": [
+      "Reasoning & Computation",
+      "Geometric Deep Learning",
+      "Approximation Theory"
+    ],
+    "designing universal causal deep learning models the geometric hyper transformer": [
+      "Finance",
+      "Geometric Deep Learning",
+      "Approximation Theory"
+    ],
+    "deep arbitrage free learning in a generalized hjm framework via arbitrage regularization": [
+      "Finance",
+      "PDEs"
+    ],
+    "neural operators can play dynamic stackelberg games": [
+      "Operator Learning",
+      "Games & BSDEs",
+      "Control & Optimization"
+    ],
+    "regret optimal federated transfer learning for kernel regression with applications in american option pricing": [
+      "Finance",
+      "Control & Optimization",
+      "Statistical Learning Theory"
+    ]
+  },
+  "url_overrides": {},
+  "venue_overrides": {}
+}
