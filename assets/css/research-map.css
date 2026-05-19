@@ -2,13 +2,80 @@
    from the HTML5 UP template so the map can be removed without touching the
    rest of the site. */
 #papers.research-map-section .inner {
-  max-width: 92rem;
+  max-width: 96rem;
 }
 
 .research-map-intro {
-  max-width: 62rem;
+  max-width: 66rem;
   margin: 0 auto 1.25rem auto;
   color: rgba(0, 0, 0, 0.70);
+}
+
+.research-map-layout {
+  display: block;
+  margin-top: 1rem;
+}
+
+.research-map-canvas-wrap {
+  position: relative;
+  min-height: 42rem;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 22% 18%, rgba(102, 153, 255, 0.13), transparent 28%),
+    radial-gradient(circle at 78% 22%, rgba(255, 187, 102, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.95));
+}
+
+#research-map-canvas {
+  width: 100%;
+  height: 42rem;
+  display: block;
+}
+
+.research-map-bottom-panel {
+  margin: 0.9rem auto 1rem auto;
+  padding: 0.95rem 1.1rem;
+  max-width: 72rem;
+  min-height: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.94);
+  text-align: center;
+}
+
+.research-map-bottom-panel h3 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.08rem;
+}
+
+.research-map-bottom-panel .paper-meta {
+  margin: 0.3rem 0 0.55rem 0;
+  color: rgba(0,0,0,0.65);
+  font-size: 0.95rem;
+}
+
+.research-map-bottom-panel a.paper-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+}
+
+.research-topic-badge,
+.research-subject-badge {
+  display: inline-block;
+  margin: 0.15rem 0.2rem 0.15rem 0;
+  padding: 0.16rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.035);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.research-subject-badge {
+  font-family: monospace;
+  background: rgba(0, 0, 0, 0.055);
 }
 
 .research-map-controls {
@@ -17,7 +84,7 @@
   gap: 0.55rem;
   align-items: center;
   justify-content: center;
-  margin: 1.2rem auto 1.2rem auto;
+  margin: 1rem auto 0.95rem auto;
 }
 
 .research-map-controls button,
@@ -46,82 +113,14 @@
 }
 
 .research-map-controls input {
-  min-width: min(22rem, 92vw);
+  min-width: min(24rem, 92vw);
 }
 
 .research-map-status {
   min-height: 1.5rem;
-  margin: 0.25rem auto 1rem auto;
+  margin: 0.1rem auto 0.8rem auto;
   font-size: 0.92rem;
   color: rgba(0, 0, 0, 0.62);
-}
-
-.research-map-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
-  gap: 1.25rem;
-  align-items: stretch;
-}
-
-.research-map-canvas-wrap {
-  position: relative;
-  min-height: 36rem;
-  border: 1px solid rgba(0, 0, 0, 0.11);
-  border-radius: 1.1rem;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 22% 18%, rgba(102, 153, 255, 0.13), transparent 28%),
-    radial-gradient(circle at 78% 22%, rgba(255, 187, 102, 0.14), transparent 30%),
-    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.95));
-}
-
-#research-map-canvas {
-  width: 100%;
-  height: 36rem;
-  display: block;
-}
-
-.research-map-sidepanel {
-  min-height: 36rem;
-  padding: 1.15rem;
-  border: 1px solid rgba(0, 0, 0, 0.11);
-  border-radius: 1.1rem;
-  background: rgba(255, 255, 255, 0.92);
-  text-align: left;
-}
-
-.research-map-sidepanel h3 {
-  margin-top: 0;
-  margin-bottom: 0.4rem;
-  font-size: 1.15rem;
-}
-
-.research-map-sidepanel .paper-meta {
-  margin: 0.4rem 0 0.75rem 0;
-  color: rgba(0,0,0,0.65);
-  font-size: 0.95rem;
-}
-
-.research-map-sidepanel .paper-abstract {
-  max-height: 12rem;
-  overflow: auto;
-  padding-right: 0.4rem;
-}
-
-.research-topic-badge {
-  display: inline-block;
-  margin: 0.15rem 0.2rem 0.15rem 0;
-  padding: 0.16rem 0.55rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  background: rgba(0, 0, 0, 0.035);
-  font-size: 0.78rem;
-  white-space: nowrap;
-}
-
-.research-map-sidepanel a.paper-link {
-  display: inline-block;
-  margin-top: 0.75rem;
 }
 
 .research-map-legend {
@@ -129,7 +128,7 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
-  margin: 0.85rem 0 1.1rem 0;
+  margin: 0.4rem 0 1.1rem 0;
   color: rgba(0, 0, 0, 0.62);
   font-size: 0.85rem;
 }
@@ -181,20 +180,20 @@
   font-family: inherit;
 }
 
+.research-node.paper text {
+  display: none;
+}
+
 .research-link {
   pointer-events: none;
 }
 
 @media screen and (max-width: 980px) {
-  .research-map-layout {
-    grid-template-columns: 1fr;
-  }
-  .research-map-sidepanel,
   .research-map-canvas-wrap {
-    min-height: 28rem;
+    min-height: 34rem;
   }
   #research-map-canvas {
-    height: 32rem;
+    height: 34rem;
   }
 }
 
@@ -207,8 +206,10 @@
   .research-map-controls input {
     width: 100%;
   }
+  .research-map-canvas-wrap {
+    min-height: 32rem;
+  }
   #research-map-canvas {
-    height: 30rem;
+    height: 32rem;
   }
 }
-

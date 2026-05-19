@@ -1,75 +1,346 @@
 {
   "generated_at": "seed",
-  "source": "Seed data from the previous website. The scheduled GitHub Action refreshes this from Google Scholar and enriches abstracts/metadata when available.",
+  "source": "Seed data from arXiv author search snapshot plus previous website; GitHub Action refreshes from Google Scholar and arXiv",
   "scholar_profile": "https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en",
+  "arxiv_author_query": "au:Kratsios_A",
   "papers": [
     {
-      "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
-      "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
-      "authors": "R. Saqur, A. Kratsios, F. Krach, Y. Limmer, J. J. Tian, J. Willes, B. Horvath, F. Rudzicz",
-      "year": 2025,
-      "venue": "International Conference on Learning Representations",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Control & Optimization",
-        "PDEs"
-      ],
-      "primary_topic": "Control & Optimization",
-      "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "neural-spacetimes-for-dag-representation-learning",
-      "title": "Neural Spacetimes for DAG Representation Learning",
-      "authors": "H. Borde, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
-      "year": 2025,
-      "venue": "International Conference on Learning Representations",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Geometric Deep Learning",
-        "Approximation Theory"
-      ],
-      "primary_topic": "Geometric Deep Learning",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
-      "title": "Approximation Rates and VC-Dimension Bounds for (P)ReLU MLP Mixture of Experts",
-      "authors": "A. Kratsios, H. Sáez de Ocáriz Borde, T. Furuya, M. T. Law",
-      "year": 2025,
-      "venue": "Transactions on Machine Learning Research",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Approximation Theory",
-        "Statistical Learning Theory"
-      ],
-      "primary_topic": "Approximation Theory",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "is-in-context-universality-enough-mlps-are-also-universal-in-context",
-      "title": "Is In-Context Universality Enough? MLPs are Also Universal In-Context",
-      "authors": "A. Kratsios, T. Furuya",
-      "year": 2025,
+      "id": "adaptivity-under-realizability-constraints-comparing-in-context-and-agen",
+      "title": "Adaptivity Under Realizability Constraints: Comparing In-Context and Agentic Learning",
+      "authors": "",
+      "year": 2026,
       "venue": "arXiv",
-      "url": "",
+      "url": "https://arxiv.org/abs/2605.04995",
       "citations": 0,
       "abstract": "",
+      "arxiv_id": "2605.04995",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.ST",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
       "topics": [
         "Reasoning & Computation",
-        "Approximation Theory"
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Games & BSDEs"
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "certifiable-boolean-reasoning-is-universal",
+      "title": "Certifiable Boolean Reasoning Is Universal",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2602.05120",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2602.05120",
+      "arxiv_categories": [
+        "cs.CC",
+        "cs.LG"
+      ],
+      "arxiv_primary_category": "cs.CC",
+      "topics": [
+        "Reasoning & Computation",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "classification-fields-arbitrarily-fine-recursive-hierarchical-clustering",
+      "title": "Classification Fields: Arbitrarily Fine Recursive Hierarchical Clustering From Few Examples",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.07119",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2605.07119",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
+      "title": "Every Feedforward Neural Network Definable in an o-Minimal Structure Has Finite Sample Complexity",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.07097",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2605.07097",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "math.LO",
+        "math.ST"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Geometric Deep Learning",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "memoa-massive-mixtures-of-online-agents-via-mean-field-decentralized-nas",
+      "title": "MEMOA: Massive Mixtures of Online Agents via Mean-Field Decentralized Nash Equilibria",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.05492",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2605.05492",
+      "arxiv_categories": [
+        "cs.LG"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Games & BSDEs",
+        "Control & Optimization",
+        "Statistical Learning Theory",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Games & BSDEs",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "neural-operators-can-discover-functional-clusters",
+      "title": "Neural Operators Can Discover Functional Clusters",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2602.23528",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2602.23528",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.CE",
+        "stat.CO",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Operator Learning",
+        "Statistical Learning Theory",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Operator Learning",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
+      "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2601.11209",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2601.11209",
+      "arxiv_categories": [
+        "q-fin.CP",
+        "q-fin.MF"
+      ],
+      "arxiv_primary_category": "q-fin.CP",
+      "topics": [
+        "Finance"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
+      "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2602.03970",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2602.03970",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "math.MG",
+        "math.ST"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Reasoning & Computation",
+        "Statistical Learning Theory",
+        "Geometric Deep Learning",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "structure-preserving-reconstruction-of-convex-lipschitz-functionals-on-h",
+      "title": "Structure-Preserving Reconstruction of Convex Lipschitz Functionals on Hilbert Spaces from Finite Samples",
+      "authors": "",
+      "year": 2026,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.08559",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2605.08559",
+      "arxiv_categories": [
+        "math.FA",
+        "cs.LG",
+        "cs.NE",
+        "math.NA",
+        "math.OC"
+      ],
+      "arxiv_primary_category": "math.FA",
+      "topics": [
+        "Universal Neural Approximation",
+        "Control & Optimization",
+        "Geometric Deep Learning",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
+      "title": "Approximation Rates in Besov Norms and Sample-Complexity of Kolmogorov-Arnold Networks with Residual Connections",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2504.15110",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2504.15110",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.FA",
+        "math.NA",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Geometric Deep Learning"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "beyond-universal-approximation-theorems-algorithmic-uniform-approximatio",
+      "title": "Beyond Universal Approximation Theorems: Algorithmic Uniform Approximation by Neural Networks Trained with Noisy Data",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2509.00924",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2509.00924",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "math.NA",
+        "math.PR"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Games & BSDEs",
+        "Geometric Deep Learning",
+        "PDEs"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "generative-market-equilibrium-models-with-stable-adversarial-learning-vi",
+      "title": "Generative Market Equilibrium Models with Stable Adversarial Learning via Reinforcement",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2504.04300",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2504.04300",
+      "arxiv_categories": [
+        "q-fin.MF",
+        "cs.LG",
+        "q-fin.PR"
+      ],
+      "arxiv_primary_category": "q-fin.MF",
+      "topics": [
+        "Finance",
+        "Games & BSDEs",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "generative-neural-operators-of-log-complexity-can-simultaneously-solve-i",
+      "title": "Generative Neural Operators of Log-Complexity Can Simultaneously Solve Infinitely Many Convex Programs",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2508.14995",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2508.14995",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.NA",
+        "math.OC",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Operator Learning",
+        "Control & Optimization",
+        "Finance",
+        "PDEs"
+      ],
+      "primary_topic": "Operator Learning",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
@@ -82,181 +353,364 @@
       "abstract": "",
       "topics": [
         "Control & Optimization",
-        "Approximation Theory"
+        "Universal Neural Approximation"
       ],
       "primary_topic": "Control & Optimization",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "incremental-generation-is-necessary-and-sufficient-for-universality-in-f",
+      "title": "Incremental Generation is Necessary and Sufficient for Universality in Flow-Based Modelling",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2511.09902",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2511.09902",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.CA",
+        "math.DS",
+        "math.NA",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Control & Optimization",
+        "PDEs"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "is-in-context-universality-enough-mlps-are-also-universal-in-context",
+      "title": "Is In-Context Universality Enough? MLPs are Also Universal In-Context",
+      "authors": "A. Kratsios, T. Furuya",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2502.03327",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2502.03327",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "math.NA",
+        "math.PR"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Reasoning & Computation",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Games & BSDEs",
+        "Geometric Deep Learning"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "keep-it-light-simplifying-image-clustering-via-text-free-adapters",
-      "title": "Keep it Light! Simplifying Image Clustering via Text-Free Adapters",
+      "title": "Keep It Light! Simplifying Image Clustering Via Text-Free Adapters",
       "authors": "Y. Li, H. Sáez de Ocáriz Borde, A. Kratsios, P. McNicholas",
       "year": 2025,
       "venue": "arXiv",
-      "url": "",
+      "url": "https://arxiv.org/abs/2502.04226",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Misc."
+      "arxiv_id": "2502.04226",
+      "arxiv_categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.NE",
+        "stat.CO",
+        "stat.ML"
       ],
-      "primary_topic": "Misc.",
-      "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "arxiv_primary_category": "cs.CV",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Geometric Deep Learning"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "neural-snowflakes-universal-latent-graph-inference-via-trainable-latent-",
-      "title": "Neural Snowflakes: Universal Latent Graph Inference via Trainable Latent Geometries",
-      "authors": "A. Kratsios, H. Sáez de Ocáriz Borde",
-      "year": 2024,
-      "venue": "NeurIPS",
-      "url": "",
+      "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+      "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2509.06894",
       "citations": 0,
       "abstract": "",
+      "arxiv_id": "2509.06894",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.MG",
+        "math.PR",
+        "math.ST"
+      ],
+      "arxiv_primary_category": "stat.ML",
       "topics": [
         "Geometric Deep Learning",
-        "Approximation Theory"
+        "Statistical Learning Theory",
+        "Games & BSDEs",
+        "PDEs",
+        "Universal Neural Approximation"
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "lora-fine-tuning-without-gpus-a-cpu-efficient-meta-generation-framework-",
+      "title": "LoRA Fine-Tuning Without GPUs: A CPU-Efficient Meta-Generation Framework for LLMs",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2507.01806",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2507.01806",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Statistical Learning Theory",
+        "Reasoning & Computation",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
+      "title": "One model to solve them all: 2BSDE families via neural operators",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2511.01125",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2511.01125",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.AP",
+        "math.NA",
+        "math.PR",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Games & BSDEs",
+        "Operator Learning",
+        "PDEs",
+        "Finance"
+      ],
+      "primary_topic": "Games & BSDEs",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "online-federation-for-mixtures-of-proprietary-agents-with-black-box-enco",
+      "title": "Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2505.00216",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2505.00216",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.GT"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Statistical Learning Theory",
+        "Games & BSDEs",
+        "Control & Optimization",
+        "Reasoning & Computation",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
+      "title": "Quantifying The Limits of AI Reasoning: Systematic Neural Network Representations of Algorithms",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2508.18526",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2508.18526",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.CC",
+        "cs.LO",
+        "cs.NE",
+        "math.NA"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Reasoning & Computation",
+        "Universal Neural Approximation",
+        "Geometric Deep Learning",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "sharp-generalization-bounds-for-foundation-models-with-asymmetric-random",
+      "title": "Sharp Generalization Bounds for Foundation Models with Asymmetric Randomized Low-Rank Adapters",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2506.14530",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2506.14530",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.LG",
+        "cs.NE",
+        "math.ST"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Geometric Deep Learning",
+        "Reasoning & Computation",
+        "Operator Learning"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "simultaneously-solving-infinitely-many-lq-mean-field-games-in-hilbert-sp",
+      "title": "Simultaneously Solving Infinitely Many LQ Mean Field Games In Hilbert Spaces: The Power of Neural Operators",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2510.20017",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2510.20017",
+      "arxiv_categories": [
+        "math.OC",
+        "cs.LG",
+        "math.NA",
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "arxiv_primary_category": "math.OC",
+      "topics": [
+        "Games & BSDEs",
+        "Operator Learning",
+        "Control & Optimization",
+        "Finance"
+      ],
+      "primary_topic": "Games & BSDEs",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
+      "title": "Step by Step: Adaptive Gradient Descent for Training L-Lipschitz Neural Networks",
+      "authors": "",
+      "year": 2025,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2502.03792",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2502.03792",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Universal Neural Approximation",
+        "Control & Optimization",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "a-comprehensive-analysis-on-the-learning-curve-in-kernel-ridge-regressio",
       "title": "A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression",
       "authors": "T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius",
       "year": 2024,
-      "venue": "NeurIPS",
-      "url": "",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2410.17796",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Statistical Learning Theory"
+      "arxiv_id": "2410.17796",
+      "arxiv_categories": [
+        "cs.LG"
       ],
-      "primary_topic": "Statistical Learning Theory",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "energy-guided-continuous-entropic-barycenter-estimation-for-general-cost",
-      "title": "Energy-Guided Continuous Entropic Barycenter Estimation for General Costs",
-      "authors": "A. Kolesov, P. Mokrov, I. Udovichenko, M. Gazdieva, G. Pammer, A. Kratsios, A. Korotin, E. Burnaev",
-      "year": 2024,
-      "venue": "NeurIPS Spotlight",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Control & Optimization"
-      ],
-      "primary_topic": "Control & Optimization",
-      "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "characterizing-overfitting-in-kernel-ridgeless-regression-through-the-ei",
-      "title": "Characterizing Overfitting in Kernel Ridgeless Regression through the Eigenspectrum",
-      "authors": "T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius",
-      "year": 2024,
-      "venue": "ICLR",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Statistical Learning Theory"
-      ],
-      "primary_topic": "Statistical Learning Theory",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
-      "title": "Out-of-distributional Risk Bounds for Neural Operators with Applications to the Helmholtz Equation",
-      "authors": "J. A. L. Benitez, T. Furuya, F. Faucher, A. Kratsios, X. Tricoche, M. V. de Hoop",
-      "year": 2024,
-      "venue": "Journal of Computational Physics",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
+      "arxiv_primary_category": "cs.LG",
       "topics": [
         "Statistical Learning Theory",
-        "Operator Learning",
-        "Finance",
-        "PDEs",
-        "Approximation Theory"
+        "Universal Neural Approximation"
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
-      "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
-      "authors": "A. Kratsios, R. Hong, H. Sáez de Ocáriz Borde",
-      "year": 2024,
-      "venue": "Neural Networks",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Geometric Deep Learning",
-        "Approximation Theory"
-      ],
-      "primary_topic": "Geometric Deep Learning",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "neural-operators-can-play-dynamic-stackelberg-games",
-      "title": "Neural Operators Can Play Dynamic Stackelberg Games",
-      "authors": "G. A. Alvarez, I. Ekren, A. Kratsios, X. Yang",
+      "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
+      "title": "Approximation Rates and VC-Dimension Bounds for (P)ReLU MLP Mixture of Experts",
+      "authors": "A. Kratsios, H. Sáez de Ocáriz Borde, T. Furuya, M. T. Law",
       "year": 2024,
       "venue": "arXiv",
-      "url": "https://www.researchgate.net/publication/385823419_Neural_Operators_Can_Play_Dynamic_Stackelberg_Games",
+      "url": "https://arxiv.org/abs/2402.03460",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Operator Learning",
-        "Games & BSDEs",
-        "Approximation Theory"
+      "arxiv_id": "2402.03460",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.NE",
+        "math.CO",
+        "math.NA"
       ],
-      "primary_topic": "Operator Learning",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
-      "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
-      "authors": "H. Borde, A. Lukoianov, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
-      "year": 2024,
-      "venue": "arXiv",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
+      "arxiv_primary_category": "stat.ML",
       "topics": [
-        "Geometric Deep Learning",
-        "Approximation Theory"
-      ],
-      "primary_topic": "Geometric Deep Learning",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
-      "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
-      "authors": "M. Persiianov, A. Asadulaev, N. Andreev, N. Starodubcev, D. Baranchuk, A. Kratsios, E. Burnaev, A. Korotin",
-      "year": 2024,
-      "venue": "arXiv",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
+        "Universal Neural Approximation",
         "Statistical Learning Theory",
-        "Control & Optimization"
+        "Geometric Deep Learning"
       ],
-      "primary_topic": "Statistical Learning Theory",
+      "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "bridging-the-gap-between-approximation-and-learning-via-optimal-approxim",
@@ -264,32 +718,287 @@
       "authors": "R. Hong, A. Kratsios",
       "year": 2024,
       "venue": "arXiv",
-      "url": "https://www.researchgate.net/publication/384189642_Bridging_the_Gap_Between_Approximation_and_Learning_via_Optimal_Approximation_by_ReLU_MLPs_of_Maximal_Regularity",
+      "url": "https://arxiv.org/abs/2409.12335",
       "citations": 0,
       "abstract": "",
+      "arxiv_id": "2409.12335",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.FA",
+        "math.NA",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
       "topics": [
-        "Approximation Theory",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Geometric Deep Learning",
         "Control & Optimization"
       ],
-      "primary_topic": "Approximation Theory",
+      "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "characterizing-overfitting-in-kernel-ridgeless-regression-through-the-ei",
+      "title": "Characterizing Overfitting in Kernel Ridgeless Regression Through the Eigenspectrum",
+      "authors": "T. S. Cheng, A. Lucchi, A. Kratsios, D. Belius",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2402.01297",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2402.01297",
+      "arxiv_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+      "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+      "authors": "R. Saqur, A. Kratsios, F. Krach, Y. Limmer, J. J. Tian, J. Willes, B. Horvath, F. Rudzicz",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2406.02969",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2406.02969",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "q-fin.CP",
+        "q-fin.MF"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Finance",
+        "PDEs",
+        "Control & Optimization",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+      "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+      "authors": "",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2405.16563",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2405.16563",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA",
+        "math.PR",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Games & BSDEs",
+        "Geometric Deep Learning",
+        "PDEs"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+      "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+      "authors": "M. Persiianov, A. Asadulaev, N. Andreev, N. Starodubcev, D. Baranchuk, A. Kratsios, E. Burnaev, A. Korotin",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2410.02628",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2410.02628",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Statistical Learning Theory",
+        "Reasoning & Computation",
+        "Universal Neural Approximation",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
-      "title": "Low-dimensional Approximations of the Conditional Law of Volterra Processes: A Non-positive Curvature Approach",
+      "title": "Low-dimensional approximations of the conditional law of Volterra processes: a non-positive curvature approach",
       "authors": "R. Arabpour, J. Armstrong, L. Galimberti, A. Kratsios, G. Livieri",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2405.20094",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2405.20094",
+      "arxiv_categories": [
+        "math.NA",
+        "cs.LG",
+        "cs.NE",
+        "math.DG",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "math.NA",
+      "topics": [
+        "Finance",
+        "Geometric Deep Learning",
+        "PDEs"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
+      "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+      "authors": "A. Kratsios, T. Furuya, J. A. Lara Benitez, M. Lassas, M. de Hoop",
       "year": 2024,
       "venue": "arXiv",
       "url": "",
       "citations": 0,
       "abstract": "",
       "topics": [
-        "PDEs"
+        "Universal Neural Approximation",
+        "Operator Learning"
       ],
-      "primary_topic": "PDEs",
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "mixture-of-experts-softens-the-curse-of-dimensionality-in-operator-learn",
+      "title": "Mixture of Experts Softens the Curse of Dimensionality in Operator Learning",
+      "authors": "",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2404.09101",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2404.09101",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.NA",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Operator Learning",
+        "Statistical Learning Theory",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "neural-operators-can-play-dynamic-stackelberg-games",
+      "title": "Neural Operators Can Play Dynamic Stackelberg Games",
+      "authors": "G. A. Alvarez, I. Ekren, A. Kratsios, X. Yang",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2411.09644",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2411.09644",
+      "arxiv_categories": [
+        "math.OC",
+        "cs.LG",
+        "math.NA",
+        "math.PR",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "math.OC",
+      "topics": [
+        "Games & BSDEs",
+        "Operator Learning",
+        "Control & Optimization",
+        "Finance"
+      ],
+      "primary_topic": "Games & BSDEs",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "neural-spacetimes-for-dag-representation-learning",
+      "title": "Neural Spacetimes for DAG Representation Learning",
+      "authors": "H. Borde, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2408.13885",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2408.13885",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.DM",
+        "cs.NE",
+        "math.MG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Geometric Deep Learning",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "polynomial-scaling-is-possible-for-neural-operator-approximations-of-str",
+      "title": "Polynomial Scaling is Possible For Neural Operator Approximations of Structured Families of BSDEs",
+      "authors": "",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2410.14788",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2410.14788",
+      "arxiv_categories": [
+        "math.OC",
+        "cs.LG",
+        "math.NA",
+        "math.PR",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "math.OC",
+      "topics": [
+        "Games & BSDEs",
+        "Operator Learning",
+        "PDEs",
+        "Finance"
+      ],
+      "primary_topic": "Games & BSDEs",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "reality-only-happens-once-single-path-generalization-bounds-for-transfor",
@@ -306,24 +1015,31 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
     },
     {
-      "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
-      "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
-      "authors": "A. Kratsios, T. Furuya, J. A. Lara Benitez, M. Lassas, M. de Hoop",
+      "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
+      "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
+      "authors": "H. Borde, A. Lukoianov, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
       "year": 2024,
       "venue": "arXiv",
-      "url": "",
+      "url": "https://arxiv.org/abs/2411.00835",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Approximation Theory",
-        "Operator Learning"
+      "arxiv_id": "2411.00835",
+      "arxiv_categories": [
+        "cs.LG"
       ],
-      "primary_topic": "Approximation Theory",
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Geometric Deep Learning",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "tighter-generalization-bounds-on-digital-computers-via-discrete-optimal-",
@@ -341,111 +1057,111 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
     },
     {
-      "id": "instance-dependent-generalization-bounds-via-optimal-transport",
-      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
-      "authors": "P. Kassraie, S. Hou, A. Kratsios, A. Krause, J. Rothfuss",
-      "year": 2023,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v24/22-1293.html",
+      "id": "tighter-learning-guarantees-on-digital-computers-via-concentration-of-me",
+      "title": "Tighter Learning Guarantees on Digital Computers via Concentration of Measure on Finite Spaces",
+      "authors": "",
+      "year": 2024,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2402.05576",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Statistical Learning Theory",
-        "Control & Optimization"
+      "arxiv_id": "2402.05576",
+      "arxiv_categories": [
+        "cs.LG"
       ],
-      "primary_topic": "Statistical Learning Theory",
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Reasoning & Computation",
+        "Statistical Learning Theory",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "a-theoretical-analysis-of-the-test-error-of-finite-rank-kernel-ridge-reg",
       "title": "A Theoretical Analysis of the Test Error of Finite-Rank Kernel Ridge Regression",
       "authors": "T. S. Cheng, A. Kratsios, A. Lucchi, I. Dokmanić, D. Belius",
       "year": 2023,
-      "venue": "NeurIPS",
-      "url": "",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2310.00987",
       "citations": 0,
       "abstract": "",
+      "arxiv_id": "2310.00987",
+      "arxiv_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
       "topics": [
         "Statistical Learning Theory",
-        "Operator Learning",
-        "Approximation Theory"
+        "Universal Neural Approximation",
+        "Operator Learning"
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "small-transformers-compute-universal-metric-embeddings",
-      "title": "Small Transformers Compute Universal Metric Embeddings",
-      "authors": "A. Kratsios, V. Debarnot, I. Dokmanić",
+      "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+      "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+      "authors": "A. Kratsios, C. Liu, M. Lassas, M. V. de Hoop, I. Dokmanić",
       "year": 2023,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v24/22-1246.html",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2304.12231",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Reasoning & Computation",
-        "Approximation Theory"
+      "arxiv_id": "2304.12231",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA",
+        "math.PR",
+        "stat.ML"
       ],
-      "primary_topic": "Reasoning & Computation",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "designing-universal-causal-deep-learning-models-the-geometric-hyper-tran",
-      "title": "Designing Universal Causal Deep Learning Models: The Geometric (Hyper) Transformer",
-      "authors": "B. Acciaio, A. Kratsios, G. Pammer",
-      "year": 2023,
-      "venue": "Mathematical Finance",
-      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12389",
-      "citations": 0,
-      "abstract": "",
+      "arxiv_primary_category": "cs.LG",
       "topics": [
-        "Approximation Theory",
-        "Finance",
         "Geometric Deep Learning",
-        "Reasoning & Computation"
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "Games & BSDEs",
+        "PDEs"
       ],
-      "primary_topic": "Approximation Theory",
+      "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "universal-regular-conditional-distributions-via-probabilistic-transforme",
-      "title": "Universal Regular Conditional Distributions via Probabilistic Transformers",
-      "authors": "A. Kratsios",
+      "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
+      "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
+      "authors": "A. Kratsios, R. Hong, H. Sáez de Ocáriz Borde",
       "year": 2023,
-      "venue": "Constructive Approximation",
-      "url": "",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2308.09250",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Approximation Theory",
-        "Reasoning & Computation"
+      "arxiv_id": "2308.09250",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.DM",
+        "cs.NE",
+        "math.MG",
+        "math.NA"
       ],
-      "primary_topic": "Approximation Theory",
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Geometric Deep Learning",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "denise-deep-robust-principal-component-analysis-for-positive-semidefinit",
-      "title": "Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices",
-      "authors": "C. Herrera, F. Krach, A. Kratsios, P. Ruyssen, J. Teichmann",
-      "year": 2023,
-      "venue": "Transactions on Machine Learning Research",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Misc."
-      ],
-      "primary_topic": "Misc.",
-      "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "deep-kalman-filters-can-filter",
@@ -461,24 +1177,147 @@
       ],
       "primary_topic": "PDEs",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
     },
     {
-      "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
-      "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
-      "authors": "A. Kratsios, C. Liu, M. Lassas, M. V. de Hoop, I. Dokmanić",
+      "id": "denise-deep-robust-principal-component-analysis-for-positive-semidefinit",
+      "title": "Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices",
+      "authors": "C. Herrera, F. Krach, A. Kratsios, P. Ruyssen, J. Teichmann",
       "year": 2023,
-      "venue": "arXiv",
+      "venue": "Transactions on Machine Learning Research",
       "url": "",
       "citations": 0,
       "abstract": "",
       "topics": [
+        "Misc."
+      ],
+      "primary_topic": "Misc.",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "designing-universal-causal-deep-learning-models-the-geometric-hyper-tran",
+      "title": "Designing Universal Causal Deep Learning Models: The Geometric (Hyper) Transformer",
+      "authors": "B. Acciaio, A. Kratsios, G. Pammer",
+      "year": 2023,
+      "venue": "Mathematical Finance",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12389",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Finance",
         "Geometric Deep Learning",
-        "Approximation Theory"
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "energy-guided-continuous-entropic-barycenter-estimation-for-general-cost",
+      "title": "Energy-Guided Continuous Entropic Barycenter Estimation for General Costs",
+      "authors": "A. Kolesov, P. Mokrov, I. Udovichenko, M. Gazdieva, G. Pammer, A. Kratsios, A. Korotin, E. Burnaev",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2310.01105",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2310.01105",
+      "arxiv_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Control & Optimization",
+        "Geometric Deep Learning"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "generative-ornstein-uhlenbeck-markets-via-geometric-deep-learning",
+      "title": "Generative Ornstein-Uhlenbeck Markets via Geometric Deep Learning",
+      "authors": "",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2302.09176",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2302.09176",
+      "arxiv_categories": [
+        "q-fin.CP",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "arxiv_primary_category": "q-fin.CP",
+      "topics": [
+        "Finance",
+        "Geometric Deep Learning",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Finance",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "neural-snowflakes-universal-latent-graph-inference-via-trainable-latent-",
+      "title": "Neural Snowflakes: Universal Latent Graph Inference via Trainable Latent Geometries",
+      "authors": "A. Kratsios, H. Sáez de Ocáriz Borde",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2310.15003",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2310.15003",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.DM",
+        "cs.NE",
+        "math.MG"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Geometric Deep Learning",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+      "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+      "authors": "J. A. L. Benitez, T. Furuya, F. Faucher, A. Kratsios, X. Tricoche, M. V. de Hoop",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2301.11509",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2301.11509",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.NA",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Operator Learning",
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Finance",
+        "PDEs"
+      ],
+      "primary_topic": "Operator Learning",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
@@ -486,82 +1325,72 @@
       "authors": "X. Yang, A. Kratsios, F. Krach, M. Grasselli, A. Lucchi",
       "year": 2023,
       "venue": "arXiv",
-      "url": "",
+      "url": "https://arxiv.org/abs/2309.04557",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Control & Optimization",
-        "Finance"
+      "arxiv_id": "2309.04557",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.DS",
+        "math.OC",
+        "q-fin.CP"
       ],
-      "primary_topic": "Control & Optimization",
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Finance",
+        "Control & Optimization",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
-      "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
-      "authors": "L. Papon, A. Kratsios",
-      "year": 2022,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v23/21-0716.html",
+      "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+      "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+      "authors": "",
+      "year": 2023,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2310.19603",
       "citations": 0,
       "abstract": "",
+      "arxiv_id": "2310.19603",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA",
+        "math.PR",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
       "topics": [
-        "Approximation Theory",
+        "Universal Neural Approximation",
+        "Statistical Learning Theory",
+        "PDEs",
+        "Games & BSDEs",
         "Geometric Deep Learning"
       ],
-      "primary_topic": "Approximation Theory",
+      "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "universal-approximation-under-constraints-is-possible-with-transformers",
-      "title": "Universal Approximation under Constraints Is Possible with Transformers",
-      "authors": "A. Kratsios, B. Zamanlooy, I. Dokmanić, T. Liu",
-      "year": 2022,
-      "venue": "ICLR Spotlight",
-      "url": "https://openreview.net/forum?id=JGO8CvG5S9",
+      "id": "universal-regular-conditional-distributions-via-probabilistic-transforme",
+      "title": "Universal Regular Conditional Distributions via Probabilistic Transformers",
+      "authors": "A. Kratsios",
+      "year": 2023,
+      "venue": "Constructive Approximation",
+      "url": "",
       "citations": 0,
       "abstract": "",
       "topics": [
-        "Approximation Theory",
+        "Universal Neural Approximation",
         "Reasoning & Computation"
       ],
-      "primary_topic": "Approximation Theory",
+      "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "do-relu-networks-have-an-edge-when-approximating-compactly-supported-fun",
-      "title": "Do ReLU Networks Have an Edge When Approximating Compactly-Supported Functions?",
-      "authors": "B. Zamanlooy, A. Kratsios",
-      "year": 2022,
-      "venue": "Transactions on Machine Learning Research",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Approximation Theory"
-      ],
-      "primary_topic": "Approximation Theory",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "learning-sub-patterns-in-piecewise-continuous-functions",
-      "title": "Learning Sub-patterns in Piecewise Continuous Functions",
-      "authors": "B. Zamanlooy, A. Kratsios",
-      "year": 2022,
-      "venue": "Neurocomputing",
-      "url": "",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Approximation Theory"
-      ],
-      "primary_topic": "Approximation Theory",
-      "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
     },
     {
       "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
@@ -569,51 +1398,173 @@
       "authors": "L. Galimberti, A. Kratsios, G. Livieri",
       "year": 2022,
       "venue": "arXiv",
-      "url": "",
+      "url": "https://arxiv.org/abs/2210.13300",
       "citations": 0,
       "abstract": "",
+      "arxiv_id": "2210.13300",
+      "arxiv_categories": [
+        "math.DS",
+        "cs.LG",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "math.DS",
       "topics": [
+        "Operator Learning",
         "PDEs",
-        "Approximation Theory",
-        "Finance"
+        "Finance",
+        "Universal Neural Approximation"
       ],
-      "primary_topic": "PDEs",
-      "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
-    },
-    {
-      "id": "neu-a-meta-algorithm-for-universal-uap-invariant-feature-representation",
-      "title": "NEU: A Meta-algorithm for Universal UAP-invariant Feature Representation",
-      "authors": "C. Hyndman, A. Kratsios",
-      "year": 2021,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v22/18-803.html",
-      "citations": 0,
-      "abstract": "",
-      "topics": [
-        "Approximation Theory",
-        "Reasoning & Computation"
-      ],
-      "primary_topic": "Approximation Theory",
+      "primary_topic": "Operator Learning",
       "root": "AI Theory",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "optimizing-optimizers-regret-optimal-gradient-descent-algorithms",
-      "title": "Optimizing Optimizers: Regret-optimal Gradient Descent Algorithms",
-      "authors": "P. Casgrain, A. Kratsios",
-      "year": 2021,
-      "venue": "Conference on Learning Theory",
-      "url": "https://proceedings.mlr.press/v134/casgrain21a.html",
+      "id": "do-relu-networks-have-an-edge-when-approximating-compactly-supported-fun",
+      "title": "Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?",
+      "authors": "B. Zamanlooy, A. Kratsios",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2204.11231",
       "citations": 0,
       "abstract": "",
-      "topics": [
-        "Control & Optimization",
-        "Reasoning & Computation"
+      "arxiv_id": "2204.11231",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.NA"
       ],
-      "primary_topic": "Control & Optimization",
-      "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "instance-dependent-generalization-bounds-via-optimal-transport",
+      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
+      "authors": "P. Kassraie, S. Hou, A. Kratsios, A. Krause, J. Rothfuss",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2211.01258",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2211.01258",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Statistical Learning Theory",
+        "Universal Neural Approximation",
+        "Control & Optimization"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "learning-sub-patterns-in-piecewise-continuous-functions",
+      "title": "Learning Sub-Patterns in Piecewise Continuous Functions",
+      "authors": "B. Zamanlooy, A. Kratsios",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2010.15571",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2010.15571",
+      "arxiv_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "small-transformers-compute-universal-metric-embeddings",
+      "title": "Small Transformers Compute Universal Metric Embeddings",
+      "authors": "A. Kratsios, V. Debarnot, I. Dokmanić",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2209.06788",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2209.06788",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.CO",
+        "math.MG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Reasoning & Computation",
+        "Geometric Deep Learning",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
+      "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
+      "authors": "L. Papon, A. Kratsios",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2101.05390",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2101.05390",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.DG",
+        "math.NA"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Geometric Deep Learning",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "universal-approximation-under-constraints-is-possible-with-transformers",
+      "title": "Universal Approximation Under Constraints is Possible with Transformers",
+      "authors": "A. Kratsios, B. Zamanlooy, I. Dokmanić, T. Liu",
+      "year": 2022,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2110.03303",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2110.03303",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Geometric Deep Learning",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "lower-estimates-on-the-hochschild-co-homological-dimension-of-commutativ",
@@ -629,7 +1580,74 @@
       ],
       "primary_topic": "Misc.",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "neu-a-meta-algorithm-for-universal-uap-invariant-feature-representation",
+      "title": "NEU: A Meta-algorithm for Universal UAP-invariant Feature Representation",
+      "authors": "C. Hyndman, A. Kratsios",
+      "year": 2021,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v22/18-803.html",
+      "citations": 0,
+      "abstract": "",
+      "topics": [
+        "Universal Neural Approximation",
+        "Reasoning & Computation"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "optimizing-optimizers-regret-optimal-gradient-descent-algorithms",
+      "title": "Optimizing Optimizers: Regret-optimal gradient descent algorithms",
+      "authors": "P. Casgrain, A. Kratsios",
+      "year": 2021,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2101.00041",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2101.00041",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Reasoning & Computation",
+        "Control & Optimization",
+        "Statistical Learning Theory",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "the-universal-approximation-property",
+      "title": "The Universal Approximation Property",
+      "authors": "",
+      "year": 2021,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/1910.03344",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "1910.03344",
+      "arxiv_categories": [
+        "cs.LG",
+        "math.NA"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
@@ -641,11 +1659,38 @@
       "citations": 0,
       "abstract": "",
       "topics": [
-        "Finance"
+        "Finance",
+        "PDEs"
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
+    },
+    {
+      "id": "non-euclidean-universal-approximation",
+      "title": "Non-Euclidean Universal Approximation",
+      "authors": "",
+      "year": 2020,
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2006.02341",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2006.02341",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.NA"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Universal Neural Approximation",
+        "Geometric Deep Learning",
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Universal Neural Approximation",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
       "id": "the-entropic-measure-transform",
@@ -661,7 +1706,8 @@
       ],
       "primary_topic": "Misc.",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
     },
     {
       "id": "replication-of-a-real-estate-market-index-teranet-national-bank-of-canad",
@@ -677,7 +1723,8 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar"
+      "source": "seeded from previous website; GitHub Action refreshes from Google Scholar",
+      "arxiv_categories": []
     }
   ]
 }
