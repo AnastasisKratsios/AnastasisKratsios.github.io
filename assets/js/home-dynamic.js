@@ -34,6 +34,112 @@
     return resp.json();
   }
 
+
+  const JMLR_FALLBACK_PAPERS = [
+    {
+      title: "Neural Operators Can Play Dynamic Stackelberg Games",
+      authors: "Guillermo A. Alvarez, Ibrahim Ekren, Anastasis Kratsios, Xuwei Yang",
+      year: 2025,
+      venue: "Journal of Machine Learning Research",
+      url: "https://www.jmlr.org/papers/v26/24-1985.html"
+    },
+    {
+      title: "Instance-Dependent Generalization Bounds via Optimal Transport",
+      authors: "Songyan Hou, Parnian Kassraie, Anastasis Kratsios, Andreas Krause, Jonas Rothfuss",
+      year: 2023,
+      venue: "Journal of Machine Learning Research",
+      url: "https://www.jmlr.org/papers/v24/22-1293.html"
+    },
+    {
+      title: "Small Transformers Compute Universal Metric Embeddings",
+      authors: "Anastasis Kratsios, Valentin Debarnot, Ivan Dokmanić",
+      year: 2023,
+      venue: "Journal of Machine Learning Research",
+      url: "https://www.jmlr.org/papers/v24/22-1246.html"
+    },
+    {
+      title: "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
+      authors: "Anastasis Kratsios, Léonie Papon",
+      year: 2022,
+      venue: "Journal of Machine Learning Research",
+      url: "https://www.jmlr.org/papers/v23/21-0716.html"
+    },
+    {
+      title: "NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation",
+      authors: "Anastasis Kratsios, Cody Hyndman",
+      year: 2021,
+      venue: "Journal of Machine Learning Research",
+      url: "https://www.jmlr.org/papers/v22/18-803.html"
+    }
+  ];
+
+  function normalizeText(str) {
+    return String(str || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+  }
+
+  function isJmlrPaper(p) {
+    const haystack = normalizeText([
+      p.venue,
+      p.journal,
+      p.publication,
+      p.publisher,
+      p.citation,
+      p.url
+    ].filter(Boolean).join(" "));
+    return haystack.includes("journal of machine learning research")
+      || haystack.includes("the journal of machine learning research")
+      || haystack.includes(" jmlr ")
+      || String(p.url || "").includes("jmlr.org/papers/");
+  }
+
+  function isJmlrUrl(url) {
+    return String(url || "").includes("jmlr.org/papers/");
+  }
+
+  function mergeByTitle(papers) {
+    const seen = new Map();
+    papers.forEach(p => {
+      if (!p || !p.title) return;
+      const key = normalizeText(p.title);
+      const old = seen.get(key) || {};
+      const preferCandidateVenue = isJmlrPaper(p) && !isJmlrPaper(old);
+      const preferCandidateUrl = isJmlrUrl(p.url) && !isJmlrUrl(old.url);
+      seen.set(key, Object.assign({}, old, p, {
+        title: old.title || p.title,
+        authors: old.authors || p.authors,
+        year: preferCandidateVenue ? (p.year || old.year) : (old.year || p.year),
+        venue: preferCandidateVenue ? (p.venue || old.venue) : (old.venue || p.venue),
+        url: preferCandidateUrl ? (p.url || old.url) : (old.url || p.url),
+        published: old.published || p.published
+      }));
+    });
+    return Array.from(seen.values());
+  }
+
+  function renderSelectedJmlrPapers(data) {
+    const el = byId("select-publications-list");
+    if (!el) return;
+    const papers = mergeByTitle([...(data.papers || []).filter(isJmlrPaper), ...JMLR_FALLBACK_PAPERS])
+      .sort((a, b) => paperScore(b) - paperScore(a) || String(a.title).localeCompare(String(b.title)))
+      .slice(0, 6);
+    if (!papers.length) {
+      el.innerHTML = `<p>JMLR papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
+      return;
+    }
+    el.innerHTML = papers.map(p => {
+      const title = p.url
+        ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>`
+        : escapeHtml(p.title);
+      const meta = [p.authors, p.venue || "Journal of Machine Learning Research", p.year].filter(Boolean).map(escapeHtml).join(" · ");
+      return `<article class="dynamic-paper-item selected-paper-item"><h3>${title}</h3><p>${meta}</p></article>`;
+    }).join("");
+  }
+
   function renderHotPapers(data) {
     const el = byId("hot-off-press-list");
     if (!el) return;
@@ -55,34 +161,6 @@
     }).join("");
   }
 
-
-  function isJmlrPaper(p) {
-    const haystack = String([p.venue, p.journal, p.publisher, p.url, p.source].filter(Boolean).join(" ")).toLowerCase();
-    return haystack.includes("journal of machine learning research") ||
-      haystack.includes("jmlr") ||
-      haystack.includes("jmlr.org/papers");
-  }
-
-  function renderSelectedJmlrPapers(data) {
-    const el = byId("select-publications-list");
-    if (!el) return;
-    const papers = (data.papers || [])
-      .filter(p => p && p.title && isJmlrPaper(p))
-      .sort((a, b) => paperScore(b) - paperScore(a) || String(a.title).localeCompare(String(b.title)))
-      .slice(0, 6);
-    if (!papers.length) {
-      el.innerHTML = `<p>JMLR papers will appear here once the Scholar/arXiv metadata refreshes. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open the Scholar profile</a>.</p>`;
-      return;
-    }
-    el.innerHTML = papers.map(p => {
-      const title = p.url
-        ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>`
-        : escapeHtml(p.title);
-      const meta = [p.authors, p.venue || "Journal of Machine Learning Research", p.year].filter(Boolean).map(escapeHtml).join(" · ");
-      return `<article class="dynamic-paper-item select-paper-item"><h3>${title}</h3><p>${meta}</p></article>`;
-    }).join("");
-  }
-
   function renderTalks(data) {
     const el = byId("upcoming-talks-list");
     if (!el) return;
@@ -100,11 +178,13 @@
   }
 
   async function init() {
-    loadJson(PUBLICATIONS_URL).then(data => { renderHotPapers(data); renderSelectedJmlrPapers(data); }).catch(() => {
-      const el = byId("hot-off-press-list");
-      if (el) el.innerHTML = `<p>Latest papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
-      const selectEl = byId("select-publications-list");
-      if (selectEl) selectEl.innerHTML = `<p>JMLR papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
+    loadJson(PUBLICATIONS_URL).then(data => {
+      renderHotPapers(data);
+      renderSelectedJmlrPapers(data);
+    }).catch(() => {
+      const hot = byId("hot-off-press-list");
+      if (hot) hot.innerHTML = `<p>Latest papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
+      renderSelectedJmlrPapers({papers: []});
     });
     loadJson(TALKS_URL).then(renderTalks).catch(() => renderTalks({talks: []}));
   }

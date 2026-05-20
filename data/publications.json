@@ -1,6 +1,6 @@
 {
   "generated_at": "seed",
-  "source": "Seed data from arXiv author search snapshot plus previous website; GitHub Action refreshes from Google Scholar and arXiv",
+  "source": "Seed data from arXiv author search snapshot plus previous website; GitHub Action refreshes from Google Scholar and arXiv; v8 includes JMLR venue/url/year overrides for Select Publications",
   "scholar_profile": "https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en",
   "arxiv_author_query": "au:Kratsios_A",
   "papers": [
@@ -500,6 +500,34 @@
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
+      "id": "neural-operators-can-play-dynamic-stackelberg-games",
+      "title": "Neural Operators Can Play Dynamic Stackelberg Games",
+      "authors": "Guillermo A. Alvarez, Ibrahim Ekren, Anastasis Kratsios, Xuwei Yang",
+      "year": 2025,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v26/24-1985.html",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2411.09644",
+      "arxiv_categories": [
+        "math.OC",
+        "cs.LG",
+        "math.NA",
+        "math.PR",
+        "q-fin.CP"
+      ],
+      "arxiv_primary_category": "math.OC",
+      "topics": [
+        "Games & BSDEs",
+        "Operator Learning",
+        "Control & Optimization",
+        "Finance"
+      ],
+      "primary_topic": "Games & BSDEs",
+      "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
       "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
       "title": "One model to solve them all: 2BSDE families via neural operators",
       "authors": "",
@@ -918,34 +946,6 @@
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "neural-operators-can-play-dynamic-stackelberg-games",
-      "title": "Neural Operators Can Play Dynamic Stackelberg Games",
-      "authors": "G. A. Alvarez, I. Ekren, A. Kratsios, X. Yang",
-      "year": 2025,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v26/24-1985.html",
-      "citations": 0,
-      "abstract": "",
-      "arxiv_id": "2411.09644",
-      "arxiv_categories": [
-        "math.OC",
-        "cs.LG",
-        "math.NA",
-        "math.PR",
-        "q-fin.CP"
-      ],
-      "arxiv_primary_category": "math.OC",
-      "topics": [
-        "Games & BSDEs",
-        "Operator Learning",
-        "Control & Optimization",
-        "Finance"
-      ],
-      "primary_topic": "Games & BSDEs",
-      "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
-    },
-    {
       "id": "neural-spacetimes-for-dag-representation-learning",
       "title": "Neural Spacetimes for DAG Representation Learning",
       "authors": "H. Borde, A. Kratsios, M. T. Law, X. Dong, M. Bronstein",
@@ -1267,6 +1267,28 @@
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
+      "id": "instance-dependent-generalization-bounds-via-optimal-transport",
+      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
+      "authors": "Songyan Hou, Parnian Kassraie, Anastasis Kratsios, Andreas Krause, Jonas Rothfuss",
+      "year": 2023,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v24/22-1293.html",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2211.01258",
+      "arxiv_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_primary_category": "stat.ML",
+      "topics": [
+        "Statistical Learning Theory"
+      ],
+      "primary_topic": "Statistical Learning Theory",
+      "root": "AI Theory",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
       "id": "neural-snowflakes-universal-latent-graph-inference-via-trainable-latent-",
       "title": "Neural Snowflakes: Universal Latent Graph Inference via Trainable Latent Geometries",
       "authors": "A. Kratsios, H. Sáez de Ocáriz Borde",
@@ -1343,6 +1365,33 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+    },
+    {
+      "id": "small-transformers-compute-universal-metric-embeddings",
+      "title": "Small Transformers Compute Universal Metric Embeddings",
+      "authors": "Anastasis Kratsios, Valentin Debarnot, Ivan Dokmanić",
+      "year": 2023,
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://www.jmlr.org/papers/v24/22-1246.html",
+      "citations": 0,
+      "abstract": "",
+      "arxiv_id": "2209.06788",
+      "arxiv_categories": [
+        "cs.LG",
+        "cs.NE",
+        "math.CO",
+        "math.MG",
+        "stat.ML"
+      ],
+      "arxiv_primary_category": "cs.LG",
+      "topics": [
+        "Reasoning & Computation",
+        "Geometric Deep Learning",
+        "Universal Neural Approximation"
+      ],
+      "primary_topic": "Reasoning & Computation",
+      "root": "AI Theory",
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
@@ -1442,30 +1491,6 @@
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "instance-dependent-generalization-bounds-via-optimal-transport",
-      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
-      "authors": "P. Kassraie, S. Hou, A. Kratsios, A. Krause, J. Rothfuss",
-      "year": 2023,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v24/22-1293.html",
-      "citations": 0,
-      "abstract": "",
-      "arxiv_id": "2211.01258",
-      "arxiv_categories": [
-        "stat.ML",
-        "cs.LG"
-      ],
-      "arxiv_primary_category": "stat.ML",
-      "topics": [
-        "Statistical Learning Theory",
-        "Universal Neural Approximation",
-        "Control & Optimization"
-      ],
-      "primary_topic": "Statistical Learning Theory",
-      "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
-    },
-    {
       "id": "learning-sub-patterns-in-piecewise-continuous-functions",
       "title": "Learning Sub-Patterns in Piecewise Continuous Functions",
       "authors": "B. Zamanlooy, A. Kratsios",
@@ -1489,36 +1514,9 @@
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
     {
-      "id": "small-transformers-compute-universal-metric-embeddings",
-      "title": "Small Transformers Compute Universal Metric Embeddings",
-      "authors": "A. Kratsios, V. Debarnot, I. Dokmanić",
-      "year": 2023,
-      "venue": "Journal of Machine Learning Research",
-      "url": "https://www.jmlr.org/papers/v24/22-1246.html",
-      "citations": 0,
-      "abstract": "",
-      "arxiv_id": "2209.06788",
-      "arxiv_categories": [
-        "cs.LG",
-        "cs.NE",
-        "math.CO",
-        "math.MG",
-        "stat.ML"
-      ],
-      "arxiv_primary_category": "cs.LG",
-      "topics": [
-        "Reasoning & Computation",
-        "Geometric Deep Learning",
-        "Universal Neural Approximation"
-      ],
-      "primary_topic": "Reasoning & Computation",
-      "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
-    },
-    {
       "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
       "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
-      "authors": "L. Papon, A. Kratsios",
+      "authors": "Anastasis Kratsios, Léonie Papon",
       "year": 2022,
       "venue": "Journal of Machine Learning Research",
       "url": "https://www.jmlr.org/papers/v23/21-0716.html",
@@ -1533,11 +1531,10 @@
       ],
       "arxiv_primary_category": "cs.LG",
       "topics": [
-        "Universal Neural Approximation",
         "Geometric Deep Learning",
-        "Statistical Learning Theory"
+        "Universal Neural Approximation"
       ],
-      "primary_topic": "Universal Neural Approximation",
+      "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
       "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
     },
@@ -1586,7 +1583,7 @@
     {
       "id": "neu-a-meta-algorithm-for-universal-uap-invariant-feature-representation",
       "title": "NEU: A Meta-algorithm for Universal UAP-invariant Feature Representation",
-      "authors": "C. Hyndman, A. Kratsios",
+      "authors": "Anastasis Kratsios, Cody Hyndman",
       "year": 2021,
       "venue": "Journal of Machine Learning Research",
       "url": "https://www.jmlr.org/papers/v22/18-803.html",
@@ -1594,7 +1591,7 @@
       "abstract": "",
       "topics": [
         "Universal Neural Approximation",
-        "Reasoning & Computation"
+        "Geometric Deep Learning"
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
