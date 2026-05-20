@@ -1,0 +1,14 @@
+{
+  "generated_at": "seed",
+  "source": "Fields Institute Mathematical AI Seminar page",
+  "fields_url": "https://www.fields.utoronto.ca/activities/25-26/mathai",
+  "talks": [
+    {
+      "date": "Tuesday, May 5, 2026",
+      "time": "1:00pm to 2:00pm",
+      "speaker": "Cengiz Pehlevan, Broad Institute of MIT/Harvard",
+      "title": "Scaling Neural Networks: Laws and Limits",
+      "url": "https://www.fields.utoronto.ca/talks/Scaling-Neural-Networks-Laws-and-Limits"
+    }
+  ]
+}
