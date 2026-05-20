@@ -126,7 +126,7 @@
     if (!el) return;
     const papers = mergeByTitle([...(data.papers || []).filter(isJmlrPaper), ...JMLR_FALLBACK_PAPERS])
       .sort((a, b) => paperScore(b) - paperScore(a) || String(a.title).localeCompare(String(b.title)))
-      .slice(0, 6);
+      .slice(0, 7);
     if (!papers.length) {
       el.innerHTML = `<p>JMLR papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
       return;

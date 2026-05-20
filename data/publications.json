@@ -1,6 +1,6 @@
 {
   "generated_at": "seed",
-  "source": "Seed data from arXiv author search snapshot plus previous website; GitHub Action refreshes from Google Scholar and arXiv; v8 includes JMLR venue/url/year overrides for Select Publications",
+  "source": "Seed data from arXiv author search snapshot plus previous website; GitHub Action refreshes from Google Scholar and arXiv; v9 includes JMLR venue/url/year overrides for Select Publications and displays up to seven exact JMLR records",
   "scholar_profile": "https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en",
   "arxiv_author_query": "au:Kratsios_A",
   "papers": [
