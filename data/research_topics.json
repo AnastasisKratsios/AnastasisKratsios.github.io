@@ -14,8 +14,8 @@
     {"id": "Games & BSDEs", "label": "Games & BSDEs", "root": "Applications", "level": 1, "x": 0.88, "y": 0.38, "kind": "topic"},
     {"id": "Finance", "label": "Finance", "root": "Applications", "level": 1, "x": 0.80, "y": 0.60, "kind": "topic"},
     {"id": "Misc.", "label": "Misc.", "root": "Applications", "level": 1, "x": 0.94, "y": 0.60, "kind": "topic"},
-    {"id": "Operator Learning", "label": "Operator Learning", "root": "AI Theory", "level": 2, "x": 0.25, "y": 0.60, "kind": "topic"},
-    {"id": "Geometric Deep Learning", "label": "Geometric Deep Learning", "root": "AI Theory", "level": 2, "x": 0.45, "y": 0.60, "kind": "topic"}
+    {"id": "Operator Learning", "label": "Operator Learning", "root": "AI Theory", "level": 2, "x": 0.12, "y": 0.74, "kind": "topic"},
+    {"id": "Geometric Deep Learning", "label": "Geometric Deep Learning", "root": "AI Theory", "level": 2, "x": 0.31, "y": 0.74, "kind": "topic"}
   ],
   "edges": [
     {"source": "AI Theory", "target": "Universal Neural Approximation", "type": "hierarchy"},
