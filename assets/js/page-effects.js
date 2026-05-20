@@ -1,22 +1,21 @@
 (function () {
-	"use strict";
+	function triggerScreenMelt() {
+		document.body.classList.remove('screen-melt-active');
+		void document.body.offsetWidth;
+		document.body.classList.add('screen-melt-active');
 
-	document.addEventListener("DOMContentLoaded", function () {
-		var perfectDayImage = document.querySelector(".perfect-day-footer img");
+		window.setTimeout(function () {
+			document.body.classList.remove('screen-melt-active');
+		}, 1950);
+	}
 
-		if (!perfectDayImage) return;
+	document.addEventListener('DOMContentLoaded', function () {
+		var perfectDay = document.querySelector('.perfect-day-footer');
 
-		perfectDayImage.addEventListener("click", function () {
-			document.body.classList.remove("screen-melt-active");
+		if (!perfectDay) {
+			return;
+		}
 
-			// Restart the animation if the image is clicked repeatedly.
-			void document.body.offsetWidth;
-
-			document.body.classList.add("screen-melt-active");
-
-			window.setTimeout(function () {
-				document.body.classList.remove("screen-melt-active");
-			}, 1900);
-		});
+		perfectDay.addEventListener('click', triggerScreenMelt);
 	});
 })();

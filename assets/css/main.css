@@ -8601,28 +8601,28 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
-/* Screen-melting effect triggered by A Perfect Day */
+/* Perfect Day click effect. */
+.perfect-day-footer,
+.perfect-day-footer img {
+	cursor: pointer;
+}
+
 body.screen-melt-active #wrapper {
-	animation: pageMeltWarp 1.8s ease-in-out both;
-	filter: saturate(1.35) contrast(1.08);
+	animation: pageMeltWarp 1.9s ease-in-out both;
+	filter: saturate(1.25) contrast(1.05);
 }
 
 body.screen-melt-active::before {
 	content: "";
 	position: fixed;
-	inset: -20vh -5vw 0 -5vw;
+	inset: -18vh -4vw 0 -4vw;
 	z-index: 99998;
 	pointer-events: none;
 	background:
-		radial-gradient(circle at 10% 0%, rgba(113, 55, 220, 0.30), transparent 18%),
-		radial-gradient(circle at 35% 0%, rgba(255, 112, 220, 0.24), transparent 22%),
-		radial-gradient(circle at 70% 0%, rgba(0, 220, 255, 0.20), transparent 20%),
-		linear-gradient(
-			180deg,
-			rgba(255,255,255,0.05) 0%,
-			rgba(113,55,220,0.24) 18%,
-			rgba(255,255,255,0.00) 75%
-		);
+		radial-gradient(circle at 12% 0%, rgba(113, 55, 220, 0.30), transparent 18%),
+		radial-gradient(circle at 38% 0%, rgba(255, 112, 220, 0.22), transparent 22%),
+		radial-gradient(circle at 72% 0%, rgba(0, 220, 255, 0.20), transparent 20%),
+		linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(113,55,220,0.24) 18%, rgba(255,255,255,0.00) 75%);
 	clip-path: polygon(
 		0 0, 100% 0, 100% 42%,
 		94% 50%, 91% 39%, 86% 64%, 82% 45%,
@@ -8631,7 +8631,7 @@ body.screen-melt-active::before {
 		30% 73%, 25% 41%, 20% 61%, 14% 47%,
 		8% 69%, 0 44%
 	);
-	animation: meltCurtain 1.8s ease-in-out both;
+	animation: meltCurtain 1.9s ease-in-out both;
 }
 
 body.screen-melt-active::after {
@@ -8641,78 +8641,28 @@ body.screen-melt-active::after {
 	z-index: 99999;
 	pointer-events: none;
 	backdrop-filter: blur(1.5px) hue-rotate(25deg);
-	background:
-		repeating-linear-gradient(
-			90deg,
-			rgba(255,255,255,0.00) 0px,
-			rgba(255,255,255,0.00) 7px,
-			rgba(255,255,255,0.09) 8px,
-			rgba(255,255,255,0.00) 11px
-		);
-	animation: meltGlitch 1.8s ease-in-out both;
-}
-
-.perfect-day-footer img {
-	cursor: pointer;
+	background: repeating-linear-gradient(90deg, rgba(255,255,255,0.00) 0px, rgba(255,255,255,0.00) 7px, rgba(255,255,255,0.09) 8px, rgba(255,255,255,0.00) 11px);
+	animation: meltGlitch 1.9s ease-in-out both;
 }
 
 @keyframes pageMeltWarp {
-	0% {
-		transform: translateY(0) skewX(0deg) scale(1);
-		filter: none;
-	}
-	18% {
-		transform: translateY(4px) skewX(-0.7deg) scale(1.003);
-		filter: blur(0.3px) saturate(1.25);
-	}
-	42% {
-		transform: translateY(14px) skewX(1deg) scale(1.008);
-		filter: blur(1px) saturate(1.55) hue-rotate(10deg);
-	}
-	70% {
-		transform: translateY(7px) skewX(-0.4deg) scale(1.004);
-		filter: blur(0.4px) saturate(1.25);
-	}
-	100% {
-		transform: translateY(0) skewX(0deg) scale(1);
-		filter: none;
-	}
+	0% { transform: translateY(0) skewX(0deg) scale(1); filter: none; }
+	18% { transform: translateY(4px) skewX(-0.7deg) scale(1.003); filter: blur(0.3px) saturate(1.25); }
+	42% { transform: translateY(14px) skewX(1deg) scale(1.008); filter: blur(1px) saturate(1.55) hue-rotate(10deg); }
+	70% { transform: translateY(7px) skewX(-0.4deg) scale(1.004); filter: blur(0.4px) saturate(1.25); }
+	100% { transform: translateY(0) skewX(0deg) scale(1); filter: none; }
 }
 
 @keyframes meltCurtain {
-	0% {
-		opacity: 0;
-		transform: translateY(-45vh) scaleY(0.75);
-	}
-	25% {
-		opacity: 0.95;
-		transform: translateY(-10vh) scaleY(1.08);
-	}
-	65% {
-		opacity: 0.75;
-		transform: translateY(20vh) scaleY(1.18);
-	}
-	100% {
-		opacity: 0;
-		transform: translateY(70vh) scaleY(1.35);
-	}
+	0% { opacity: 0; transform: translateY(-45vh) scaleY(0.75); }
+	25% { opacity: 0.95; transform: translateY(-10vh) scaleY(1.08); }
+	65% { opacity: 0.75; transform: translateY(20vh) scaleY(1.18); }
+	100% { opacity: 0; transform: translateY(70vh) scaleY(1.35); }
 }
 
 @keyframes meltGlitch {
-	0%, 100% {
-		opacity: 0;
-		transform: translateX(0);
-	}
-	20% {
-		opacity: 0.45;
-		transform: translateX(-4px);
-	}
-	38% {
-		opacity: 0.65;
-		transform: translateX(5px);
-	}
-	62% {
-		opacity: 0.35;
-		transform: translateX(-2px);
-	}
+	0%, 100% { opacity: 0; transform: translateX(0); }
+	20% { opacity: 0.45; transform: translateX(-4px); }
+	38% { opacity: 0.65; transform: translateX(5px); }
+	62% { opacity: 0.35; transform: translateX(-2px); }
 }
