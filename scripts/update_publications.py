@@ -231,12 +231,22 @@ def scholar_publications() -> List[Dict[str, Any]]:
         title = bib.get("title") or pub.get("title") or ""
         if not title:
             continue
+        venue = (
+            bib.get("venue")
+            or bib.get("journal")
+            or bib.get("booktitle")
+            or bib.get("conference")
+            or bib.get("citation")
+            or ""
+        )
         publications.append({
             "id": slugify(title),
             "title": title,
             "authors": bib.get("author", ""),
             "year": _safe_int(bib.get("pub_year") or bib.get("year")),
-            "venue": bib.get("venue", ""),
+            "venue": venue,
+            "journal": bib.get("journal", ""),
+            "citation": bib.get("citation", ""),
             "url": pub.get("pub_url", "") or pub.get("eprint_url", ""),
             "citations": _safe_int(pub.get("num_citations"), default=0),
             "abstract": bib.get("abstract", ""),
@@ -279,6 +289,7 @@ def arxiv_publications() -> List[Dict[str, Any]]:
         categories = [cat.attrib.get("term", "") for cat in entry.findall("atom:category", ns) if cat.attrib.get("term")]
         primary = entry.find("arxiv:primary_category", ns)
         primary_category = primary.attrib.get("term", "") if primary is not None else (categories[0] if categories else "")
+        journal_ref = clean_arxiv_text(entry.findtext("arxiv:journal_ref", default="", namespaces=ns))
         pdf_url = ""
         html_url = f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else entry_id
         for link in entry.findall("atom:link", ns):
@@ -289,7 +300,8 @@ def arxiv_publications() -> List[Dict[str, Any]]:
             "title": title,
             "authors": authors,
             "year": year,
-            "venue": "arXiv",
+            "venue": journal_ref or "arXiv",
+            "journal": journal_ref,
             "url": html_url or pdf_url,
             "citations": 0,
             "abstract": summary,
@@ -320,15 +332,28 @@ def dedupe_by_title(papers: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
         key = normalize(paper.get("title", ""))
         if not key:
             continue
-        old = seen.get(key)
-        if old is None or (paper.get("citations") or 0) > (old.get("citations") or 0):
-            seen[key] = paper
-        else:
-            seen[key] = merge_papers(old, paper)
+        seen[key] = merge_papers(seen[key], paper) if key in seen else dict(paper)
     return list(seen.values())
 
 
+def _is_arxiv_venue(value: Any) -> bool:
+    return normalize(value) == "arxiv"
+
+
+def _is_jmlrish(value: Any) -> bool:
+    text = normalize(value)
+    raw = str(value or "").lower()
+    return "journal of machine learning research" in text or text == "jmlr" or "jmlr.org/papers/" in raw
+
+
 def merge_papers(primary: Dict[str, Any], secondary: Dict[str, Any]) -> Dict[str, Any]:
+    """Merge two records for the same title without losing structured metadata.
+
+    Scholar often has the correct journal/citation information while arXiv has the
+    arXiv identifier and subject classes.  Earlier versions kept whichever record
+    had more citations, which could silently drop the JMLR venue.  This merge keeps
+    both and deliberately prefers non-arXiv/JMLR venue and URL information.
+    """
     merged = dict(primary)
     for key, value in secondary.items():
         if value in (None, "", [], 0):
@@ -337,10 +362,30 @@ def merge_papers(primary: Dict[str, Any], secondary: Dict[str, Any]) -> Dict[str
             merged[key] = max(_safe_int(merged.get(key), 0) or 0, _safe_int(value, 0) or 0)
         elif key == "arxiv_categories":
             merged[key] = list(dict.fromkeys((merged.get(key) or []) + (value or [])))
+        elif key == "venue":
+            old = merged.get("venue", "")
+            if not old or _is_arxiv_venue(old) or _is_jmlrish(value):
+                merged[key] = value
+        elif key == "url":
+            old = merged.get("url", "")
+            if not old or ("arxiv.org" in str(old).lower() and "jmlr.org/papers/" in str(value).lower()):
+                merged[key] = value
+        elif key in {"journal", "citation"}:
+            if not merged.get(key):
+                merged[key] = value
+            if _is_jmlrish(value) and (not merged.get("venue") or _is_arxiv_venue(merged.get("venue"))):
+                merged["venue"] = value
+        elif key == "year":
+            # Prefer the later published year when the secondary record is a journal version.
+            old_year = _safe_int(merged.get("year"), default=0) or 0
+            new_year = _safe_int(value, default=0) or 0
+            if _is_jmlrish(secondary.get("venue")) or _is_jmlrish(secondary.get("journal")) or _is_jmlrish(secondary.get("citation")):
+                merged[key] = new_year or old_year
+            elif not old_year:
+                merged[key] = new_year
         elif not merged.get(key):
             merged[key] = value
     return merged
-
 
 def merge_sources(*paper_lists: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen: Dict[str, Dict[str, Any]] = {}
@@ -482,7 +527,7 @@ def apply_overrides(papers: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         if key in venue_overrides:
             p["venue"] = venue_overrides[key]
         if key in year_overrides:
-            p["year"] = _safe_int(year_overrides[key], p.get("year"))
+            p["year"] = year_overrides[key]
         if key in category_overrides:
             p["arxiv_categories"] = category_overrides[key]
         if key in topic_overrides:
