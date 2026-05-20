@@ -81,7 +81,26 @@
       "PDEs"
     ]
   },
-  "url_overrides": {},
-  "venue_overrides": {},
-  "arxiv_category_overrides": {}
+  "url_overrides": {
+    "neural operators can play dynamic stackelberg games": "https://www.jmlr.org/papers/v26/24-1985.html",
+    "small transformers compute universal metric embeddings": "https://www.jmlr.org/papers/v24/22-1246.html",
+    "instance dependent generalization bounds via optimal transport": "https://www.jmlr.org/papers/v24/22-1293.html",
+    "universal approximation theorems for differentiable geometric deep learning": "https://www.jmlr.org/papers/v23/21-0716.html",
+    "neu a meta algorithm for universal uap invariant feature representation": "https://www.jmlr.org/papers/v22/18-803.html"
+  },
+  "venue_overrides": {
+    "neural operators can play dynamic stackelberg games": "Journal of Machine Learning Research",
+    "small transformers compute universal metric embeddings": "Journal of Machine Learning Research",
+    "instance dependent generalization bounds via optimal transport": "Journal of Machine Learning Research",
+    "universal approximation theorems for differentiable geometric deep learning": "Journal of Machine Learning Research",
+    "neu a meta algorithm for universal uap invariant feature representation": "Journal of Machine Learning Research"
+  },
+  "arxiv_category_overrides": {},
+  "year_overrides": {
+    "neural operators can play dynamic stackelberg games": 2025,
+    "small transformers compute universal metric embeddings": 2023,
+    "instance dependent generalization bounds via optimal transport": 2023,
+    "universal approximation theorems for differentiable geometric deep learning": 2022,
+    "neu a meta algorithm for universal uap invariant feature representation": 2021
+  }
 }

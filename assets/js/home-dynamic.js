@@ -55,6 +55,34 @@
     }).join("");
   }
 
+
+  function isJmlrPaper(p) {
+    const haystack = String([p.venue, p.journal, p.publisher, p.url, p.source].filter(Boolean).join(" ")).toLowerCase();
+    return haystack.includes("journal of machine learning research") ||
+      haystack.includes("jmlr") ||
+      haystack.includes("jmlr.org/papers");
+  }
+
+  function renderSelectedJmlrPapers(data) {
+    const el = byId("select-publications-list");
+    if (!el) return;
+    const papers = (data.papers || [])
+      .filter(p => p && p.title && isJmlrPaper(p))
+      .sort((a, b) => paperScore(b) - paperScore(a) || String(a.title).localeCompare(String(b.title)))
+      .slice(0, 6);
+    if (!papers.length) {
+      el.innerHTML = `<p>JMLR papers will appear here once the Scholar/arXiv metadata refreshes. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open the Scholar profile</a>.</p>`;
+      return;
+    }
+    el.innerHTML = papers.map(p => {
+      const title = p.url
+        ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>`
+        : escapeHtml(p.title);
+      const meta = [p.authors, p.venue || "Journal of Machine Learning Research", p.year].filter(Boolean).map(escapeHtml).join(" · ");
+      return `<article class="dynamic-paper-item select-paper-item"><h3>${title}</h3><p>${meta}</p></article>`;
+    }).join("");
+  }
+
   function renderTalks(data) {
     const el = byId("upcoming-talks-list");
     if (!el) return;
@@ -72,9 +100,11 @@
   }
 
   async function init() {
-    loadJson(PUBLICATIONS_URL).then(renderHotPapers).catch(() => {
+    loadJson(PUBLICATIONS_URL).then(data => { renderHotPapers(data); renderSelectedJmlrPapers(data); }).catch(() => {
       const el = byId("hot-off-press-list");
       if (el) el.innerHTML = `<p>Latest papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
+      const selectEl = byId("select-publications-list");
+      if (selectEl) selectEl.innerHTML = `<p>JMLR papers could not be loaded. <a href="https://scholar.google.ca/citations?hl=en&user=9D-bHFgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Open Google Scholar</a>.</p>`;
     });
     loadJson(TALKS_URL).then(renderTalks).catch(() => renderTalks({talks: []}));
   }

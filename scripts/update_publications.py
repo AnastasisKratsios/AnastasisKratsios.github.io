@@ -474,12 +474,15 @@ def apply_overrides(papers: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     url_overrides = overrides.get("url_overrides", {}) or {}
     venue_overrides = overrides.get("venue_overrides", {}) or {}
     category_overrides = overrides.get("arxiv_category_overrides", {}) or {}
+    year_overrides = overrides.get("year_overrides", {}) or {}
     for p in papers:
         key = normalize(p.get("title", ""))
         if key in url_overrides:
             p["url"] = url_overrides[key]
         if key in venue_overrides:
             p["venue"] = venue_overrides[key]
+        if key in year_overrides:
+            p["year"] = _safe_int(year_overrides[key], p.get("year"))
         if key in category_overrides:
             p["arxiv_categories"] = category_overrides[key]
         if key in topic_overrides:
