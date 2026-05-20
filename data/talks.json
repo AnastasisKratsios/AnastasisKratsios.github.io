@@ -1,0 +1,55 @@
+{
+  "generated_at": "seed",
+  "source_url": "http://www.fields.utoronto.ca/activities/25-26/mathai",
+  "source": "Seeded from Fields Mathematical AI Seminar pages; GitHub Action refreshes this file.",
+  "talks": [
+    {
+      "title": "Machine Learning, Mean Field Theory and Complexity",
+      "speaker": "Dmitry Vaintrob, Principles of Intelligence",
+      "date": "Tuesday, April 21, 2026 - 3:00pm to 4:00pm",
+      "date_iso": "2026-04-21T15:00:00-04:00",
+      "location": "Fields Institute, Room 309",
+      "url": "https://www.fields.utoronto.ca/talks/ML-Mean-Field-Theory-and-complexity"
+    },
+    {
+      "title": "Universal Boolean Reasoning Is Certifiable",
+      "speaker": "Hrad Ghoukasian, McMaster University; Wenhao Li, University of Toronto",
+      "date": "Friday, April 10, 2026 - 11:00am to 12:00pm",
+      "date_iso": "2026-04-10T11:00:00-04:00",
+      "location": "Online",
+      "url": "https://www2.fields.utoronto.ca/talks/Universal-Boolean-Reasoning-Certifiable"
+    },
+    {
+      "title": "Constructive Conditional Normalizing Flows",
+      "speaker": "Domènec Ruiz-Balet, Universitat de Barcelona",
+      "date": "Friday, March 27, 2026 - 11:00am to 12:00pm",
+      "date_iso": "2026-03-27T11:00:00-04:00",
+      "location": "Online",
+      "url": "https://www2.fields.utoronto.ca/talks/Constructive-Conditional-Normalizing-Flows"
+    },
+    {
+      "title": "Approximation Theory for Neural and Polynomial Operator Surrogates",
+      "speaker": "Carlo Marcati, Université Lyon 1",
+      "date": "Friday, March 6, 2026 - 11:00am to 12:00pm",
+      "date_iso": "2026-03-06T11:00:00-05:00",
+      "location": "Fields Institute via Zoom",
+      "url": "http://www.fields.utoronto.ca/activities/25-26/mathai"
+    },
+    {
+      "title": "Accelerating Optimization over the Probability Measure Space",
+      "speaker": "Shi Chen, MIT",
+      "date": "Friday, February 27, 2026 - 11:00am to 12:00pm",
+      "date_iso": "2026-02-27T11:00:00-05:00",
+      "location": "Fields Institute",
+      "url": "http://www.fields.utoronto.ca/activities/25-26/mathai"
+    },
+    {
+      "title": "Quantifying AI Reasoning via Systematic Neural Network Representations of Algorithms",
+      "speaker": "Dennis Zvigelsky, McMaster University",
+      "date": "Friday, February 20, 2026 - 11:00am to 12:00pm",
+      "date_iso": "2026-02-20T11:00:00-05:00",
+      "location": "Fields Institute, Room 210",
+      "url": "https://www.fields.utoronto.ca/talks/Quantifying-AI-Reasoning-Systematic-Neural-Network-Representations-Algorithms"
+    }
+  ]
+}

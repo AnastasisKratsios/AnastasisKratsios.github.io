@@ -2,7 +2,10 @@
    from the HTML5 UP template so the map can be removed without touching the
    rest of the site. */
 #papers.research-map-section .inner {
-  max-width: 96rem;
+  max-width: none;
+  width: min(96vw, 122rem);
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
 }
 
 .research-map-intro {
@@ -18,7 +21,7 @@
 
 .research-map-canvas-wrap {
   position: relative;
-  min-height: 42rem;
+  min-height: clamp(40rem, 58vw, 62rem);
   border: 1px solid rgba(0, 0, 0, 0.11);
   border-radius: 1.1rem;
   overflow: hidden;
@@ -30,7 +33,7 @@
 
 #research-map-canvas {
   width: 100%;
-  height: 42rem;
+  height: clamp(40rem, 58vw, 62rem);
   display: block;
 }
 
@@ -212,4 +215,9 @@
   #research-map-canvas {
     height: 32rem;
   }
+}
+
+#publication-list,
+.publication-list-fallback {
+  display: none !important;
 }
