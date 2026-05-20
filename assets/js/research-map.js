@@ -34,7 +34,8 @@
     search: "",
     publications: [],
     topics: null,
-    selected: null
+    selected: null,
+    jitterTimer: null
   };
 
   function byId(id) { return document.getElementById(id); }
@@ -176,6 +177,7 @@
     }
     const svgEl = byId(SVG_ID);
     if (!svgEl || !state.topics) return;
+    if (state.jitterTimer) { state.jitterTimer.stop(); state.jitterTimer = null; }
     setStatus();
     renderList();
 
@@ -281,18 +283,44 @@
       .force("x", d3.forceX(d => d.kind === "paper" ? ((topicMap.get(d.primary_topic) || topicMap.get("Misc.") || topicNodes[0]).fx) : d.fx).strength(d => d.kind === "paper" ? 0.045 : 0.5))
       .force("y", d3.forceY(d => d.kind === "paper" ? ((topicMap.get(d.primary_topic) || topicMap.get("Misc.") || topicNodes[0]).fy + 76) : d.fy).strength(d => d.kind === "paper" ? 0.045 : 0.5));
 
+    nodes.forEach((d, i) => {
+      d._jitterPhaseX = (i * 1.61803398875) % (Math.PI * 2);
+      d._jitterPhaseY = (i * 2.41421356237) % (Math.PI * 2);
+    });
+
+    function visualX(d, elapsed) {
+      if (!elapsed) return d.x;
+      const amp = d.kind === "paper" ? 0.7 : 0.32;
+      return d.x + amp * Math.sin(elapsed * 0.00125 + d._jitterPhaseX);
+    }
+
+    function visualY(d, elapsed) {
+      if (!elapsed) return d.y;
+      const amp = d.kind === "paper" ? 0.7 : 0.32;
+      return d.y + amp * Math.cos(elapsed * 0.00110 + d._jitterPhaseY);
+    }
+
+    function draw(elapsed) {
+      link
+        .attr("x1", d => visualX(d.source, elapsed))
+        .attr("y1", d => visualY(d.source, elapsed))
+        .attr("x2", d => visualX(d.target, elapsed))
+        .attr("y2", d => visualY(d.target, elapsed));
+      node.attr("transform", d => `translate(${visualX(d, elapsed)},${visualY(d, elapsed)})`);
+    }
+
     simulation.on("tick", () => {
       nodes.forEach(d => {
         d.x = Math.max(nodeRadius(d) + 4, Math.min(width - nodeRadius(d) - 4, d.x));
         d.y = Math.max(nodeRadius(d) + 4, Math.min(height - nodeRadius(d) - 4, d.y));
       });
-      link
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
-      node.attr("transform", d => `translate(${d.x},${d.y})`);
+      draw(0);
     });
+
+    const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduceMotion) {
+      state.jitterTimer = d3.timer(elapsed => draw(elapsed));
+    }
 
     function dragstarted(event, d) {
       if (!event.active) simulation.alphaTarget(0.25).restart();
