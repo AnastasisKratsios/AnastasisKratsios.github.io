@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Geometric Foundations of AI with Applications to Finance, Control, and PDE<</title>
+		<title>Geometric Foundations of AI with Applications to Finance, Control, and PDE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/research-map.css" />
+		<link rel="stylesheet" href="assets/css/site-dynamic.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -61,18 +62,66 @@
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
 						<div class="content">
-							<h2>Hot off the press (Select Prepints)</h2>
-							<p>G. Alvarez, I. Ekren, A. Kratsios, X. Yang: <a href="https://www.researchgate.net/publication/385823419_Neural_Operators_Can_Play_Dynamic_Stackelberg_Games">Neural Operators Can Play Dynamic Stackelberg Games, 2024.</p>
-							<p>T. Furuya, A. Kratsios: <a href="https://www.researchgate.net/publication/385048676_Simultaneously_Solving_FBSDEs_with_Neural_Operators_of_Logarithmic_Depth_Constant_Width_and_Sub-Linear_Rank">Simultaneously Solving FBSDEs with Neural Operators of Logarithmic Depth, Constant Width, and Sub-Linear Rank, 2024.</p>
-							<p>R. Hong and A. Kratsios: <a href="https://www.researchgate.net/publication/384189642_Bridging_the_Gap_Between_Approximation_and_Learning_via_Optimal_Approximation_by_ReLU_MLPs_of_Maximal_Regularity">Bridging the gap between approximation and learning via optimal approximation by ReLU MLPs of maximal regularity, 2024.</p>
+							<h2>Hot of The Press</h2>
+							<p>The three most recent papers, refreshed from the Scholar/arXiv publication data.</p>
+							<div id="hot-press-list" class="hot-press-list" aria-live="polite">
+								<p>Loading latest papers...</p>
+							</div>
 							<ul class="actions stacked">
-								<li><a href="#third" class="button big wide smooth-scroll-middle">What we work on</a></li>
+								<li><a href="https://scholar.google.ca/citations?hl=en&amp;user=9D-bHFgAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" class="button" target="_blank" rel="noopener">Latest on Google Scholar</a></li>
+								<li><a href="#papers" class="button big wide smooth-scroll-middle">Explore the research map</a></li>
 							</ul>
 						</div>
 						<div class="image">
 							<img src="images/local_transport_cost-1.jpg" alt="" />
 						</div>
 					</section>
+
+					
+				<section class="wrapper style1 align-center research-map-section" id="papers">
+					<div class="inner">
+						<h1>Research Map</h1>
+						<p class="research-map-intro">
+							A dynamically updated directed map of publications and preprints, organized by arXiv subjects and topic keywords, then aligned with the high-level AI Theory / Applications hierarchy.
+						</p>
+
+						<div class="research-map-layout">
+							<div class="research-map-canvas-wrap">
+								<svg id="research-map-canvas" role="img" aria-label="Interactive publication DAG"></svg>
+							</div>
+						</div>
+
+						<div class="research-map-bottom-panel" id="research-map-details">
+							<h3>Click a paper node to read its title here.</h3>
+							<p>Topic nodes summarize visible papers; paper nodes are automatically classified from arXiv subjects, titles, and metadata.</p>
+						</div>
+
+						<div class="research-map-controls" aria-label="Research map filters">
+							<button type="button" class="is-active" data-research-filter="all">All</button>
+							<button type="button" data-research-filter="AI Theory">AI Theory</button>
+							<button type="button" data-research-filter="Applications">Applications</button>
+							<button type="button" data-research-filter="Finance">Finance</button>
+							<button type="button" data-research-filter="Universal Neural Approximation">Universal Neural Approximation</button>
+							<button type="button" data-research-filter="Statistical Learning Theory">Learning Theory</button>
+							<button type="button" data-research-filter="Operator Learning">Operator Learning</button>
+							<button type="button" data-research-filter="Geometric Deep Learning">Geometric DL</button>
+							<select id="research-map-year" aria-label="Filter by year">
+								<option value="all">All years</option>
+							</select>
+							<input id="research-map-search" type="search" placeholder="Search title, author, venue, topic, or arXiv subject" aria-label="Search publications" />
+						</div>
+
+						<p class="research-map-status" id="research-map-status">Loading publication map...</p>
+
+						<div class="research-map-legend" aria-label="Research map legend">
+							<span class="legend-root">root topic</span>
+							<span class="legend-topic">research topic</span>
+							<span class="legend-paper">paper; size grows with citations</span>
+						</div>
+					</div>
+				</section>
+
+			
 
 				<!-- Four -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
@@ -292,75 +341,26 @@
 			
 			<!-- Seminar -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="fourth">
-						<div class="content">
-							<h2>Our AI Theory Seminar</h2>
-							<p>I host a organize and host a weekly AI theory seminar, <a href="https://vectorinstitute.ai/research/researchers/">powered by: the Vector Institute</a>, exploring the most recent results in AI theory.  Our seminar covers topics ranging from statistical and approximation-theoretic guarantees to the theoretical viability of deep learning solutions to problems in stochastic analysis and game theory. </p>
-							<p><a href="https://www.youtube.com/playlist?list=PLe19jL1Jw7q-wlIGZT_W9UF6rL008VaXU">Hosted on our Youtube Channel @DeepLearninarSeminarSeries</p>
-							<!-- <img src="https://upload.wikimedia.org/wikipedia/en/1/18/Vector_Institute_Logo.jpg" alt="" /> -->
-							<ul class="actions stacked">
-<!-- 								<li><a href="#papers" class="button">Our research</a></li> -->
-								<li><a href="#DLTheorySeminar" class="button">Upcoming Talks</a></li>
-							</ul>
-						</div>
-						<div>
-							<iframe width="560" 
-								height="375" 
-								src="https://www.youtube.com/embed/videoseries?si=jM28NaAzrREanwME&amp;list=PLe19jL1Jw7q-wlIGZT_W9UF6rL008VaXU" 
-								title="YouTube video player" 
-								frameborder="0" 
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-								referrerpolicy="strict-origin-when-cross-origin" 
-								allowfullscreen></iframe>
-						</div>
-
-					</section>
-
-				<section class="wrapper style1 align-center research-map-section" id="papers">
-					<div class="inner">
-						<h1>Research Map</h1>
-						<p class="research-map-intro">
-							A dynamically updated directed map of publications and preprints, organized by arXiv subjects and topic keywords, then aligned with the high-level AI Theory / Applications hierarchy.
-						</p>
-
-						<div class="research-map-layout">
-							<div class="research-map-canvas-wrap">
-								<svg id="research-map-canvas" role="img" aria-label="Interactive publication DAG"></svg>
+							<div class="content">
+								<h2>We run the Fields Institute Mathematical AI Seminar</h2>
+								<p>We organize the Fields Institute Mathematical AI Seminar, a weekly seminar on mathematical foundations of AI, spanning approximation theory, statistical learning theory, reasoning and computation, operator learning, PDEs, control, games, BSDEs, and finance.</p>
+								<p><a href="https://www.youtube.com/watch?v=-cXlK4M_XZA&amp;list=PLArBKNfJxuumIT2kUXZOEamghPnnvIHjL" target="_blank" rel="noopener">Watch the seminar playlist on YouTube.</a></p>
+								<ul class="actions stacked">
+									<li><a href="#DLTheorySeminar" class="button">Upcoming Talks We've Organized</a></li>
+								</ul>
 							</div>
-						</div>
-
-						<div class="research-map-bottom-panel" id="research-map-details">
-							<h3>Click a paper node to read its title here.</h3>
-							<p>Topic nodes summarize visible papers; paper nodes are automatically classified from arXiv subjects, titles, and metadata.</p>
-						</div>
-
-						<div class="research-map-controls" aria-label="Research map filters">
-							<button type="button" class="is-active" data-research-filter="all">All</button>
-							<button type="button" data-research-filter="AI Theory">AI Theory</button>
-							<button type="button" data-research-filter="Applications">Applications</button>
-							<button type="button" data-research-filter="Finance">Finance</button>
-							<button type="button" data-research-filter="Universal Neural Approximation">Universal Neural Approximation</button>
-							<button type="button" data-research-filter="Statistical Learning Theory">Learning Theory</button>
-							<button type="button" data-research-filter="Operator Learning">Operator Learning</button>
-							<button type="button" data-research-filter="Geometric Deep Learning">Geometric DL</button>
-							<select id="research-map-year" aria-label="Filter by year">
-								<option value="all">All years</option>
-							</select>
-							<input id="research-map-search" type="search" placeholder="Search title, author, venue, topic, or arXiv subject" aria-label="Search publications" />
-						</div>
-
-						<p class="research-map-status" id="research-map-status">Loading publication map...</p>
-
-						<div class="research-map-legend" aria-label="Research map legend">
-							<span class="legend-root">root topic</span>
-							<span class="legend-topic">research topic</span>
-							<span class="legend-paper">paper; size grows with citations</span>
-						</div>
-
-						<div class="publication-list-fallback" id="publication-list" aria-live="polite"></div>
-					</div>
-				</section>
-
-			<!-- The Team -->
+							<div class="seminar-video">
+								<iframe width="560"
+									height="375"
+									src="https://www.youtube.com/embed/videoseries?list=PLArBKNfJxuumIT2kUXZOEamghPnnvIHjL"
+									title="Fields Institute Mathematical AI Seminar playlist"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen></iframe>
+							</div>
+						</section>
+<!-- The Team -->
 		
 			<!-- Gallery of People -->
 			<section class="wrapper style1 align-center">
@@ -418,11 +418,11 @@
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/Dennis_Yankovsky.jpg" class="image">
-								<img src="images/gallery/Dennis_Yankovsky.jpg" alt="" />
+							<a href="images/Dennis_Yankovsky.jpg" class="image">
+								<img src="images/Dennis_Yankovsky.jpg" alt="" />
 							</a>
 							<div class="caption">
-								<h3>Dennis Yankovsky</h3>
+								<h3>Dennis Zvigelsky</h3>
 								<p>PhD Candidate (2025-2029) - AI Reasoning (Joint: Bradd Hart)</p>
 								<ul class="actions fixed">
 									<!--<li><span class="button small">Details</span></li>-->
@@ -507,28 +507,22 @@
 					</section>					
 
 
-				<section class="wrapper style1 align-center" id="DLTheorySeminar">
+					<section class="wrapper style1 align-center" id="DLTheorySeminar">
 						<div class="inner">
-						<h1>Deep Learning Seminar 2025 - Talks</h1>
-						
-						    <ul>
-						        <li>Feb 7 - Eric Moulines (Learning Theory) - Rates of convergence for density estimation with generative adversarial networks </li>
-						        <li>Feb 14 - Saber Jararpour (Deep Learning Theory) - Robust Implicit Networks via Non-Euclidean Constraints</li>
-						        <li>Feb 28 - Haotian Jian (Deep Learning Theory) - Approximation Rate of the Transformer Architecture for Sequence Modeling</li>
-						        <li>March 7 - Christopher Salvi (Geometric Deep Learning) - Scaling Limits of GNNs</li>
-						        <li>March 28 - Florian Rossmannek - TBD</li>
-						        <li>Arpil 11 - Mary Letey - (Learning Theory) - Asymptotic theory of in-context learning by linear attention</li>
-							<li>April 18 - Michael Choi - (Information Geometry and Optimization) - Covering Numbers for Deep ReLU Networks with Applications to Function Approximation and Nonparametric Regression</li>
-							<li>April 25 - Weigutian Ou - (Approximation Theory) - Covering Numbers for Deep ReLU Networks with Applications to Function Approximation and Nonparametric Regression</li>
-							<li>May 2 - Haizhao Yang - (Learning Theory) - Deep Nonparametric Estimation of Operators between Infinite Dimensional Spaces</li>
-							<li>May 23 - Giovanni Ballarin - (Approximation Theory) - Memory of Recurrent Networks: Do We Compute It Right?</li>
-							<li>May 23 - Anotnio Lara - (Operator Theory) - TBD</li>
-						    </ul>
-				
-				<!-- Footer -->
+							<h1>Upcoming Talks We've Organized</h1>
+							<p>Recent and upcoming talks from the Fields Institute Mathematical AI Seminar.</p>
+							<div id="fields-talks-list" class="fields-talks-list" aria-live="polite">
+								<p>Loading talks from the Fields seminar data...</p>
+							</div>
+							<ul class="actions stacked">
+								<li><a href="http://www.fields.utoronto.ca/activities/25-26/mathai" class="button" target="_blank" rel="noopener">Full Fields seminar page</a></li>
+							</ul>
+						</div>
+					</section>
+<!-- Footer -->
 					<footer class="wrapper style1 align-center" id="links">
 						<div class="image">
-							<b>Me thinking of a nice proof near friends...</b>
+							<b>A Perfect Day</b>
 							<img src="images/Professional.jpg" alt="" />
 						</div>
 						<!--
@@ -561,6 +555,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+			<script src="assets/js/hot-press.js"></script>
+			<script src="assets/js/talks.js"></script>
 			<script src="assets/js/research-map.js"></script>
 
 	</body>

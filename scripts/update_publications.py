@@ -272,6 +272,7 @@ def arxiv_publications() -> List[Dict[str, Any]]:
         authors = ", ".join(a for a in authors.split(", ") if a)
         summary = clean_arxiv_text(entry.findtext("atom:summary", default="", namespaces=ns))
         published = entry.findtext("atom:published", default="", namespaces=ns)
+        updated = entry.findtext("atom:updated", default="", namespaces=ns)
         year = _safe_int(published[:4])
         entry_id = entry.findtext("atom:id", default="", namespaces=ns)
         arxiv_id = entry_id.rstrip("/").split("/")[-1] if entry_id else ""
@@ -294,6 +295,8 @@ def arxiv_publications() -> List[Dict[str, Any]]:
             "citations": 0,
             "abstract": summary,
             "arxiv_id": arxiv_id,
+            "published": published,
+            "updated": updated,
             "arxiv_categories": categories,
             "arxiv_primary_category": primary_category,
             "source": "arXiv author search",

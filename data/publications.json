@@ -28,7 +28,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "certifiable-boolean-reasoning-is-universal",
@@ -52,7 +54,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "classification-fields-arbitrarily-fine-recursive-hierarchical-clustering",
@@ -76,7 +80,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
@@ -104,7 +110,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "memoa-massive-mixtures-of-online-agents-via-mean-field-decentralized-nas",
@@ -128,7 +136,9 @@
       ],
       "primary_topic": "Games & BSDEs",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "neural-operators-can-discover-functional-clusters",
@@ -154,7 +164,9 @@
       ],
       "primary_topic": "Operator Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
@@ -176,7 +188,9 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-01-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
@@ -204,7 +218,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "structure-preserving-reconstruction-of-convex-lipschitz-functionals-on-h",
@@ -232,7 +248,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2026-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
@@ -259,7 +277,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-04-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "beyond-universal-approximation-theorems-algorithmic-uniform-approximatio",
@@ -288,7 +308,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-09-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "generative-market-equilibrium-models-with-stable-adversarial-learning-vi",
@@ -313,7 +335,9 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-04-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "generative-neural-operators-of-log-complexity-can-simultaneously-solve-i",
@@ -340,7 +364,9 @@
       ],
       "primary_topic": "Operator Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-08-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
@@ -386,7 +412,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-11-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "is-in-context-universality-enough-mlps-are-also-universal-in-context",
@@ -415,7 +443,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "keep-it-light-simplifying-image-clustering-via-text-free-adapters",
@@ -442,7 +472,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
@@ -471,7 +503,9 @@
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-09-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "lora-fine-tuning-without-gpus-a-cpu-efficient-meta-generation-framework-",
@@ -497,7 +531,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-07-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
@@ -525,7 +561,9 @@
       ],
       "primary_topic": "Games & BSDEs",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-11-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "online-federation-for-mixtures-of-proprietary-agents-with-black-box-enco",
@@ -552,7 +590,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
@@ -580,7 +620,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-08-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "sharp-generalization-bounds-for-foundation-models-with-asymmetric-random",
@@ -609,7 +651,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-06-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "simultaneously-solving-infinitely-many-lq-mean-field-games-in-hilbert-sp",
@@ -637,7 +681,9 @@
       ],
       "primary_topic": "Games & BSDEs",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
@@ -661,7 +707,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2025-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "a-comprehensive-analysis-on-the-learning-curve-in-kernel-ridge-regressio",
@@ -683,7 +731,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
@@ -710,7 +760,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "bridging-the-gap-between-approximation-and-learning-via-optimal-approxim",
@@ -738,7 +790,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-09-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "characterizing-overfitting-in-kernel-ridgeless-regression-through-the-ei",
@@ -761,7 +815,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
@@ -789,7 +845,9 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-06-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
@@ -818,7 +876,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
@@ -843,7 +903,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
@@ -870,7 +932,9 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-05-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
@@ -915,7 +979,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-04-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "neural-operators-can-play-dynamic-stackelberg-games",
@@ -943,7 +1009,9 @@
       ],
       "primary_topic": "Games & BSDEs",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-11-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "neural-spacetimes-for-dag-representation-learning",
@@ -970,7 +1038,9 @@
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-08-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "polynomial-scaling-is-possible-for-neural-operator-approximations-of-str",
@@ -998,7 +1068,9 @@
       ],
       "primary_topic": "Games & BSDEs",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "reality-only-happens-once-single-path-generalization-bounds-for-transfor",
@@ -1039,7 +1111,9 @@
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-11-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "tighter-generalization-bounds-on-digital-computers-via-discrete-optimal-",
@@ -1081,7 +1155,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2024-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "a-theoretical-analysis-of-the-test-error-of-finite-rank-kernel-ridge-reg",
@@ -1105,7 +1181,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
@@ -1134,7 +1212,9 @@
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-04-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
@@ -1161,7 +1241,9 @@
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-08-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "deep-kalman-filters-can-filter",
@@ -1239,7 +1321,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "generative-ornstein-uhlenbeck-markets-via-geometric-deep-learning",
@@ -1264,7 +1348,9 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-02-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "neural-snowflakes-universal-latent-graph-inference-via-trainable-latent-",
@@ -1290,7 +1376,9 @@
       ],
       "primary_topic": "Geometric Deep Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
@@ -1317,7 +1405,9 @@
       ],
       "primary_topic": "Operator Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-01-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
@@ -1343,7 +1433,9 @@
       ],
       "primary_topic": "Finance",
       "root": "Applications",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-09-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
@@ -1372,7 +1464,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2023-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "universal-regular-conditional-distributions-via-probabilistic-transforme",
@@ -1416,7 +1510,9 @@
       ],
       "primary_topic": "Operator Learning",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2022-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "do-relu-networks-have-an-edge-when-approximating-compactly-supported-fun",
@@ -1439,7 +1535,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2022-04-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "instance-dependent-generalization-bounds-via-optimal-transport",
@@ -1463,7 +1561,9 @@
       ],
       "primary_topic": "Statistical Learning Theory",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2022-11-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "learning-sub-patterns-in-piecewise-continuous-functions",
@@ -1486,7 +1586,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2020-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "small-transformers-compute-universal-metric-embeddings",
@@ -1513,7 +1615,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2022-09-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
@@ -1539,7 +1643,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2021-01-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "universal-approximation-under-constraints-is-possible-with-transformers",
@@ -1564,7 +1670,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2021-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "lower-estimates-on-the-hochschild-co-homological-dimension-of-commutativ",
@@ -1624,7 +1732,9 @@
       ],
       "primary_topic": "Reasoning & Computation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2021-01-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "the-universal-approximation-property",
@@ -1647,7 +1757,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2019-10-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
@@ -1690,7 +1802,9 @@
       ],
       "primary_topic": "Universal Neural Approximation",
       "root": "AI Theory",
-      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv"
+      "source": "seeded from arXiv author search snapshot; GitHub Action refreshes from Scholar/arXiv",
+      "published": "2020-06-01T00:00:00Z",
+      "published_is_month_estimate": true
     },
     {
       "id": "the-entropic-measure-transform",

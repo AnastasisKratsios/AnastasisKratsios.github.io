@@ -138,27 +138,10 @@
   }
 
   function renderList() {
-    const container = byId("publication-list");
-    if (!container) return;
-    const papers = state.publications.filter(paperMatches).sort((a,b) => (b.year || 0) - (a.year || 0) || String(a.title).localeCompare(String(b.title)));
-    const grouped = new Map();
-    papers.forEach(p => {
-      const y = p.year || "Undated";
-      if (!grouped.has(y)) grouped.set(y, []);
-      grouped.get(y).push(p);
-    });
-    let html = `<h2>Publication list</h2>`;
-    grouped.forEach((items, year) => {
-      html += `<details ${String(year) === String(new Date().getFullYear()) ? "open" : ""}><summary>${escapeHtml(year)} · ${items.length} paper${items.length === 1 ? "" : "s"}</summary><ul>`;
-      items.forEach(p => {
-        const title = p.url ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>` : escapeHtml(p.title);
-        const subjects = (p.arxiv_categories || []).length ? ` · subjects: ${(p.arxiv_categories || []).map(escapeHtml).join(" · ")}` : "";
-        html += `<li>${title}. <em>${escapeHtml(p.venue || "")}</em>${p.citations ? ` · ${escapeHtml(p.citations)} citations` : ""}<br><small>${(p.topics || []).map(escapeHtml).join(" · ")}${subjects}</small></li>`;
-      });
-      html += `</ul></details>`;
-    });
-    container.innerHTML = html;
+    // The full publication list was intentionally removed from the homepage;
+    // the interactive DAG and the hot-press cards are the publication UI.
   }
+
 
   function nodeRadius(d) {
     if (d.kind === "root") return 25;
