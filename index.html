@@ -13,8 +13,26 @@
 		<link rel="stylesheet" href="assets/css/research-map.css" />
 		<link rel="stylesheet" href="assets/css/collaboration-map.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#scroll-background {
+				position: fixed;
+				inset: 0;
+				background: url("images/background_image_faded.jpg") center center / cover no-repeat;
+				opacity: 0;
+				pointer-events: none;
+				z-index: 0;
+			}
+
+			#wrapper {
+				position: relative;
+				z-index: 1;
+				background-color: transparent !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+
+		<div id="scroll-background" aria-hidden="true"></div>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -570,6 +588,31 @@
 			<script src="assets/js/research-map.js"></script>
 			<script src="assets/js/collaboration-map.js"></script>
 			<script src="assets/js/page-effects.js"></script>
+			<script>
+				(function () {
+					var background = document.getElementById("scroll-background");
+					var maxOpacity = 0.30;
+					var ticking = false;
+
+					function updateBackgroundOpacity() {
+						var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+						var progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+						background.style.opacity = progress * maxOpacity;
+						ticking = false;
+					}
+
+					function requestUpdate() {
+						if (!ticking) {
+							window.requestAnimationFrame(updateBackgroundOpacity);
+							ticking = true;
+						}
+					}
+
+					window.addEventListener("scroll", requestUpdate, { passive: true });
+					window.addEventListener("resize", requestUpdate);
+					updateBackgroundOpacity();
+				})();
+			</script>
 
 	</body>
 </html>
