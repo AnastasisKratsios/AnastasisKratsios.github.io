@@ -25,6 +25,15 @@
 				z-index: 0;
 			}
 
+			#scroll-background-video {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: none;
+			}
+
 			#wrapper {
 				position: relative;
 				z-index: 1;
@@ -34,7 +43,7 @@
 	</head>
 	<body class="is-preload">
 
-		<div id="scroll-background" aria-hidden="true"></div>
+		<div id="scroll-background" aria-hidden="true"><video id="scroll-background-video" autoplay muted loop playsinline></video></div>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -593,16 +602,17 @@
 			<script>
 				(function () {
 					var background = document.getElementById("scroll-background");
+					var video = document.getElementById("scroll-background-video");
 					var backgrounds = [
 						"images/Backgrounds/An then it happened.jpeg",
 						"images/Backgrounds/Facekid.jpg",
 						"images/Backgrounds/PurpleOnes.jpg",
 						"images/Backgrounds/background_image_faded.jpg",
 						"images/Backgrounds/background_image_faded2.jpg",
-						"images/Backgrounds/flux.gif",
-						"images/Backgrounds/fluxface.gif",
+						"images/Backgrounds/flux.mp4",
+						"images/Backgrounds/fluxface.mp4",
 						"images/Backgrounds/unnamed.jpg",
-						"images/Backgrounds/us_njns.gif"
+						"images/Backgrounds/us_njns.mp4"
 					];
 					var maxOpacity = 0.30;
 					var ticking = false;
@@ -619,19 +629,39 @@
 					}
 
 					function tryBackgrounds(candidates, index) {
-						if (index >= candidates.length) {
-							return;
-						}
+						if (index >= candidates.length) return;
 
 						var candidate = candidates[index];
-						var tester = new Image();
-						tester.onload = function () {
-							background.style.backgroundImage = 'url("' + candidate + '")';
-						};
-						tester.onerror = function () {
-							tryBackgrounds(candidates, index + 1);
-						};
-						tester.src = candidate;
+						var isVideo = /\.(mp4|webm)$/i.test(candidate);
+
+						if (isVideo) {
+							var failed = false;
+							video.onloadeddata = function () {
+								if (failed) return;
+								background.style.backgroundImage = "none";
+								video.style.display = "block";
+								video.play().catch(function () {});
+							};
+							video.onerror = function () {
+								failed = true;
+								video.removeAttribute("src");
+								video.load();
+								tryBackgrounds(candidates, index + 1);
+							};
+							video.src = candidate;
+							video.load();
+						} else {
+							var tester = new Image();
+							tester.onload = function () {
+								video.pause();
+								video.style.display = "none";
+								background.style.backgroundImage = 'url("' + candidate + '")';
+							};
+							tester.onerror = function () {
+								tryBackgrounds(candidates, index + 1);
+							};
+							tester.src = candidate;
+						}
 					}
 
 					function updateBackgroundOpacity() {
