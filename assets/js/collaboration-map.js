@@ -32,7 +32,8 @@
     return (data.institutions || []).filter(d =>
       d &&
       Number.isFinite(Number(d.latitude)) &&
-      Number.isFinite(Number(d.longitude))
+      Number.isFinite(Number(d.longitude)) &&
+      (d.has_historical || d.has_current || Number(d.paper_count || 0) > 0)
     );
   }
 
@@ -40,16 +41,42 @@
     return [d.city, d.region, d.country].filter(Boolean).join(", ");
   }
 
+  function ensureLegend() {
+    if (!statusEl || document.getElementById("collaboration-map-legend")) return;
+    const legend = document.createElement("div");
+    legend.id = "collaboration-map-legend";
+    legend.className = "collaboration-map-legend";
+    legend.innerHTML = `
+      <span><i class="collaboration-legend-dot"></i> institution on a joint paper</span>
+      <span><i class="collaboration-legend-ring"></i> current co-author affiliation</span>
+    `;
+    statusEl.insertAdjacentElement("afterend", legend);
+  }
+
+  function sourceLink(source) {
+    if (!source || !source.source_url) return "";
+    const label = source.source_type ? escapeHtml(source.source_type) : "source";
+    return ` <a href="${escapeHtml(source.source_url)}" target="_blank" rel="noopener">[${label}]</a>`;
+  }
+
   function renderDetails(d) {
     if (!detailsEl || !d) return;
 
-    const coauthors = (d.coauthors || []).map(escapeHtml).join(", ");
-    const papers = (d.papers || []).slice(0, 8).map(p => {
+    const historicalNames = (d.coauthors || []).map(escapeHtml).join(", ");
+    const currentNames = (d.current_coauthors || []).map(escapeHtml).join(", ");
+
+    const papers = (d.papers || []).slice(0, 12).map(p => {
       const title = p.url
         ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>`
         : escapeHtml(p.title);
       const names = (p.coauthors || []).map(escapeHtml).join(", ");
       return `<li>${title}${p.year ? ` (${escapeHtml(p.year)})` : ""}${names ? `<br><span>${names}</span>` : ""}</li>`;
+    }).join("");
+
+    const currentEvidence = (d.current_sources || []).map(source => {
+      const person = escapeHtml(source.person || "");
+      const note = source.note ? ` — ${escapeHtml(source.note)}` : "";
+      return `<li>${person}${sourceLink(source)}${note}</li>`;
     }).join("");
 
     detailsEl.innerHTML = `
@@ -59,9 +86,59 @@
         ${locationLabel(d) && d.paper_count ? " · " : ""}
         ${d.paper_count ? paperCountLabel(Number(d.paper_count)) : ""}
       </p>
-      ${coauthors ? `<p><strong>Co-authors:</strong> ${coauthors}</p>` : ""}
-      ${papers ? `<ul class="collaboration-paper-list">${papers}</ul>` : ""}
+
+      ${d.has_historical ? `
+        <div class="collaboration-detail-section">
+          <h4>On joint publications</h4>
+          ${historicalNames ? `<p><strong>Co-authors:</strong> ${historicalNames}</p>` : ""}
+          ${papers ? `<ul class="collaboration-paper-list">${papers}</ul>` : ""}
+        </div>
+      ` : ""}
+
+      ${d.has_current ? `
+        <div class="collaboration-detail-section collaboration-current-detail">
+          <h4>Current affiliation</h4>
+          ${currentNames ? `<p><strong>Co-authors currently here:</strong> ${currentNames}</p>` : ""}
+          ${currentEvidence ? `<ul class="collaboration-current-source-list">${currentEvidence}</ul>` : ""}
+        </div>
+      ` : ""}
     `;
+  }
+
+  function makeDisplayPoints(institutions, projection) {
+    // Separate institutions that share a city/coordinate (Toronto, Oxford, Zürich, etc.)
+    // by a tiny deterministic screen-space offset so every node remains clickable.
+    const grouped = new Map();
+
+    institutions.forEach(d => {
+      const raw = projection([Number(d.longitude), Number(d.latitude)]);
+      if (!raw) return;
+      const key = `${Number(d.latitude).toFixed(3)}:${Number(d.longitude).toFixed(3)}`;
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push({d, raw});
+    });
+
+    const positions = new Map();
+    grouped.forEach(items => {
+      items.sort((a, b) => String(a.d.name).localeCompare(String(b.d.name)));
+      const n = items.length;
+
+      items.forEach((item, i) => {
+        if (n === 1) {
+          positions.set(item.d, item.raw);
+          return;
+        }
+
+        const angle = (2 * Math.PI * i / n) - Math.PI / 2;
+        const spread = n <= 2 ? 6 : n <= 4 ? 8 : 10;
+        positions.set(item.d, [
+          item.raw[0] + spread * Math.cos(angle),
+          item.raw[1] + spread * Math.sin(angle)
+        ]);
+      });
+    });
+
+    return positions;
   }
 
   function renderMap(world, data) {
@@ -101,21 +178,32 @@
       .attr("class", "collaboration-map-country")
       .attr("d", path);
 
-    const maxPapers = Math.max(1, d3.max(institutions, d => Number(d.paper_count || 1)));
-    const radius = d3.scaleSqrt().domain([1, maxPapers]).range([4.5, 10]);
+    const maxPapers = Math.max(1, d3.max(institutions, d => Number(d.paper_count || 0)));
+    const radius = d3.scaleSqrt().domain([1, maxPapers]).range([4.2, 9.5]);
+    const positions = makeDisplayPoints(institutions, projection);
 
-    const nodes = svg.append("g")
+    const groups = svg.append("g")
       .attr("class", "collaboration-map-nodes")
-      .selectAll("circle")
+      .selectAll("g")
       .data(institutions)
-      .join("circle")
-      .attr("class", "collaboration-map-node")
-      .attr("cx", d => projection([Number(d.longitude), Number(d.latitude)])[0])
-      .attr("cy", d => projection([Number(d.longitude), Number(d.latitude)])[1])
-      .attr("r", d => radius(Number(d.paper_count || 1)))
+      .join("g")
+      .attr("class", d => [
+        "collaboration-map-node-group",
+        d.has_historical ? "has-historical" : "",
+        d.has_current ? "has-current" : ""
+      ].filter(Boolean).join(" "))
+      .attr("transform", d => {
+        const p = positions.get(d) || projection([Number(d.longitude), Number(d.latitude)]);
+        return `translate(${p[0]},${p[1]})`;
+      })
       .attr("tabindex", 0)
       .attr("role", "button")
-      .attr("aria-label", d => `${d.name}. ${locationLabel(d)}. ${paperCountLabel(Number(d.paper_count || 0))}.`)
+      .attr("aria-label", d => {
+        const parts = [d.name, locationLabel(d)];
+        if (d.has_historical) parts.push(paperCountLabel(Number(d.paper_count || 0)));
+        if (d.has_current) parts.push("current co-author affiliation");
+        return parts.filter(Boolean).join(". ");
+      })
       .on("mouseenter", function (event, d) {
         d3.select(this).classed("is-active", true);
         renderDetails(d);
@@ -131,29 +219,59 @@
         d3.select(this).classed("is-active", false);
       })
       .on("click", function (event, d) {
-        nodes.classed("is-selected", false);
+        groups.classed("is-selected", false);
         d3.select(this).classed("is-selected", true);
         renderDetails(d);
       });
 
-    nodes.append("title")
-      .text(d => `${d.name} — ${locationLabel(d)} — ${paperCountLabel(Number(d.paper_count || 0))}`);
+    groups.filter(d => d.has_current)
+      .append("circle")
+      .attr("class", "collaboration-map-current-ring")
+      .attr("r", d => Math.max(7.5, radius(Math.max(1, Number(d.paper_count || 1))) + 3.2));
+
+    groups.filter(d => d.has_historical)
+      .append("circle")
+      .attr("class", "collaboration-map-historical-dot")
+      .attr("r", d => radius(Math.max(1, Number(d.paper_count || 1))));
+
+    groups.filter(d => !d.has_historical && d.has_current)
+      .append("circle")
+      .attr("class", "collaboration-map-current-only-core")
+      .attr("r", 2.2);
+
+    groups.append("circle")
+      .attr("class", "collaboration-map-hit")
+      .attr("r", d => Math.max(12, radius(Math.max(1, Number(d.paper_count || 1))) + 5));
+
+    groups.append("title")
+      .text(d => {
+        const bits = [`${d.name} — ${locationLabel(d)}`];
+        if (d.has_historical) bits.push(paperCountLabel(Number(d.paper_count || 0)));
+        if (d.has_current) bits.push("current affiliation");
+        return bits.join(" — ");
+      });
 
     const mappedPaperIds = new Set();
     institutions.forEach(inst => (inst.papers || []).forEach(p => mappedPaperIds.add(p.id || p.title)));
+    const historicalCount = institutions.filter(d => d.has_historical).length;
+    const currentCount = institutions.filter(d => d.has_current).length;
 
     if (statusEl) {
       statusEl.textContent =
-        `${institutionCountLabel(institutions.length)} · ` +
-        `${paperCountLabel(mappedPaperIds.size)} with resolved co-author affiliations`;
+        `${institutionCountLabel(historicalCount)} on joint papers · ` +
+        `${institutionCountLabel(currentCount)} with current co-author affiliations · ` +
+        `${paperCountLabel(mappedPaperIds.size)} resolved`;
     }
 
+    ensureLegend();
+
     const first = institutions
+      .filter(d => d.has_historical)
       .slice()
       .sort((a, b) =>
         Number(b.paper_count || 0) - Number(a.paper_count || 0) ||
         String(a.name).localeCompare(String(b.name))
-      )[0];
+      )[0] || institutions[0];
 
     renderDetails(first);
   }

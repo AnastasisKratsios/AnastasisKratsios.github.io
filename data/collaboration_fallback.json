@@ -1,0 +1,1851 @@
+{
+  "schema_version": 3,
+  "audited_at": "2026-08-21",
+  "purpose": "Tertiary fallback for paper-time co-author institutions plus separately tracked current affiliations.",
+  "source_priority": [
+    "OpenAlex structured paper-level affiliation",
+    "OpenAlex raw affiliation string from the same paper",
+    "Curated arXiv/version-specific paper affiliation in this file",
+    "Current LinkedIn/official affiliation in this file (displayed separately; never used as historical evidence)"
+  ],
+  "audit": {
+    "arxiv_author_query": "https://arxiv.org/search/?query=Kratsios%2C+A&searchtype=author&abstracts=show&order=-announced_date_first&size=200",
+    "arxiv_results_count": 75,
+    "google_scholar_profile": "https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en",
+    "google_scholar_note": "Direct Scholar access can be rate-limited; arXiv's exact author search was used as the auditable paper/version backbone.",
+    "policy": "If an affiliation could not be verified from a paper/version or a reliable current source, it is not guessed."
+  },
+  "institution_catalog": {
+    "McMaster University": {
+      "city": "Hamilton",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.2609,
+      "longitude": -79.9192,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Vector Institute": {
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.6532,
+      "longitude": -79.3832,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Toronto": {
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.6532,
+      "longitude": -79.3832,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Concordia University": {
+      "city": "Montreal",
+      "region": "Quebec",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 45.5017,
+      "longitude": -73.5673,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Oxford": {
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.752,
+      "longitude": -1.2577,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Oxford-Man Institute": {
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.752,
+      "longitude": -1.2577,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Cambridge": {
+      "city": "Cambridge",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 52.2053,
+      "longitude": 0.1218,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "King's College London": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "London School of Economics": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "DRW": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Google DeepMind": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Mediobanca": {
+      "city": "Milan",
+      "region": "Lombardy",
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 45.4642,
+      "longitude": 9.19,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Scuola Normale Superiore": {
+      "city": "Pisa",
+      "region": "Tuscany",
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 43.7228,
+      "longitude": 10.4017,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "ETH Zürich": {
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.3769,
+      "longitude": 8.5417,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "ETH AI Center": {
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.3769,
+      "longitude": 8.5417,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Zürich": {
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.3769,
+      "longitude": 8.5417,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Google Zürich": {
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.3769,
+      "longitude": 8.5417,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Basel": {
+      "city": "Basel",
+      "region": "Basel-Stadt",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.5596,
+      "longitude": 7.5886,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "UniDistance Suisse": {
+      "city": "Brig",
+      "region": "Valais",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.3159,
+      "longitude": 7.9877,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Vienna": {
+      "city": "Vienna",
+      "region": "Vienna",
+      "country": "Austria",
+      "country_code": "AT",
+      "latitude": 48.2082,
+      "longitude": 16.3738,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Czech Technical University in Prague": {
+      "city": "Prague",
+      "region": "Prague",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "latitude": 50.0755,
+      "longitude": 14.4378,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Graz University of Technology": {
+      "city": "Graz",
+      "region": "Styria",
+      "country": "Austria",
+      "country_code": "AT",
+      "latitude": 47.0707,
+      "longitude": 15.4395,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Tokyo": {
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Doshisha University": {
+      "city": "Kyoto",
+      "region": "Kyoto",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.0116,
+      "longitude": 135.7681,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Shimane University": {
+      "city": "Matsue",
+      "region": "Shimane",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.4723,
+      "longitude": 133.0505,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Nanyang Technological University": {
+      "city": "Singapore",
+      "region": "",
+      "country": "Singapore",
+      "country_code": "SG",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Rice University": {
+      "city": "Houston",
+      "region": "Texas",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 29.7604,
+      "longitude": -95.3698,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Lawrence Berkeley National Laboratory": {
+      "city": "Berkeley",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.8715,
+      "longitude": -122.273,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Cornell University": {
+      "city": "Ithaca",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.443,
+      "longitude": -76.5019,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Michigan": {
+      "city": "Ann Arbor",
+      "region": "Michigan",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.2808,
+      "longitude": -83.743,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Massachusetts Institute of Technology": {
+      "city": "Cambridge",
+      "region": "Massachusetts",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.3736,
+      "longitude": -71.1097,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Princeton University": {
+      "city": "Princeton",
+      "region": "New Jersey",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.343,
+      "longitude": -74.6514,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Purdue University": {
+      "city": "West Lafayette",
+      "region": "Indiana",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.4259,
+      "longitude": -86.9081,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Alberta": {
+      "city": "Edmonton",
+      "region": "Alberta",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 53.5461,
+      "longitude": -113.4938,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Helsinki": {
+      "city": "Helsinki",
+      "region": "Uusimaa",
+      "country": "Finland",
+      "country_code": "FI",
+      "latitude": 60.1699,
+      "longitude": 24.9384,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "ShanghaiTech University": {
+      "city": "Shanghai",
+      "region": "Shanghai",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 31.2304,
+      "longitude": 121.4737,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Durham University": {
+      "city": "Durham",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 54.7753,
+      "longitude": -1.5849,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Dalhousie University": {
+      "city": "Halifax",
+      "region": "Nova Scotia",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 44.6488,
+      "longitude": -63.5752,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Mohamed bin Zayed University of Artificial Intelligence": {
+      "city": "Abu Dhabi",
+      "region": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "latitude": 24.4539,
+      "longitude": 54.3773,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Skolkovo Institute of Science and Technology": {
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "AIRI": {
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Yandex Research": {
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Yandex School of Data Analysis": {
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Applied AI Institute": {
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Inria Bordeaux": {
+      "city": "Bordeaux",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 44.8378,
+      "longitude": -0.5792,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "University of Pau": {
+      "city": "Pau",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 43.2951,
+      "longitude": -0.3708,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "Heinrich Heine University Düsseldorf": {
+      "city": "Düsseldorf",
+      "region": "North Rhine-Westphalia",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 51.2277,
+      "longitude": 6.7735,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    },
+    "NVIDIA": {
+      "city": "Santa Clara",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.3541,
+      "longitude": -121.9552,
+      "coordinate_precision": "city-centroid",
+      "note": "Coordinates are deliberately city-level fallback coordinates; OpenAlex geocoding remains preferred when available."
+    }
+  },
+  "paper_affiliations": {
+    "2608.12587": {
+      "title": "DYSANOS Generative Dynamic Smooth Arbitrage-free Non-parametric Option Surfaces",
+      "status": "verified",
+      "coauthors": {
+        "Hans Buehler": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Blanka Horvath": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ]
+      }
+    },
+    "2607.14361": {
+      "title": "NeuralChaos: Optimal Adapted Approximation of Square Integrable Predictable Processes",
+      "status": "verified",
+      "coauthors": {
+        "Giulia Livieri": [
+          "London School of Economics"
+        ],
+        "Philipp Schmocker": [
+          "ETH Zürich"
+        ]
+      }
+    },
+    "2606.26705": {
+      "title": "Algorithmic Foundations of Deep Learning: Complexity-Theoretic Rates and a Characterization of Universal Approximation",
+      "status": "verified",
+      "coauthors": {
+        "Simone Brugiapaglia": [
+          "Concordia University"
+        ],
+        "Bum Jun Kim": [
+          "University of Tokyo"
+        ],
+        "Gregory Cousins": [
+          "McMaster University"
+        ],
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Cambridge"
+        ]
+      },
+      "note": "Affiliations cross-checked against same-period companion arXiv papers where the HTML header for this paper was unavailable."
+    },
+    "2606.17065": {
+      "title": "PIVOT: Bridging Black-Scholes Implied-Volatility and Price Objectives via Differentiable Jäckel Operator",
+      "status": "verified",
+      "coauthors": {
+        "Raeid Saqur": [
+          "University of Oxford"
+        ],
+        "Yannick Limmer": [
+          "DRW"
+        ],
+        "Blanka Horvath": [
+          "University of Oxford"
+        ],
+        "Hans Buehler": [
+          "University of Oxford"
+        ]
+      }
+    },
+    "2605.08559": {
+      "title": "Structure-Preserving Reconstruction of Convex Lipschitz Functionals on Hilbert Spaces from Finite Samples",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "2605.07119": {
+      "title": "Classification Fields: Arbitrarily Fine Recursive Hierarchical Clustering From Few Examples",
+      "status": "verified",
+      "coauthors": {
+        "Yicen Li": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Ruiyang Hong": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Cambridge"
+        ],
+        "Paul D. McNicholas": [
+          "McMaster University",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2605.07097": {
+      "title": "Every Feedforward Neural Network Definable in an o-Minimal Structure Has Finite Sample Complexity",
+      "status": "verified",
+      "coauthors": {
+        "Gregory Cousins": [
+          "McMaster University"
+        ],
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Cambridge"
+        ],
+        "Bum Jun Kim": [
+          "University of Tokyo"
+        ],
+        "Simone Brugiapaglia": [
+          "Concordia University"
+        ]
+      }
+    },
+    "2605.05492": {
+      "title": "MEMOA: Massive Mixtures of Online Agents via Mean-Field Decentralized Nash Equilibria",
+      "status": "verified",
+      "coauthors": {
+        "Xuwei Yang": [
+          "McMaster University"
+        ],
+        "David B. Emerson": [
+          "Vector Institute"
+        ],
+        "Fatemeh Tavakoli": [
+          "Vector Institute"
+        ]
+      }
+    },
+    "2605.04995": {
+      "title": "Adaptivity Under Realizability Constraints: Comparing In-Context and Agentic Learning",
+      "status": "verified",
+      "coauthors": {
+        "A. Martina Neuman": [
+          "University of Vienna"
+        ],
+        "Philipp Petersen": [
+          "University of Vienna"
+        ]
+      }
+    },
+    "2602.23528": {
+      "title": "Neural Operators Can Discover Functional Clusters",
+      "status": "verified",
+      "coauthors": {
+        "Yicen Li": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Jose Antonio Lara Benitez": [
+          "Rice University"
+        ],
+        "Ruiyang Hong": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Paul David McNicholas": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Maarten V. de Hoop": [
+          "Rice University"
+        ]
+      }
+    },
+    "2602.05120": {
+      "title": "Certifiable Boolean Reasoning Is Universal",
+      "status": "verified",
+      "coauthors": {
+        "Wenhao Li": [
+          "University of Toronto"
+        ],
+        "Hrad Ghoukasian": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Dennis Zvigelsky": [
+          "McMaster University",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2602.03970": {
+      "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
+      "status": "verified",
+      "coauthors": {
+        "Giulia Livieri": [
+          "London School of Economics"
+        ],
+        "A. Martina Neuman": [
+          "University of Vienna"
+        ]
+      }
+    },
+    "2601.11209": {
+      "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+      "status": "verified",
+      "coauthors": {
+        "Hans Buehler": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Blanka Horvath": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Yannick Limmer": [
+          "DRW"
+        ],
+        "Raeid Saqur": [
+          "University of Oxford"
+        ]
+      },
+      "note": "Latest arXiv version contains Oxford/Oxford-Man/DRW affiliations; author-to-affiliation mapping is supplemented by the PIVOT companion paper."
+    },
+    "2511.09902": {
+      "title": "Incremental Generation is Necessary and Sufficient for Universality in Flow-Based Modelling",
+      "status": "verified",
+      "coauthors": {
+        "Hossein Rouhvarzi": [
+          "McMaster University",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2511.01125": {
+      "title": "One model to solve them all",
+      "status": "verified",
+      "coauthors": {
+        "Takashi Furuya": [
+          "Doshisha University"
+        ],
+        "Dylan Possamaï": [
+          "ETH Zürich"
+        ],
+        "Bogdan Raonić": [
+          "ETH Zürich",
+          "ETH AI Center"
+        ]
+      }
+    },
+    "2510.20017": {
+      "title": "Simultaneously Solving Linear-Quadratic Mean-Field Games",
+      "status": "verified",
+      "coauthors": {
+        "Dena Firoozi": [
+          "University of Toronto"
+        ],
+        "Xuwei Yang": [
+          "McMaster University",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2509.06894": {
+      "title": "Learning from one graph is all you need",
+      "status": "verified",
+      "coauthors": {
+        "Nils Detering": [
+          "Heinrich Heine University Düsseldorf"
+        ],
+        "Luca Galimberti": [
+          "King's College London"
+        ],
+        "Giulia Livieri": [
+          "London School of Economics"
+        ],
+        "A. Martina Neuman": [
+          "University of Vienna"
+        ]
+      }
+    },
+    "2509.00924": {
+      "title": "Beyond Universal Approximation",
+      "status": "verified",
+      "coauthors": {
+        "Tin Sum Cheng": [
+          "University of Basel"
+        ],
+        "Daniel M. Roy": [
+          "University of Toronto",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2508.18526": {
+      "title": "Quantifying the Limits of AI Reasoning",
+      "status": "verified",
+      "coauthors": {
+        "Dennis Zvigelsky": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Bradd Hart": [
+          "McMaster University"
+        ]
+      }
+    },
+    "2508.14995": {
+      "title": "Generative Neural Operators",
+      "status": "verified",
+      "coauthors": {
+        "Ariel Neufeld": [
+          "Nanyang Technological University"
+        ],
+        "Philipp Schmocker": [
+          "Nanyang Technological University"
+        ]
+      }
+    },
+    "2507.01806": {
+      "title": "LoRA Fine-Tuning",
+      "status": "verified",
+      "coauthors": {
+        "Reza Arabpour": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Oxford"
+        ]
+      }
+    },
+    "2506.14530": {
+      "title": "Sharp Generalization Bounds",
+      "status": "partially_verified",
+      "coauthors": {
+        "Tin Sum Cheng": [
+          "University of Basel"
+        ],
+        "Aurelien Lucchi": [
+          "University of Basel"
+        ]
+      },
+      "note": "The arXiv header did not expose every affiliation; only high-confidence institutional links are included."
+    },
+    "2505.00216": {
+      "title": "Online Federation",
+      "status": "verified",
+      "coauthors": {
+        "Xuwei Yang": [
+          "McMaster University"
+        ],
+        "Fatemeh Tavakoli": [
+          "Vector Institute"
+        ],
+        "David B. Emerson": [
+          "Vector Institute"
+        ]
+      }
+    },
+    "2504.15110": {
+      "title": "Approximation Rates in Besov Spaces",
+      "status": "partially_verified",
+      "coauthors": {
+        "Bum Jun Kim": [
+          "University of Tokyo"
+        ],
+        "Takashi Furuya": [
+          "Doshisha University"
+        ]
+      }
+    },
+    "2504.04300": {
+      "title": "Generative Market Equilibrium",
+      "status": "verified",
+      "coauthors": {
+        "Xiaofei Shi": [
+          "University of Toronto"
+        ],
+        "Qiang Sun": [
+          "University of Toronto"
+        ],
+        "Zhanhao Zhang": [
+          "Cornell University"
+        ]
+      }
+    },
+    "2502.04226": {
+      "title": "Keep It Light",
+      "status": "partially_verified",
+      "coauthors": {
+        "Yicen Li": [
+          "McMaster University"
+        ],
+        "Paul D. McNicholas": [
+          "McMaster University"
+        ]
+      }
+    },
+    "2502.03792": {
+      "title": "Step by Step",
+      "status": "verified",
+      "coauthors": {
+        "Kyle Sung": [
+          "McMaster University"
+        ],
+        "Kholood Khalil": [
+          "McMaster University"
+        ],
+        "Noah Forman": [
+          "McMaster University"
+        ],
+        "Steven Samu": [
+          "McMaster University"
+        ]
+      }
+    },
+    "2502.03327": {
+      "title": "In-Context Universality",
+      "status": "verified",
+      "coauthors": {
+        "Takashi Furuya": [
+          "Shimane University"
+        ]
+      }
+    },
+    "2411.09644": {
+      "title": "Neural Operators Can Play Dynamic Stackelberg Games",
+      "status": "verified",
+      "coauthors": {
+        "Guillermo Alvarez": [
+          "University of Michigan"
+        ],
+        "Ibrahim Ekren": [
+          "University of Michigan"
+        ],
+        "Xuwei Yang": [
+          "McMaster University"
+        ]
+      }
+    },
+    "2411.00835": {
+      "title": "Scalable Message Passing Neural Networks",
+      "status": "verified",
+      "coauthors": {
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Oxford"
+        ],
+        "Artem Lukoianov": [
+          "Massachusetts Institute of Technology"
+        ],
+        "Michael Bronstein": [
+          "University of Oxford"
+        ],
+        "Xiaowen Dong": [
+          "University of Oxford"
+        ]
+      }
+    },
+    "2410.17796": {
+      "title": "A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression",
+      "status": "verified",
+      "coauthors": {
+        "Tin Sum Cheng": [
+          "University of Basel"
+        ],
+        "Aurelien Lucchi": [
+          "University of Basel"
+        ],
+        "David Belius": [
+          "UniDistance Suisse"
+        ]
+      }
+    },
+    "2410.14788": {
+      "title": "Polynomial Scaling for BSDEs",
+      "status": "verified",
+      "coauthors": {
+        "Takashi Furuya": [
+          "Doshisha University"
+        ]
+      }
+    },
+    "2410.02628": {
+      "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+      "status": "partially_verified",
+      "coauthors": {
+        "Mikhail Persiianov": [
+          "Applied AI Institute",
+          "Yandex School of Data Analysis"
+        ],
+        "Arip Asadulaev": [
+          "Mohamed bin Zayed University of Artificial Intelligence"
+        ],
+        "Nikita Starodubcev": [
+          "Yandex Research"
+        ],
+        "Dmitry Baranchuk": [
+          "Yandex Research"
+        ],
+        "Evgeny Burnaev": [
+          "Applied AI Institute"
+        ],
+        "Alexander Korotin": [
+          "Applied AI Institute"
+        ]
+      },
+      "note": "Nikita Andreev had no explicit affiliation in the inspected arXiv header and is left unresolved."
+    },
+    "2409.12335": {
+      "title": "Bridging the Gap Between Approximation and Learning via Optimal Approximation by ReLU MLPs of Maximal Regularity",
+      "status": "verified",
+      "coauthors": {
+        "Ruiyang Hong": [
+          "McMaster University",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2408.13885": {
+      "title": "Neural Spacetimes for DAG Representation Learning",
+      "status": "verified",
+      "coauthors": {
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Oxford"
+        ],
+        "Xiaowen Dong": [
+          "University of Oxford"
+        ],
+        "Michael Bronstein": [
+          "University of Oxford"
+        ],
+        "Marc T. Law": [
+          "NVIDIA"
+        ]
+      }
+    },
+    "2406.02969": {
+      "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+      "status": "verified",
+      "coauthors": {
+        "Raeid Saqur": [
+          "University of Toronto",
+          "Vector Institute",
+          "Princeton University"
+        ],
+        "Florian Krach": [
+          "ETH Zürich"
+        ],
+        "Yannick Limmer": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Jacob-Junqi Tian": [
+          "Vector Institute"
+        ],
+        "John Willes": [
+          "Vector Institute"
+        ],
+        "Blanka Horvath": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Frank Rudzicz": [
+          "Vector Institute",
+          "Dalhousie University"
+        ]
+      }
+    },
+    "2405.20094": {
+      "title": "Low-dimensional Volterra",
+      "status": "verified",
+      "coauthors": {
+        "Reza Arabpour": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "John Armstrong": [
+          "King's College London"
+        ],
+        "Luca Galimberti": [
+          "King's College London"
+        ],
+        "Giulia Livieri": [
+          "London School of Economics"
+        ]
+      }
+    },
+    "2405.16563": {
+      "title": "Higher-Order Transformer Derivatives",
+      "status": "verified",
+      "coauthors": {
+        "Yannick Limmer": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Xuwei Yang": [
+          "McMaster University"
+        ],
+        "Raeid Saqur": [
+          "University of Toronto",
+          "Vector Institute"
+        ],
+        "Blanka Horvath": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ]
+      }
+    },
+    "2404.09101": {
+      "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+      "status": "verified",
+      "coauthors": {
+        "Takashi Furuya": [
+          "Shimane University"
+        ],
+        "Jose Antonio Lara Benitez": [
+          "Rice University"
+        ],
+        "Matti Lassas": [
+          "University of Helsinki"
+        ],
+        "Maarten V. de Hoop": [
+          "Rice University"
+        ]
+      }
+    },
+    "2402.05576": {
+      "title": "Tighter Learning Guarantees",
+      "status": "verified",
+      "coauthors": {
+        "A. Martina Neuman": [
+          "University of Vienna"
+        ],
+        "Gudmund Pammer": [
+          "ETH Zürich"
+        ]
+      }
+    },
+    "2402.03460": {
+      "title": "Approximation Rates and VC Dimension of Mixture-of-Experts",
+      "status": "verified",
+      "coauthors": {
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Oxford"
+        ],
+        "Takashi Furuya": [
+          "Shimane University"
+        ],
+        "Marc T. Law": [
+          "NVIDIA"
+        ]
+      }
+    },
+    "2402.01297": {
+      "title": "Characterizing Overfitting in Kernel Ridge Regression",
+      "status": "verified",
+      "coauthors": {
+        "Tin Sum Cheng": [
+          "University of Basel"
+        ],
+        "Aurelien Lucchi": [
+          "University of Basel"
+        ],
+        "David Belius": [
+          "UniDistance Suisse"
+        ]
+      }
+    },
+    "2310.19603": {
+      "title": "Transformers as Filters",
+      "status": "verified",
+      "coauthors": {
+        "Blanka Horvath": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Yannick Limmer": [
+          "University of Oxford",
+          "Oxford-Man Institute"
+        ],
+        "Xuwei Yang": [
+          "McMaster University",
+          "Vector Institute"
+        ]
+      }
+    },
+    "2310.15003": {
+      "title": "Neural Snowflakes",
+      "status": "verified",
+      "coauthors": {
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Oxford"
+        ]
+      }
+    },
+    "2310.01105": {
+      "title": "Energy-Guided Continuous Entropic Barycenter Estimation",
+      "status": "verified",
+      "coauthors": {
+        "Alexander Kolesov": [
+          "Skolkovo Institute of Science and Technology",
+          "AIRI"
+        ],
+        "Petr Mokrov": [
+          "Skolkovo Institute of Science and Technology"
+        ],
+        "Igor Udovichenko": [
+          "Skolkovo Institute of Science and Technology"
+        ],
+        "Milena Gazdieva": [
+          "Skolkovo Institute of Science and Technology",
+          "AIRI"
+        ],
+        "Gudmund Pammer": [
+          "Graz University of Technology"
+        ],
+        "Evgeny Burnaev": [
+          "Skolkovo Institute of Science and Technology",
+          "AIRI"
+        ],
+        "Alexander Korotin": [
+          "Skolkovo Institute of Science and Technology",
+          "AIRI"
+        ]
+      }
+    },
+    "2310.00987": {
+      "title": "Test Error of Finite-Rank Kernel Ridge Regression",
+      "status": "verified",
+      "coauthors": {
+        "Tin Sum Cheng": [
+          "University of Basel"
+        ],
+        "Aurelien Lucchi": [
+          "University of Basel"
+        ],
+        "Ivan Dokmanić": [
+          "University of Basel"
+        ],
+        "David Belius": [
+          "UniDistance Suisse"
+        ]
+      }
+    },
+    "2309.04557": {
+      "title": "Meta-optimization and Transfer",
+      "status": "verified",
+      "coauthors": {
+        "Xuwei Yang": [
+          "McMaster University"
+        ],
+        "Florian Krach": [
+          "ETH Zürich"
+        ],
+        "Matheus Grasselli": [
+          "McMaster University"
+        ],
+        "Aurelien Lucchi": [
+          "University of Basel"
+        ]
+      }
+    },
+    "2308.09250": {
+      "title": "Capacity Bounds for Hyperbolic Neural Networks",
+      "status": "verified",
+      "coauthors": {
+        "Ruiyang Hong": [
+          "McMaster University",
+          "Vector Institute"
+        ],
+        "Haitz Sáez de Ocáriz Borde": [
+          "University of Oxford"
+        ]
+      }
+    },
+    "2304.12231": {
+      "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+      "status": "verified",
+      "coauthors": {
+        "Chong Liu": [
+          "ShanghaiTech University"
+        ],
+        "Matti Lassas": [
+          "University of Helsinki"
+        ],
+        "Maarten V. de Hoop": [
+          "Rice University"
+        ],
+        "Ivan Dokmanić": [
+          "University of Basel"
+        ]
+      }
+    },
+    "2302.09176": {
+      "title": "Generative Ornstein-Uhlenbeck Markets",
+      "status": "verified",
+      "coauthors": {
+        "Cody Hyndman": [
+          "Concordia University"
+        ]
+      }
+    },
+    "2301.11509": {
+      "title": "Out-of-Distribution Neural Operators for Helmholtz Problems",
+      "status": "verified",
+      "coauthors": {
+        "Jose Antonio Lara Benitez": [
+          "Rice University"
+        ],
+        "Takashi Furuya": [
+          "Shimane University"
+        ],
+        "Florian Faucher": [
+          "Inria Bordeaux",
+          "University of Pau"
+        ],
+        "Xavier Tricoche": [
+          "Purdue University"
+        ],
+        "Maarten V. de Hoop": [
+          "Rice University"
+        ]
+      }
+    },
+    "2211.01258": {
+      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
+      "status": "verified",
+      "coauthors": {
+        "Songyan Hou": [
+          "ETH Zürich"
+        ],
+        "Parnian Kassraie": [
+          "ETH Zürich"
+        ],
+        "Andreas Krause": [
+          "ETH Zürich"
+        ],
+        "Jonas Rothfuss": [
+          "ETH Zürich"
+        ]
+      }
+    },
+    "2210.13300": {
+      "title": "Causal Neural Operators",
+      "status": "verified",
+      "coauthors": {
+        "Luca Galimberti": [
+          "King's College London"
+        ],
+        "Giulia Livieri": [
+          "London School of Economics"
+        ]
+      },
+      "note": "Latest/revised public version used where the original arXiv header did not expose affiliations."
+    },
+    "2209.06788": {
+      "title": "Small Transformers Compute Universal Metric Embeddings",
+      "status": "verified",
+      "coauthors": {
+        "Valentin Debarnot": [
+          "University of Basel"
+        ],
+        "Ivan Dokmanić": [
+          "University of Basel"
+        ]
+      }
+    },
+    "2204.11231": {
+      "title": "Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?",
+      "status": "verified",
+      "coauthors": {
+        "Behnoosh Zamanlooy": [
+          "McMaster University"
+        ]
+      }
+    },
+    "2201.13094": {
+      "title": "Designing Universal Causal Deep Learning Models: The Geometric (Hyper) Transformer",
+      "status": "verified",
+      "coauthors": {
+        "Beatrice Acciaio": [
+          "ETH Zürich"
+        ],
+        "Gudmund Pammer": [
+          "ETH Zürich"
+        ]
+      }
+    },
+    "2110.03303": {
+      "title": "Universal Approximation Under Constraints is Possible with Transformers",
+      "status": "verified",
+      "coauthors": {
+        "Tianlin Liu": [
+          "University of Basel"
+        ],
+        "Ivan Dokmanić": [
+          "University of Basel"
+        ],
+        "Behnoosh Zamanlooy": [
+          "University of Zürich"
+        ]
+      }
+    },
+    "2105.07743": {
+      "title": "Universal Regular Conditional Distributions",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "2101.05390": {
+      "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
+      "status": "verified",
+      "coauthors": {
+        "Léonie Papon": [
+          "Durham University"
+        ]
+      }
+    },
+    "2101.00041": {
+      "title": "Optimizing Optimizers: Regret-optimal gradient descent algorithms",
+      "status": "verified",
+      "coauthors": {
+        "Philippe Casgrain": [
+          "ETH Zürich"
+        ]
+      }
+    },
+    "2010.15571": {
+      "title": "Learning Sub-Patterns in Piece-Wise Continuous Functions",
+      "status": "verified",
+      "coauthors": {
+        "Behnoosh Zamanlooy": [
+          "University of Zürich"
+        ]
+      }
+    },
+    "2006.14378": {
+      "title": "Canonical Transform",
+      "status": "verified",
+      "coauthors": {
+        "Behnoosh Zamanlooy": [
+          "University of Zürich"
+        ]
+      }
+    },
+    "2006.02341": {
+      "title": "Non-Euclidean Universal Approximation",
+      "status": "verified",
+      "coauthors": {
+        "Eugene Bilokopytov": [
+          "University of Alberta"
+        ]
+      }
+    },
+    "2004.13612": {
+      "title": "Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices",
+      "status": "verified",
+      "coauthors": {
+        "Calypso Herrera": [
+          "ETH Zürich"
+        ],
+        "Florian Krach": [
+          "ETH Zürich"
+        ],
+        "Pierre Ruyssen": [
+          "Google Zürich"
+        ],
+        "Josef Teichmann": [
+          "ETH Zürich"
+        ]
+      }
+    },
+    "1910.03344": {
+      "title": "The Universal Approximation Property",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "1909.13610": {
+      "title": "Partial Uncertainty",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "1809.00082": {
+      "title": "NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation",
+      "status": "verified",
+      "coauthors": {
+        "Cody Hyndman": [
+          "Concordia University"
+        ]
+      }
+    },
+    "1712.04844": {
+      "title": "Decensoring",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "1710.05829": {
+      "title": "Non-Euclidean Conditional Expectation",
+      "status": "verified",
+      "coauthors": {
+        "Cody Hyndman": [
+          "Concordia University"
+        ]
+      }
+    },
+    "1710.05114": {
+      "title": "Heath-Jarrow-Morton",
+      "status": "verified",
+      "coauthors": {
+        "Cody Hyndman": [
+          "Concordia University"
+        ]
+      }
+    },
+    "1609.09384": {
+      "title": "Hochschild",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "1511.06032": {
+      "title": "Entropic Measure Transform",
+      "status": "verified",
+      "coauthors": {
+        "Renjie Wang": [
+          "Concordia University"
+        ],
+        "Cody Hyndman": [
+          "Concordia University"
+        ]
+      }
+    },
+    "1407.4825": {
+      "title": "arXiv:1407.4825",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "1404.0126": {
+      "title": "arXiv:1404.0126",
+      "status": "single_author",
+      "coauthors": {}
+    },
+    "1402.4197": {
+      "title": "arXiv:1402.4197",
+      "status": "single_author",
+      "coauthors": {}
+    }
+  },
+  "current_affiliations": {
+    "A. Martina Neuman": [
+      {
+        "institution": "Czech Technical University in Prague",
+        "source_type": "linkedin+official",
+        "source_url": "https://www.linkedin.com/posts/anastasiskratsios_one-of-my-strongest-co-authors-and-long-activity-7491544596620087296-lJZg",
+        "secondary_url": "https://www.cvut.cz/en",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "Current Assistant Professor in Mathematics at CTU Prague. Historical joint-paper affiliations remain University of Vienna."
+      }
+    ],
+    "Jose Antonio Lara Benitez": [
+      {
+        "institution": "Lawrence Berkeley National Laboratory",
+        "source_type": "linkedin",
+        "source_url": "https://www.linkedin.com/in/jose-antonio-lara-benitez-4904bb136",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "Current Berkeley Lab/NERSC affiliation; historical joint papers list Rice University."
+      }
+    ],
+    "Philipp Schmocker": [
+      {
+        "institution": "ETH Zürich",
+        "source_type": "linkedin",
+        "source_url": "https://ch.linkedin.com/in/philipp-schmocker-030219129/en",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "Current postdoc at ETH Zürich; a 2025 joint paper lists Nanyang Technological University."
+      }
+    ],
+    "Daniel M. Roy": [
+      {
+        "institution": "Google DeepMind",
+        "source_type": "linkedin",
+        "source_url": "https://www.linkedin.com/posts/danroy_announcement-time-dec-31-activity-7413581686472536064-pgNN",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "Visiting Research Scientist in London while on leave from the University of Toronto."
+      },
+      {
+        "institution": "University of Toronto",
+        "source_type": "linkedin",
+        "source_url": "https://ca.linkedin.com/in/danroy",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "Professor at University of Toronto; currently on leave during DeepMind visit."
+      }
+    ],
+    "Haitz Sáez de Ocáriz Borde": [
+      {
+        "institution": "University of Cambridge",
+        "source_type": "linkedin",
+        "source_url": "https://uk.linkedin.com/in/ocariz",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      },
+      {
+        "institution": "University of Oxford",
+        "source_type": "linkedin",
+        "source_url": "https://www.linkedin.com/posts/ocariz_geometricdeeplearning-representationlearning-activity-7438943563805048832-PgE4",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "LinkedIn describes him as an AI Researcher at Oxford and Cambridge."
+      }
+    ],
+    "Giulia Livieri": [
+      {
+        "institution": "Mediobanca",
+        "source_type": "linkedin",
+        "source_url": "https://it.linkedin.com/in/giulia-livieri-779a9048",
+        "verified_at": "2026-08-21",
+        "confidence": "medium",
+        "note": "LinkedIn currently lists Mediobanca. Academic pages also list LSE/Scuola Normale roles; historical joint-paper affiliation remains LSE."
+      },
+      {
+        "institution": "London School of Economics",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      },
+      {
+        "institution": "Scuola Normale Superiore",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "medium"
+      }
+    ],
+    "Raeid Saqur": [
+      {
+        "institution": "University of Oxford",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Yannick Limmer": [
+      {
+        "institution": "DRW",
+        "source_type": "linkedin",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Blanka Horvath": [
+      {
+        "institution": "University of Oxford",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Hans Buehler": [
+      {
+        "institution": "University of Oxford",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high",
+        "note": "Visiting Professor; recent XTX Markets role ended in 2026."
+      }
+    ],
+    "Gregory Cousins": [
+      {
+        "institution": "McMaster University",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Simone Brugiapaglia": [
+      {
+        "institution": "Concordia University",
+        "source_type": "linkedin",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Bum Jun Kim": [
+      {
+        "institution": "University of Tokyo",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Yicen Li": [
+      {
+        "institution": "Vector Institute",
+        "source_type": "linkedin",
+        "verified_at": "2026-08-21",
+        "confidence": "medium"
+      },
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Ruiyang Hong": [
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Paul D. McNicholas": [
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Paul David McNicholas": [
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Hrad Ghoukasian": [
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Dennis Zvigelsky": [
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Takashi Furuya": [
+      {
+        "institution": "Doshisha University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Dylan Possamaï": [
+      {
+        "institution": "ETH Zürich",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Bogdan Raonić": [
+      {
+        "institution": "ETH Zürich",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      },
+      {
+        "institution": "ETH AI Center",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Dena Firoozi": [
+      {
+        "institution": "University of Toronto",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Nils Detering": [
+      {
+        "institution": "Heinrich Heine University Düsseldorf",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Luca Galimberti": [
+      {
+        "institution": "King's College London",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Tin Sum Cheng": [
+      {
+        "institution": "University of Basel",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Aurelien Lucchi": [
+      {
+        "institution": "University of Basel",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Bradd Hart": [
+      {
+        "institution": "McMaster University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Ariel Neufeld": [
+      {
+        "institution": "Nanyang Technological University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Maarten V. de Hoop": [
+      {
+        "institution": "Rice University",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "David Belius": [
+      {
+        "institution": "UniDistance Suisse",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Cody Hyndman": [
+      {
+        "institution": "Concordia University",
+        "source_type": "linkedin/official",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ],
+    "Matti Lassas": [
+      {
+        "institution": "University of Helsinki",
+        "source_type": "official-academic",
+        "verified_at": "2026-08-21",
+        "confidence": "high"
+      }
+    ]
+  }
+}
