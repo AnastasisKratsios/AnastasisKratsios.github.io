@@ -1,12 +1,642 @@
 {
-  "generated_at": "not-yet-generated",
-  "source": "Run python scripts/update_collaborations.py",
+  "generated_at": "2026-08-21T04:56:14Z",
+  "source": "OpenAlex paper-level authorships matched to data/publications.json",
   "author": {
     "name": "Anastasis Kratsios",
-    "openalex_id": ""
+    "openalex_id": "https://openalex.org/A5036113771"
   },
-  "matched_publications": 0,
-  "total_publications": 0,
-  "institutions": [],
-  "unmatched_publications": []
+  "matched_publications": 60,
+  "total_publications": 70,
+  "institutions": [
+    {
+      "id": "https://openalex.org/I60158472",
+      "name": "Concordia University",
+      "city": "Montreal",
+      "region": "",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 45.50883865356445,
+      "longitude": -73.58780670166016,
+      "coauthors": [
+        "Cody Hyndman",
+        "Renjie Wang"
+      ],
+      "paper_count": 2,
+      "papers": [
+        {
+          "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
+          "title": "Deep Arbitrage-Free Learning in a Generalized HJM Framework via Arbitrage-Regularization",
+          "year": 2020,
+          "url": "https://www.mdpi.com/2227-9091/8/2/40",
+          "coauthors": [
+            "Cody Hyndman"
+          ]
+        },
+        {
+          "id": "the-entropic-measure-transform",
+          "title": "The Entropic Measure Transform",
+          "year": 2020,
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cjs.11537",
+          "coauthors": [
+            "Cody Hyndman",
+            "Renjie Wang"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I129902397",
+      "name": "Dalhousie University",
+      "city": "Halifax",
+      "region": "Nova Scotia",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 44.64269,
+      "longitude": -63.57688,
+      "coauthors": [
+        "Frank Rudzicz"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Frank Rudzicz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I133984924",
+      "name": "Doshisha University",
+      "city": "Kyoto",
+      "region": "",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.02973556518555,
+      "longitude": 135.76072692871094,
+      "coauthors": [
+        "Takashi Furuya"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
+          "title": "Approximation Rates in Besov Norms and Sample-Complexity of Kolmogorov-Arnold Networks with Residual Connections",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2504.15110",
+          "coauthors": [
+            "Takashi Furuya"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I5124864",
+      "name": "École Polytechnique Fédérale de Lausanne",
+      "city": "Lausanne",
+      "region": "Vaud",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.516,
+      "longitude": 6.63282,
+      "coauthors": [
+        "Leonie Papon"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
+          "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
+          "year": 2022,
+          "url": "https://www.jmlr.org/papers/v23/21-0716.html",
+          "coauthors": [
+            "Leonie Papon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I35440088",
+      "name": "ETH Zurich",
+      "city": "Zurich",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.36667,
+      "longitude": 8.55,
+      "coauthors": [
+        "Beatrice Acciaio",
+        "Florian Krach",
+        "Gudmund Pammer",
+        "Philippe Casgrain"
+      ],
+      "paper_count": 3,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Florian Krach"
+          ]
+        },
+        {
+          "id": "designing-universal-causal-deep-learning-models-the-geometric-hyper-tran",
+          "title": "Designing Universal Causal Deep Learning Models: The Geometric (Hyper) Transformer",
+          "year": 2023,
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/mafi.12389",
+          "coauthors": [
+            "Beatrice Acciaio",
+            "Gudmund Pammer"
+          ]
+        },
+        {
+          "id": "optimizing-optimizers-regret-optimal-gradient-descent-algorithms",
+          "title": "Optimizing Optimizers: Regret-optimal gradient descent algorithms",
+          "year": 2021,
+          "url": "https://arxiv.org/abs/2101.00041",
+          "coauthors": [
+            "Philippe Casgrain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I183935753",
+      "name": "King's College London",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "coauthors": [
+        "Luca Galimberti"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
+          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2210.13300",
+          "coauthors": [
+            "Luca Galimberti"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I909854389",
+      "name": "London School of Economics and Political Science",
+      "city": "London",
+      "region": "",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.50852966308594,
+      "longitude": -0.12574000656604767,
+      "coauthors": [
+        "Giulia Livieri"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
+          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2210.13300",
+          "coauthors": [
+            "Giulia Livieri"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I131579929",
+      "name": "Mansfield University",
+      "city": "Mansfield",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.806800842285156,
+      "longitude": -77.07080078125,
+      "coauthors": [
+        "Blanka Horvath"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4210120676",
+      "name": "Mathematical Institute of the Slovak Academy of Sciences",
+      "city": "Bratislava",
+      "region": "",
+      "country": "Slovakia",
+      "country_code": "SK",
+      "latitude": 48.14815902709961,
+      "longitude": 17.106740951538086,
+      "coauthors": [
+        "Blanka Horvath",
+        "Yannick Limmer"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I219193219",
+      "name": "Purdue University West Lafayette",
+      "city": "West Lafayette",
+      "region": "Indiana",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.42587,
+      "longitude": -86.90807,
+      "coauthors": [
+        "Xavier Tricoche"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Xavier Tricoche"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4210098931",
+      "name": "Quantitative BioSciences",
+      "city": "Solana Beach",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 32.9898681640625,
+      "longitude": -117.25956726074219,
+      "coauthors": [
+        "Yannick Limmer"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Yannick Limmer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I74775410",
+      "name": "Rice University",
+      "city": "Houston",
+      "region": "Texas",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 29.76328,
+      "longitude": -95.36327,
+      "coauthors": [
+        "Jose Antonio Lara Benitez",
+        "Maarten V. de Hoop"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Jose Antonio Lara Benitez",
+            "Maarten V. de Hoop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4210146410",
+      "name": "Science Oxford",
+      "city": "Oxford",
+      "region": "",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.751075744628906,
+      "longitude": -1.2386599779129028,
+      "coauthors": [
+        "Yannick Limmer"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Yannick Limmer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I169016828",
+      "name": "Shimane University",
+      "city": "Matsue",
+      "region": "",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.48666763305664,
+      "longitude": 133.0680694580078,
+      "coauthors": [
+        "Takashi Furuya"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Takashi Furuya"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4210128584",
+      "name": "The Alan Turing Institute",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "coauthors": [
+        "Blanka Horvath"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I74801974",
+      "name": "The University of Tokyo",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.6895,
+      "longitude": 139.69171,
+      "coauthors": [
+        "Bum Jun Kim"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
+          "title": "Approximation Rates in Besov Norms and Sample-Complexity of Kolmogorov-Arnold Networks with Residual Connections",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2504.15110",
+          "coauthors": [
+            "Bum Jun Kim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I154425047",
+      "name": "University of Alberta",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 53.55014,
+      "longitude": -113.46871,
+      "coauthors": [
+        "Eugene Bilokopytov"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "non-euclidean-universal-approximation",
+          "title": "Non-Euclidean Universal Approximation",
+          "year": 2020,
+          "url": "https://arxiv.org/abs/2006.02341",
+          "coauthors": [
+            "Eugene Bilokopytov"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I40120149",
+      "name": "University of Oxford",
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.75222,
+      "longitude": -1.25596,
+      "coauthors": [
+        "Blanka Horvath",
+        "Yannick Limmer"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I185261750",
+      "name": "University of Toronto",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.70643,
+      "longitude": -79.39864,
+      "coauthors": [
+        "Raeid Saqur"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Raeid Saqur"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I202697423",
+      "name": "University of Zurich",
+      "city": "Zurich",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.36667,
+      "longitude": 8.55,
+      "coauthors": [
+        "Behnoosh Zamanlooy"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "learning-sub-patterns-in-piecewise-continuous-functions",
+          "title": "Learning Sub-Patterns in Piecewise Continuous Functions",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2010.15571",
+          "coauthors": [
+            "Behnoosh Zamanlooy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4210127509",
+      "name": "Vector Institute",
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.70643,
+      "longitude": -79.39864,
+      "coauthors": [
+        "Frank Rudzicz",
+        "Jacob-Junqi Tian",
+        "John Willes"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Frank Rudzicz",
+            "Jacob-Junqi Tian",
+            "John Willes"
+          ]
+        }
+      ]
+    }
+  ],
+  "unmatched_publications": [
+    {
+      "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
+      "title": "Guiding Two-Layer Neural Networks toward Lipschitzness via Gradient Descent Learning Rate Constraints",
+      "year": 2025,
+      "best_title_match_score": 0.29
+    },
+    {
+      "id": "online-federation-for-mixtures-of-proprietary-agents-with-black-box-enco",
+      "title": "Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders",
+      "year": 2025,
+      "best_title_match_score": 0.322
+    },
+    {
+      "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
+      "title": "Quantifying The Limits of AI Reasoning: Systematic Neural Network Representations of Algorithms",
+      "year": 2025,
+      "best_title_match_score": 0.404
+    },
+    {
+      "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
+      "title": "Step by Step: Adaptive Gradient Descent for Training L-Lipschitz Neural Networks",
+      "year": 2025,
+      "best_title_match_score": 0.26
+    },
+    {
+      "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
+      "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+      "year": 2024,
+      "best_title_match_score": 0.492
+    },
+    {
+      "id": "mixture-of-experts-softens-the-curse-of-dimensionality-in-operator-learn",
+      "title": "Mixture of Experts Softens the Curse of Dimensionality in Operator Learning",
+      "year": 2024,
+      "best_title_match_score": 0.489
+    },
+    {
+      "id": "reality-only-happens-once-single-path-generalization-bounds-for-transfor",
+      "title": "Reality Only Happens Once: Single-Path Generalization Bounds for Transformers",
+      "year": 2024,
+      "best_title_match_score": 0.395
+    },
+    {
+      "id": "tighter-generalization-bounds-on-digital-computers-via-discrete-optimal-",
+      "title": "Tighter Generalization Bounds on Digital Computers via Discrete Optimal Transport",
+      "year": 2024,
+      "best_title_match_score": 0.541
+    },
+    {
+      "id": "deep-kalman-filters-can-filter",
+      "title": "Deep Kalman Filters Can Filter",
+      "year": 2023,
+      "best_title_match_score": 0.258
+    },
+    {
+      "id": "replication-of-a-real-estate-market-index-teranet-national-bank-of-canad",
+      "title": "Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)",
+      "year": 2017,
+      "best_title_match_score": 0.254
+    }
+  ]
 }
