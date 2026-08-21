@@ -1,20 +1,107 @@
 {
-  "generated_at": "2026-08-21T05:07:50Z",
-  "source": "OpenAlex structured paper-level authorships plus raw paper-affiliation fallback",
+  "generated_at": "2026-08-21T05:58:31Z",
+  "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
+  "openalex_available": true,
   "matched_publications": 60,
-  "publications_with_resolved_affiliations": 12,
+  "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
   "raw_affiliations_resolved": 3,
+  "fallback_paper_links_added": 184,
+  "fallback_papers_used": 58,
+  "current_affiliation_people": 33,
   "match_methods": {
     "author-profile": 60
   },
   "institutions": [
     {
-      "id": "https://openalex.org/I4210131512",
+      "id": "inst:airi",
+      "openalex_id": "",
+      "name": "AIRI",
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coauthors": [
+        "Alexander Kolesov",
+        "Alexander Korotin",
+        "Evgeny Burnaev",
+        "Milena Gazdieva"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "energy-guided-continuous-entropic-barycenter-estimation-for-general-cost",
+          "title": "Energy-Guided Continuous Entropic Barycenter Estimation for General Costs",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.01105",
+          "coauthors": [
+            "Alexander Kolesov",
+            "Alexander Korotin",
+            "Evgeny Burnaev",
+            "Milena Gazdieva"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:applied-ai-institute",
+      "openalex_id": "",
+      "name": "Applied AI Institute",
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coauthors": [
+        "Alexander Korotin",
+        "Evgeny Burnaev",
+        "Mikhail Persiianov"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+          "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.02628",
+          "coauthors": [
+            "Alexander Korotin",
+            "Evgeny Burnaev",
+            "Mikhail Persiianov"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:centre-inria-de-l-universite-de-bordeaux",
+      "openalex_id": "https://openalex.org/I4210131512",
       "name": "Centre Inria de l'université de Bordeaux",
       "city": "Talence",
       "region": "Nouvelle-Aquitaine",
@@ -25,6 +112,7 @@
       "coauthors": [
         "Florian Faucher"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -34,25 +122,76 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Florian Faucher"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I60158472",
+      "id": "inst:concordia-university",
+      "openalex_id": "https://openalex.org/I60158472",
       "name": "Concordia University",
       "city": "Montreal",
-      "region": "",
+      "region": "Quebec",
       "country": "Canada",
       "country_code": "CA",
-      "latitude": 45.50883865356445,
-      "longitude": -73.58780670166016,
+      "latitude": 45.5017,
+      "longitude": -73.5673,
       "coauthors": [
         "Cody Hyndman",
-        "Renjie Wang"
+        "Renjie Wang",
+        "Simone Brugiapaglia"
       ],
-      "paper_count": 2,
+      "current_coauthors": [
+        "Cody Hyndman",
+        "Simone Brugiapaglia"
+      ],
+      "paper_count": 5,
       "papers": [
+        {
+          "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
+          "title": "Every Feedforward Neural Network Definable in an o-Minimal Structure Has Finite Sample Complexity",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07097",
+          "coauthors": [
+            "Simone Brugiapaglia"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "generative-ornstein-uhlenbeck-markets-via-geometric-deep-learning",
+          "title": "Generative Ornstein-Uhlenbeck Markets via Geometric Deep Learning",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2302.09176",
+          "coauthors": [
+            "Cody Hyndman"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "neu-a-meta-algorithm-for-universal-uap-invariant-feature-representation",
+          "title": "NEU: A Meta-algorithm for Universal UAP-invariant Feature Representation",
+          "year": 2021,
+          "url": "https://www.jmlr.org/papers/v22/18-803.html",
+          "coauthors": [
+            "Cody Hyndman"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
           "title": "Deep Arbitrage-Free Learning in a Generalized HJM Framework via Arbitrage-Regularization",
@@ -60,6 +199,10 @@
           "url": "https://www.mdpi.com/2227-9091/8/2/40",
           "coauthors": [
             "Cody Hyndman"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -70,22 +213,124 @@
           "coauthors": [
             "Cody Hyndman",
             "Renjie Wang"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Simone Brugiapaglia",
+          "source_type": "linkedin",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Cody Hyndman",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I129902397",
+      "id": "inst:cornell-university",
+      "openalex_id": "",
+      "name": "Cornell University",
+      "city": "Ithaca",
+      "region": "New York",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.443,
+      "longitude": -76.5019,
+      "coauthors": [
+        "Zhanhao Zhang"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "generative-market-equilibrium-models-with-stable-adversarial-learning-vi",
+          "title": "Generative Market Equilibrium Models with Stable Adversarial Learning via Reinforcement",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2504.04300",
+          "coauthors": [
+            "Zhanhao Zhang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:czech-technical-university-in-prague",
+      "openalex_id": "",
+      "name": "Czech Technical University in Prague",
+      "city": "Prague",
+      "region": "Prague",
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "latitude": 50.0755,
+      "longitude": 14.4378,
+      "coauthors": [],
+      "current_coauthors": [
+        "A. Martina Neuman"
+      ],
+      "paper_count": 0,
+      "papers": [],
+      "has_historical": false,
+      "has_current": true,
+      "sources": [
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "A. Martina Neuman",
+          "source_type": "linkedin+official",
+          "source_url": "https://www.linkedin.com/posts/anastasiskratsios_one-of-my-strongest-co-authors-and-long-activity-7491544596620087296-lJZg",
+          "secondary_url": "https://www.cvut.cz/en",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "Current Assistant Professor in Mathematics at CTU Prague. Historical joint-paper affiliations remain University of Vienna."
+        }
+      ]
+    },
+    {
+      "id": "inst:dalhousie-university",
+      "openalex_id": "https://openalex.org/I129902397",
       "name": "Dalhousie University",
       "city": "Halifax",
       "region": "Nova Scotia",
       "country": "Canada",
       "country_code": "CA",
-      "latitude": 44.64269,
-      "longitude": -63.57688,
+      "latitude": 44.6488,
+      "longitude": -63.5752,
       "coauthors": [
         "Frank Rudzicz"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -95,23 +340,40 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Frank Rudzicz"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I133984924",
+      "id": "inst:doshisha-university",
+      "openalex_id": "https://openalex.org/I133984924",
       "name": "Doshisha University",
       "city": "Kyoto",
-      "region": "",
+      "region": "Kyoto",
       "country": "Japan",
       "country_code": "JP",
-      "latitude": 35.02973556518555,
-      "longitude": 135.76072692871094,
+      "latitude": 35.0116,
+      "longitude": 135.7681,
       "coauthors": [
         "Takashi Furuya"
       ],
-      "paper_count": 1,
+      "current_coauthors": [
+        "Takashi Furuya"
+      ],
+      "paper_count": 3,
       "papers": [
         {
           "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
@@ -120,12 +382,146 @@
           "url": "https://arxiv.org/abs/2504.15110",
           "coauthors": [
             "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        },
+        {
+          "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
+          "title": "One model to solve them all: 2BSDE families via neural operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.01125",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "polynomial-scaling-is-possible-for-neural-operator-approximations-of-str",
+          "title": "Polynomial Scaling is Possible For Neural Operator Approximations of Structured Families of BSDEs",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.14788",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Takashi Furuya",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I5124864",
+      "id": "inst:drw",
+      "openalex_id": "",
+      "name": "DRW",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coauthors": [
+        "Yannick Limmer"
+      ],
+      "current_coauthors": [
+        "Yannick Limmer"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
+          "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2601.11209",
+          "coauthors": [
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Yannick Limmer",
+          "source_type": "linkedin",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inst:durham-university",
+      "openalex_id": "",
+      "name": "Durham University",
+      "city": "Durham",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 54.7753,
+      "longitude": -1.5849,
+      "coauthors": [
+        "Léonie Papon"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "universal-approximation-theorems-for-differentiable-geometric-deep-learn",
+          "title": "Universal Approximation Theorems for Differentiable Geometric Deep Learning",
+          "year": 2022,
+          "url": "https://www.jmlr.org/papers/v23/21-0716.html",
+          "coauthors": [
+            "Léonie Papon"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:ecole-polytechnique-federale-de-lausanne",
+      "openalex_id": "https://openalex.org/I5124864",
       "name": "École Polytechnique Fédérale de Lausanne",
       "city": "Lausanne",
       "region": "Vaud",
@@ -136,6 +532,7 @@
       "coauthors": [
         "Leonie Papon"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -145,27 +542,114 @@
           "url": "https://www.jmlr.org/papers/v23/21-0716.html",
           "coauthors": [
             "Leonie Papon"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:eth-ai-center",
+      "openalex_id": "",
+      "name": "ETH AI Center",
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.3769,
+      "longitude": 8.5417,
+      "coauthors": [
+        "Bogdan Raonić"
+      ],
+      "current_coauthors": [
+        "Bogdan Raonić"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
+          "title": "One model to solve them all: 2BSDE families via neural operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.01125",
+          "coauthors": [
+            "Bogdan Raonić"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Bogdan Raonić",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I35440088",
-      "name": "ETH Zurich",
-      "city": "Zurich",
-      "region": "Zurich",
+      "id": "inst:eth-zurich",
+      "openalex_id": "https://openalex.org/I35440088",
+      "name": "ETH Zürich",
+      "city": "Zürich",
+      "region": "Zürich",
       "country": "Switzerland",
       "country_code": "CH",
-      "latitude": 47.36667,
-      "longitude": 8.55,
+      "latitude": 47.3769,
+      "longitude": 8.5417,
       "coauthors": [
+        "Andreas Krause",
         "Beatrice Acciaio",
+        "Bogdan Raonić",
+        "Calypso Herrera",
+        "Dylan Possamaï",
         "Florian Krach",
         "Gudmund Pammer",
-        "Philippe Casgrain"
+        "Jonas Rothfuss",
+        "Josef Teichmann",
+        "Parnian Kassraie",
+        "Philippe Casgrain",
+        "Songyan Hou"
       ],
-      "paper_count": 3,
+      "current_coauthors": [
+        "Bogdan Raonić",
+        "Dylan Possamaï",
+        "Philipp Schmocker"
+      ],
+      "paper_count": 8,
       "papers": [
+        {
+          "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
+          "title": "One model to solve them all: 2BSDE families via neural operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.01125",
+          "coauthors": [
+            "Bogdan Raonić",
+            "Dylan Possamaï"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
@@ -173,6 +657,37 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Florian Krach"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "tighter-learning-guarantees-on-digital-computers-via-concentration-of-me",
+          "title": "Tighter Learning Guarantees on Digital Computers via Concentration of Measure on Finite Spaces",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.05576",
+          "coauthors": [
+            "Gudmund Pammer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "denise-deep-robust-principal-component-analysis-for-positive-semidefinit",
+          "title": "Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices",
+          "year": 2023,
+          "url": "",
+          "coauthors": [
+            "Calypso Herrera",
+            "Florian Krach",
+            "Josef Teichmann"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -183,6 +698,37 @@
           "coauthors": [
             "Beatrice Acciaio",
             "Gudmund Pammer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "instance-dependent-generalization-bounds-via-optimal-transport",
+          "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
+          "year": 2023,
+          "url": "https://www.jmlr.org/papers/v24/22-1293.html",
+          "coauthors": [
+            "Andreas Krause",
+            "Jonas Rothfuss",
+            "Parnian Kassraie",
+            "Songyan Hou"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
+          "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2309.04557",
+          "coauthors": [
+            "Florian Krach"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -192,12 +738,245 @@
           "url": "https://arxiv.org/abs/2101.00041",
           "coauthors": [
             "Philippe Casgrain"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Philipp Schmocker",
+          "source_type": "linkedin",
+          "source_url": "https://ch.linkedin.com/in/philipp-schmocker-030219129/en",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "Current postdoc at ETH Zürich; a 2025 joint paper lists Nanyang Technological University."
+        },
+        {
+          "person": "Dylan Possamaï",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Bogdan Raonić",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I4210153325",
+      "id": "inst:google-deepmind",
+      "openalex_id": "",
+      "name": "Google DeepMind",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coauthors": [],
+      "current_coauthors": [
+        "Daniel M. Roy"
+      ],
+      "paper_count": 0,
+      "papers": [],
+      "has_historical": false,
+      "has_current": true,
+      "sources": [
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Daniel M. Roy",
+          "source_type": "linkedin",
+          "source_url": "https://www.linkedin.com/posts/danroy_announcement-time-dec-31-activity-7413581686472536064-pgNN",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "Visiting Research Scientist in London while on leave from the University of Toronto."
+        }
+      ]
+    },
+    {
+      "id": "inst:google-zurich",
+      "openalex_id": "",
+      "name": "Google Zürich",
+      "city": "Zürich",
+      "region": "Zürich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.3769,
+      "longitude": 8.5417,
+      "coauthors": [
+        "Pierre Ruyssen"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "denise-deep-robust-principal-component-analysis-for-positive-semidefinit",
+          "title": "Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices",
+          "year": 2023,
+          "url": "",
+          "coauthors": [
+            "Pierre Ruyssen"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:graz-university-of-technology",
+      "openalex_id": "",
+      "name": "Graz University of Technology",
+      "city": "Graz",
+      "region": "Styria",
+      "country": "Austria",
+      "country_code": "AT",
+      "latitude": 47.0707,
+      "longitude": 15.4395,
+      "coauthors": [
+        "Gudmund Pammer"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "energy-guided-continuous-entropic-barycenter-estimation-for-general-cost",
+          "title": "Energy-Guided Continuous Entropic Barycenter Estimation for General Costs",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.01105",
+          "coauthors": [
+            "Gudmund Pammer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:heinrich-heine-university-dusseldorf",
+      "openalex_id": "",
+      "name": "Heinrich Heine University Düsseldorf",
+      "city": "Düsseldorf",
+      "region": "North Rhine-Westphalia",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 51.2277,
+      "longitude": 6.7735,
+      "coauthors": [
+        "Nils Detering"
+      ],
+      "current_coauthors": [
+        "Nils Detering"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+          "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.06894",
+          "coauthors": [
+            "Nils Detering"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Nils Detering",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inst:inria-bordeaux",
+      "openalex_id": "",
+      "name": "Inria Bordeaux",
+      "city": "Bordeaux",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 44.8378,
+      "longitude": -0.5792,
+      "coauthors": [
+        "Florian Faucher"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Florian Faucher"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:institute-of-mathematical-statistics",
+      "openalex_id": "https://openalex.org/I4210153325",
       "name": "Institute of Mathematical Statistics",
       "city": "Beachwood",
       "region": "Ohio",
@@ -208,6 +987,7 @@
       "coauthors": [
         "Blanka Horvath"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -217,24 +997,63 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Blanka Horvath"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I183935753",
+      "id": "inst:king-s-college-london",
+      "openalex_id": "https://openalex.org/I183935753",
       "name": "King's College London",
       "city": "London",
       "region": "England",
       "country": "United Kingdom",
       "country_code": "GB",
-      "latitude": 51.50853,
-      "longitude": -0.12574,
+      "latitude": 51.5074,
+      "longitude": -0.1278,
       "coauthors": [
+        "John Armstrong",
         "Luca Galimberti"
       ],
-      "paper_count": 1,
+      "current_coauthors": [
+        "Luca Galimberti"
+      ],
+      "paper_count": 3,
       "papers": [
+        {
+          "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+          "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.06894",
+          "coauthors": [
+            "Luca Galimberti"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
+          "title": "Low-dimensional approximations of the conditional law of Volterra processes: a non-positive curvature approach",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.20094",
+          "coauthors": [
+            "John Armstrong",
+            "Luca Galimberti"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
           "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
@@ -242,12 +1061,153 @@
           "url": "https://arxiv.org/abs/2210.13300",
           "coauthors": [
             "Luca Galimberti"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Luca Galimberti",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I909854389",
+      "id": "inst:lawrence-berkeley-national-laboratory",
+      "openalex_id": "",
+      "name": "Lawrence Berkeley National Laboratory",
+      "city": "Berkeley",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.8715,
+      "longitude": -122.273,
+      "coauthors": [],
+      "current_coauthors": [
+        "Jose Antonio Lara Benitez"
+      ],
+      "paper_count": 0,
+      "papers": [],
+      "has_historical": false,
+      "has_current": true,
+      "sources": [
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Jose Antonio Lara Benitez",
+          "source_type": "linkedin",
+          "source_url": "https://www.linkedin.com/in/jose-antonio-lara-benitez-4904bb136",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "Current Berkeley Lab/NERSC affiliation; historical joint papers list Rice University."
+        }
+      ]
+    },
+    {
+      "id": "inst:london-school-of-economics",
+      "openalex_id": "",
+      "name": "London School of Economics",
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "coauthors": [
+        "Giulia Livieri"
+      ],
+      "current_coauthors": [
+        "Giulia Livieri"
+      ],
+      "paper_count": 4,
+      "papers": [
+        {
+          "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
+          "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.03970",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+          "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.06894",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
+          "title": "Low-dimensional approximations of the conditional law of Volterra processes: a non-positive curvature approach",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.20094",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
+          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2210.13300",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Giulia Livieri",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inst:london-school-of-economics-and-political-science",
+      "openalex_id": "https://openalex.org/I909854389",
       "name": "London School of Economics and Political Science",
       "city": "London",
       "region": "",
@@ -258,6 +1218,7 @@
       "coauthors": [
         "Giulia Livieri"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -267,12 +1228,22 @@
           "url": "https://arxiv.org/abs/2210.13300",
           "coauthors": [
             "Giulia Livieri"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I131579929",
+      "id": "inst:mansfield-university",
+      "openalex_id": "https://openalex.org/I131579929",
       "name": "Mansfield University",
       "city": "Mansfield",
       "region": "Pennsylvania",
@@ -283,6 +1254,7 @@
       "coauthors": [
         "Blanka Horvath"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -292,12 +1264,58 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Blanka Horvath"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I4210120676",
+      "id": "inst:massachusetts-institute-of-technology",
+      "openalex_id": "",
+      "name": "Massachusetts Institute of Technology",
+      "city": "Cambridge",
+      "region": "Massachusetts",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.3736,
+      "longitude": -71.1097,
+      "coauthors": [
+        "Artem Lukoianov"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
+          "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2411.00835",
+          "coauthors": [
+            "Artem Lukoianov"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:mathematical-institute-of-the-slovak-academy-of-sciences",
+      "openalex_id": "https://openalex.org/I4210120676",
       "name": "Mathematical Institute of the Slovak Academy of Sciences",
       "city": "Bratislava",
       "region": "",
@@ -309,6 +1327,7 @@
         "Blanka Horvath",
         "Yannick Limmer"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -319,24 +1338,262 @@
           "coauthors": [
             "Blanka Horvath",
             "Yannick Limmer"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I98251732",
+      "id": "inst:mcmaster-university",
+      "openalex_id": "https://openalex.org/I98251732",
       "name": "McMaster University",
       "city": "Hamilton",
       "region": "Ontario",
       "country": "Canada",
       "country_code": "CA",
-      "latitude": 43.25011,
-      "longitude": -79.84963,
+      "latitude": 43.2609,
+      "longitude": -79.9192,
       "coauthors": [
-        "Ruiyang Hong"
+        "Behnoosh Zamanlooy",
+        "Bradd Hart",
+        "Dennis Zvigelsky",
+        "Gregory Cousins",
+        "Hossein Rouhvarzi",
+        "Hrad Ghoukasian",
+        "Kholood Khalil",
+        "Kyle Sung",
+        "Matheus Grasselli",
+        "Noah Forman",
+        "Paul D. McNicholas",
+        "Paul David McNicholas",
+        "Reza Arabpour",
+        "Ruiyang Hong",
+        "Steven Samu",
+        "Xuwei Yang",
+        "Yicen Li"
       ],
-      "paper_count": 1,
+      "current_coauthors": [
+        "Bradd Hart",
+        "Dennis Zvigelsky",
+        "Gregory Cousins",
+        "Hrad Ghoukasian",
+        "Paul D. McNicholas",
+        "Paul David McNicholas",
+        "Ruiyang Hong",
+        "Yicen Li"
+      ],
+      "paper_count": 20,
       "papers": [
+        {
+          "id": "certifiable-boolean-reasoning-is-universal",
+          "title": "Certifiable Boolean Reasoning Is Universal",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.05120",
+          "coauthors": [
+            "Dennis Zvigelsky",
+            "Hrad Ghoukasian"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "classification-fields-arbitrarily-fine-recursive-hierarchical-clustering",
+          "title": "Classification Fields: Arbitrarily Fine Recursive Hierarchical Clustering From Few Examples",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07119",
+          "coauthors": [
+            "Paul D. McNicholas",
+            "Ruiyang Hong",
+            "Yicen Li"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
+          "title": "Every Feedforward Neural Network Definable in an o-Minimal Structure Has Finite Sample Complexity",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07097",
+          "coauthors": [
+            "Gregory Cousins"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "memoa-massive-mixtures-of-online-agents-via-mean-field-decentralized-nas",
+          "title": "MEMOA: Massive Mixtures of Online Agents via Mean-Field Decentralized Nash Equilibria",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.05492",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "neural-operators-can-discover-functional-clusters",
+          "title": "Neural Operators Can Discover Functional Clusters",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.23528",
+          "coauthors": [
+            "Paul David McNicholas",
+            "Ruiyang Hong",
+            "Yicen Li"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "incremental-generation-is-necessary-and-sufficient-for-universality-in-f",
+          "title": "Incremental Generation is Necessary and Sufficient for Universality in Flow-Based Modelling",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.09902",
+          "coauthors": [
+            "Hossein Rouhvarzi"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "keep-it-light-simplifying-image-clustering-via-text-free-adapters",
+          "title": "Keep It Light! Simplifying Image Clustering Via Text-Free Adapters",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2502.04226",
+          "coauthors": [
+            "Paul D. McNicholas",
+            "Yicen Li"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "lora-fine-tuning-without-gpus-a-cpu-efficient-meta-generation-framework-",
+          "title": "LoRA Fine-Tuning Without GPUs: A CPU-Efficient Meta-Generation Framework for LLMs",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2507.01806",
+          "coauthors": [
+            "Reza Arabpour"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "neural-operators-can-play-dynamic-stackelberg-games",
+          "title": "Neural Operators Can Play Dynamic Stackelberg Games",
+          "year": 2025,
+          "url": "https://www.jmlr.org/papers/v26/24-1985.html",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "online-federation-for-mixtures-of-proprietary-agents-with-black-box-enco",
+          "title": "Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2505.00216",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
+          "title": "Quantifying The Limits of AI Reasoning: Systematic Neural Network Representations of Algorithms",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2508.18526",
+          "coauthors": [
+            "Bradd Hart",
+            "Dennis Zvigelsky"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "simultaneously-solving-infinitely-many-lq-mean-field-games-in-hilbert-sp",
+          "title": "Simultaneously Solving Infinitely Many LQ Mean Field Games In Hilbert Spaces: The Power of Neural Operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2510.20017",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
+          "title": "Step by Step: Adaptive Gradient Descent for Training L-Lipschitz Neural Networks",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2502.03792",
+          "coauthors": [
+            "Kholood Khalil",
+            "Kyle Sung",
+            "Noah Forman",
+            "Steven Samu"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "bridging-the-gap-between-approximation-and-learning-via-optimal-approxim",
+          "title": "Bridging the Gap Between Approximation and Learning via Optimal Approximation by ReLU MLPs of Maximal Regularity",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2409.12335",
+          "coauthors": [
+            "Ruiyang Hong"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.16563",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
+          "title": "Low-dimensional approximations of the conditional law of Volterra processes: a non-positive curvature approach",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.20094",
+          "coauthors": [
+            "Reza Arabpour"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
           "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
@@ -344,12 +1601,455 @@
           "url": "https://arxiv.org/abs/2308.09250",
           "coauthors": [
             "Ruiyang Hong"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        },
+        {
+          "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
+          "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2309.04557",
+          "coauthors": [
+            "Matheus Grasselli",
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "do-relu-networks-have-an-edge-when-approximating-compactly-supported-fun",
+          "title": "Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2204.11231",
+          "coauthors": [
+            "Behnoosh Zamanlooy"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Gregory Cousins",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Yicen Li",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Ruiyang Hong",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Paul D. McNicholas",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Paul David McNicholas",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Hrad Ghoukasian",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Dennis Zvigelsky",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Bradd Hart",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I117015748",
+      "id": "inst:mediobanca",
+      "openalex_id": "",
+      "name": "Mediobanca",
+      "city": "Milan",
+      "region": "Lombardy",
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 45.4642,
+      "longitude": 9.19,
+      "coauthors": [],
+      "current_coauthors": [
+        "Giulia Livieri"
+      ],
+      "paper_count": 0,
+      "papers": [],
+      "has_historical": false,
+      "has_current": true,
+      "sources": [
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Giulia Livieri",
+          "source_type": "linkedin",
+          "source_url": "https://it.linkedin.com/in/giulia-livieri-779a9048",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "medium",
+          "note": "LinkedIn currently lists Mediobanca. Academic pages also list LSE/Scuola Normale roles; historical joint-paper affiliation remains LSE."
+        }
+      ]
+    },
+    {
+      "id": "inst:mohamed-bin-zayed-university-of-artificial-intelligence",
+      "openalex_id": "",
+      "name": "Mohamed bin Zayed University of Artificial Intelligence",
+      "city": "Abu Dhabi",
+      "region": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "latitude": 24.4539,
+      "longitude": 54.3773,
+      "coauthors": [
+        "Arip Asadulaev"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+          "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.02628",
+          "coauthors": [
+            "Arip Asadulaev"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:nanyang-technological-university",
+      "openalex_id": "",
+      "name": "Nanyang Technological University",
+      "city": "Singapore",
+      "region": "",
+      "country": "Singapore",
+      "country_code": "SG",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "coauthors": [
+        "Ariel Neufeld",
+        "Philipp Schmocker"
+      ],
+      "current_coauthors": [
+        "Ariel Neufeld"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "generative-neural-operators-of-log-complexity-can-simultaneously-solve-i",
+          "title": "Generative Neural Operators of Log-Complexity Can Simultaneously Solve Infinitely Many Convex Programs",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2508.14995",
+          "coauthors": [
+            "Ariel Neufeld",
+            "Philipp Schmocker"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Ariel Neufeld",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inst:nvidia",
+      "openalex_id": "",
+      "name": "NVIDIA",
+      "city": "Santa Clara",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 37.3541,
+      "longitude": -121.9552,
+      "coauthors": [
+        "Marc T. Law"
+      ],
+      "current_coauthors": [],
+      "paper_count": 2,
+      "papers": [
+        {
+          "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
+          "title": "Approximation Rates and VC-Dimension Bounds for (P)ReLU MLP Mixture of Experts",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.03460",
+          "coauthors": [
+            "Marc T. Law"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "neural-spacetimes-for-dag-representation-learning",
+          "title": "Neural Spacetimes for DAG Representation Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2408.13885",
+          "coauthors": [
+            "Marc T. Law"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:oxford-man-institute",
+      "openalex_id": "",
+      "name": "Oxford-Man Institute",
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 51.752,
+      "longitude": -1.2577,
+      "coauthors": [
+        "Blanka Horvath",
+        "Hans Buehler",
+        "Yannick Limmer"
+      ],
+      "current_coauthors": [],
+      "paper_count": 4,
+      "papers": [
+        {
+          "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
+          "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2601.11209",
+          "coauthors": [
+            "Blanka Horvath",
+            "Hans Buehler"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.16563",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:princeton-university",
+      "openalex_id": "",
+      "name": "Princeton University",
+      "city": "Princeton",
+      "region": "New Jersey",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.343,
+      "longitude": -74.6514,
+      "coauthors": [
+        "Raeid Saqur"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Raeid Saqur"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:purdue-university",
+      "openalex_id": "",
+      "name": "Purdue University",
+      "city": "West Lafayette",
+      "region": "Indiana",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 40.4259,
+      "longitude": -86.9081,
+      "coauthors": [
+        "Xavier Tricoche"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Xavier Tricoche"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:purdue-university-northwest",
+      "openalex_id": "https://openalex.org/I117015748",
       "name": "Purdue University Northwest",
       "city": "Hammond",
       "region": "Indiana",
@@ -360,6 +2060,7 @@
       "coauthors": [
         "Xavier Tricoche"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -369,12 +2070,22 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Xavier Tricoche"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I219193219",
+      "id": "inst:purdue-university-west-lafayette",
+      "openalex_id": "https://openalex.org/I219193219",
       "name": "Purdue University West Lafayette",
       "city": "West Lafayette",
       "region": "Indiana",
@@ -385,6 +2096,7 @@
       "coauthors": [
         "Xavier Tricoche"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -394,12 +2106,22 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Xavier Tricoche"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I4210098931",
+      "id": "inst:quantitative-biosciences",
+      "openalex_id": "https://openalex.org/I4210098931",
       "name": "Quantitative BioSciences",
       "city": "Solana Beach",
       "region": "California",
@@ -410,6 +2132,7 @@
       "coauthors": [
         "Yannick Limmer"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -419,25 +2142,89 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Yannick Limmer"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I74775410",
+      "id": "inst:rice-university",
+      "openalex_id": "https://openalex.org/I74775410",
       "name": "Rice University",
       "city": "Houston",
       "region": "Texas",
       "country": "United States",
       "country_code": "US",
-      "latitude": 29.76328,
-      "longitude": -95.36327,
+      "latitude": 29.7604,
+      "longitude": -95.3698,
       "coauthors": [
         "Jose Antonio Lara Benitez",
         "Maarten V. de Hoop"
       ],
-      "paper_count": 1,
+      "current_coauthors": [
+        "Maarten V. de Hoop"
+      ],
+      "paper_count": 5,
       "papers": [
+        {
+          "id": "neural-operators-can-discover-functional-clusters",
+          "title": "Neural Operators Can Discover Functional Clusters",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.23528",
+          "coauthors": [
+            "Jose Antonio Lara Benitez",
+            "Maarten V. de Hoop"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
+          "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+          "year": 2024,
+          "url": "",
+          "coauthors": [
+            "Jose Antonio Lara Benitez",
+            "Maarten V. de Hoop"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "mixture-of-experts-softens-the-curse-of-dimensionality-in-operator-learn",
+          "title": "Mixture of Experts Softens the Curse of Dimensionality in Operator Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2404.09101",
+          "coauthors": [
+            "Jose Antonio Lara Benitez",
+            "Maarten V. de Hoop"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+          "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2304.12231",
+          "coauthors": [
+            "Maarten V. de Hoop"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
           "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
@@ -446,12 +2233,37 @@
           "coauthors": [
             "Jose Antonio Lara Benitez",
             "Maarten V. de Hoop"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Maarten V. de Hoop",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I4210146410",
+      "id": "inst:science-oxford",
+      "openalex_id": "https://openalex.org/I4210146410",
       "name": "Science Oxford",
       "city": "Oxford",
       "region": "",
@@ -463,6 +2275,7 @@
         "Haitz Sáez de Ocáriz Borde",
         "Yannick Limmer"
       ],
+      "current_coauthors": [],
       "paper_count": 2,
       "papers": [
         {
@@ -472,6 +2285,9 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Yannick Limmer"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         },
         {
@@ -481,24 +2297,152 @@
           "url": "https://arxiv.org/abs/2308.09250",
           "coauthors": [
             "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:scuola-normale-superiore",
+      "openalex_id": "",
+      "name": "Scuola Normale Superiore",
+      "city": "Pisa",
+      "region": "Tuscany",
+      "country": "Italy",
+      "country_code": "IT",
+      "latitude": 43.7228,
+      "longitude": 10.4017,
+      "coauthors": [],
+      "current_coauthors": [
+        "Giulia Livieri"
+      ],
+      "paper_count": 0,
+      "papers": [],
+      "has_historical": false,
+      "has_current": true,
+      "sources": [
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Giulia Livieri",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "medium",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I169016828",
+      "id": "inst:shanghaitech-university",
+      "openalex_id": "",
+      "name": "ShanghaiTech University",
+      "city": "Shanghai",
+      "region": "Shanghai",
+      "country": "China",
+      "country_code": "CN",
+      "latitude": 31.2304,
+      "longitude": 121.4737,
+      "coauthors": [
+        "Chong Liu"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+          "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2304.12231",
+          "coauthors": [
+            "Chong Liu"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:shimane-university",
+      "openalex_id": "https://openalex.org/I169016828",
       "name": "Shimane University",
       "city": "Matsue",
-      "region": "",
+      "region": "Shimane",
       "country": "Japan",
       "country_code": "JP",
-      "latitude": 35.48666763305664,
-      "longitude": 133.0680694580078,
+      "latitude": 35.4723,
+      "longitude": 133.0505,
       "coauthors": [
         "Takashi Furuya"
       ],
-      "paper_count": 1,
+      "current_coauthors": [],
+      "paper_count": 5,
       "papers": [
+        {
+          "id": "is-in-context-universality-enough-mlps-are-also-universal-in-context",
+          "title": "Is In-Context Universality Enough? MLPs are Also Universal In-Context",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2502.03327",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
+          "title": "Approximation Rates and VC-Dimension Bounds for (P)ReLU MLP Mixture of Experts",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.03460",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
+          "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+          "year": 2024,
+          "url": "",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "mixture-of-experts-softens-the-curse-of-dimensionality-in-operator-learn",
+          "title": "Mixture of Experts Softens the Curse of Dimensionality in Operator Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2404.09101",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
           "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
@@ -506,12 +2450,72 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Takashi Furuya"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I4210128584",
+      "id": "inst:skolkovo-institute-of-science-and-technology",
+      "openalex_id": "",
+      "name": "Skolkovo Institute of Science and Technology",
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coauthors": [
+        "Alexander Kolesov",
+        "Alexander Korotin",
+        "Evgeny Burnaev",
+        "Igor Udovichenko",
+        "Milena Gazdieva",
+        "Petr Mokrov"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "energy-guided-continuous-entropic-barycenter-estimation-for-general-cost",
+          "title": "Energy-Guided Continuous Entropic Barycenter Estimation for General Costs",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.01105",
+          "coauthors": [
+            "Alexander Kolesov",
+            "Alexander Korotin",
+            "Evgeny Burnaev",
+            "Igor Udovichenko",
+            "Milena Gazdieva",
+            "Petr Mokrov"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:the-alan-turing-institute",
+      "openalex_id": "https://openalex.org/I4210128584",
       "name": "The Alan Turing Institute",
       "city": "London",
       "region": "England",
@@ -522,6 +2526,7 @@
       "coauthors": [
         "Blanka Horvath"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -531,12 +2536,24 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Blanka Horvath"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I74801974",
+      "id": "inst:the-university-of-tokyo",
+      "openalex_id": "https://openalex.org/I74801974",
       "name": "The University of Tokyo",
       "city": "Tokyo",
       "region": "Tokyo",
@@ -547,6 +2564,7 @@
       "coauthors": [
         "Bum Jun Kim"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -556,12 +2574,24 @@
           "url": "https://arxiv.org/abs/2504.15110",
           "coauthors": [
             "Bum Jun Kim"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I103084370",
+      "id": "inst:total-france",
+      "openalex_id": "https://openalex.org/I103084370",
       "name": "Total (France)",
       "city": "Paris",
       "region": "",
@@ -572,6 +2602,7 @@
       "coauthors": [
         "Florian Faucher"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -581,12 +2612,95 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Florian Faucher"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:unidistance-suisse",
+      "openalex_id": "",
+      "name": "UniDistance Suisse",
+      "city": "Brig",
+      "region": "Valais",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 46.3159,
+      "longitude": 7.9877,
+      "coauthors": [
+        "David Belius"
+      ],
+      "current_coauthors": [
+        "David Belius"
+      ],
+      "paper_count": 3,
+      "papers": [
+        {
+          "id": "a-comprehensive-analysis-on-the-learning-curve-in-kernel-ridge-regressio",
+          "title": "A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.17796",
+          "coauthors": [
+            "David Belius"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "characterizing-overfitting-in-kernel-ridgeless-regression-through-the-ei",
+          "title": "Characterizing Overfitting in Kernel Ridgeless Regression Through the Eigenspectrum",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.01297",
+          "coauthors": [
+            "David Belius"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "a-theoretical-analysis-of-the-test-error-of-finite-rank-kernel-ridge-reg",
+          "title": "A Theoretical Analysis of the Test Error of Finite-Rank Kernel Ridge Regression",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.00987",
+          "coauthors": [
+            "David Belius"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "David Belius",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I144889574",
+      "id": "inst:universite-de-pau-et-des-pays-de-l-adour",
+      "openalex_id": "https://openalex.org/I144889574",
       "name": "Université de Pau et des Pays de l'Adour",
       "city": "Pau",
       "region": "Nouvelle-Aquitaine",
@@ -597,6 +2711,7 @@
       "coauthors": [
         "Florian Faucher"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -606,22 +2721,33 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Florian Faucher"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I154425047",
+      "id": "inst:university-of-alberta",
+      "openalex_id": "https://openalex.org/I154425047",
       "name": "University of Alberta",
       "city": "Edmonton",
       "region": "Alberta",
       "country": "Canada",
       "country_code": "CA",
-      "latitude": 53.55014,
-      "longitude": -113.46871,
+      "latitude": 53.5461,
+      "longitude": -113.4938,
       "coauthors": [
         "Eugene Bilokopytov"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -631,26 +2757,426 @@
           "url": "https://arxiv.org/abs/2006.02341",
           "coauthors": [
             "Eugene Bilokopytov"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:university-of-basel",
+      "openalex_id": "",
+      "name": "University of Basel",
+      "city": "Basel",
+      "region": "Basel-Stadt",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.5596,
+      "longitude": 7.5886,
+      "coauthors": [
+        "Aurelien Lucchi",
+        "Ivan Dokmanić",
+        "Tianlin Liu",
+        "Tin Sum Cheng",
+        "Valentin Debarnot"
+      ],
+      "current_coauthors": [
+        "Aurelien Lucchi",
+        "Tin Sum Cheng"
+      ],
+      "paper_count": 9,
+      "papers": [
+        {
+          "id": "beyond-universal-approximation-theorems-algorithmic-uniform-approximatio",
+          "title": "Beyond Universal Approximation Theorems: Algorithmic Uniform Approximation by Neural Networks Trained with Noisy Data",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.00924",
+          "coauthors": [
+            "Tin Sum Cheng"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "sharp-generalization-bounds-for-foundation-models-with-asymmetric-random",
+          "title": "Sharp Generalization Bounds for Foundation Models with Asymmetric Randomized Low-Rank Adapters",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2506.14530",
+          "coauthors": [
+            "Aurelien Lucchi",
+            "Tin Sum Cheng"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "a-comprehensive-analysis-on-the-learning-curve-in-kernel-ridge-regressio",
+          "title": "A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.17796",
+          "coauthors": [
+            "Aurelien Lucchi",
+            "Tin Sum Cheng"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "characterizing-overfitting-in-kernel-ridgeless-regression-through-the-ei",
+          "title": "Characterizing Overfitting in Kernel Ridgeless Regression Through the Eigenspectrum",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.01297",
+          "coauthors": [
+            "Aurelien Lucchi",
+            "Tin Sum Cheng"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "a-theoretical-analysis-of-the-test-error-of-finite-rank-kernel-ridge-reg",
+          "title": "A Theoretical Analysis of the Test Error of Finite-Rank Kernel Ridge Regression",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.00987",
+          "coauthors": [
+            "Aurelien Lucchi",
+            "Ivan Dokmanić",
+            "Tin Sum Cheng"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+          "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2304.12231",
+          "coauthors": [
+            "Ivan Dokmanić"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
+          "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2309.04557",
+          "coauthors": [
+            "Aurelien Lucchi"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "small-transformers-compute-universal-metric-embeddings",
+          "title": "Small Transformers Compute Universal Metric Embeddings",
+          "year": 2023,
+          "url": "https://www.jmlr.org/papers/v24/22-1246.html",
+          "coauthors": [
+            "Ivan Dokmanić",
+            "Valentin Debarnot"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "universal-approximation-under-constraints-is-possible-with-transformers",
+          "title": "Universal Approximation Under Constraints is Possible with Transformers",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2110.03303",
+          "coauthors": [
+            "Ivan Dokmanić",
+            "Tianlin Liu"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Tin Sum Cheng",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Aurelien Lucchi",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I40120149",
+      "id": "inst:university-of-cambridge",
+      "openalex_id": "",
+      "name": "University of Cambridge",
+      "city": "Cambridge",
+      "region": "England",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "latitude": 52.2053,
+      "longitude": 0.1218,
+      "coauthors": [
+        "Haitz Sáez de Ocáriz Borde"
+      ],
+      "current_coauthors": [
+        "Haitz Sáez de Ocáriz Borde"
+      ],
+      "paper_count": 2,
+      "papers": [
+        {
+          "id": "classification-fields-arbitrarily-fine-recursive-hierarchical-clustering",
+          "title": "Classification Fields: Arbitrarily Fine Recursive Hierarchical Clustering From Few Examples",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07119",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
+          "title": "Every Feedforward Neural Network Definable in an o-Minimal Structure Has Finite Sample Complexity",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07097",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Haitz Sáez de Ocáriz Borde",
+          "source_type": "linkedin",
+          "source_url": "https://uk.linkedin.com/in/ocariz",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inst:university-of-helsinki",
+      "openalex_id": "",
+      "name": "University of Helsinki",
+      "city": "Helsinki",
+      "region": "Uusimaa",
+      "country": "Finland",
+      "country_code": "FI",
+      "latitude": 60.1699,
+      "longitude": 24.9384,
+      "coauthors": [
+        "Matti Lassas"
+      ],
+      "current_coauthors": [
+        "Matti Lassas"
+      ],
+      "paper_count": 3,
+      "papers": [
+        {
+          "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
+          "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
+          "year": 2024,
+          "url": "",
+          "coauthors": [
+            "Matti Lassas"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "mixture-of-experts-softens-the-curse-of-dimensionality-in-operator-learn",
+          "title": "Mixture of Experts Softens the Curse of Dimensionality in Operator Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2404.09101",
+          "coauthors": [
+            "Matti Lassas"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+          "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2304.12231",
+          "coauthors": [
+            "Matti Lassas"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Matti Lassas",
+          "source_type": "official-academic",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "inst:university-of-michigan",
+      "openalex_id": "",
+      "name": "University of Michigan",
+      "city": "Ann Arbor",
+      "region": "Michigan",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 42.2808,
+      "longitude": -83.743,
+      "coauthors": [
+        "Guillermo Alvarez",
+        "Ibrahim Ekren"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "neural-operators-can-play-dynamic-stackelberg-games",
+          "title": "Neural Operators Can Play Dynamic Stackelberg Games",
+          "year": 2025,
+          "url": "https://www.jmlr.org/papers/v26/24-1985.html",
+          "coauthors": [
+            "Guillermo Alvarez",
+            "Ibrahim Ekren"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:university-of-oxford",
+      "openalex_id": "https://openalex.org/I40120149",
       "name": "University of Oxford",
       "city": "Oxford",
       "region": "England",
       "country": "United Kingdom",
       "country_code": "GB",
-      "latitude": 51.75222,
-      "longitude": -1.25596,
+      "latitude": 51.752,
+      "longitude": -1.2577,
       "coauthors": [
         "Blanka Horvath",
         "Haitz Sáez de Ocáriz Borde",
+        "Hans Buehler",
+        "Michael Bronstein",
+        "Raeid Saqur",
+        "Xiaowen Dong",
         "Yannick Limmer"
       ],
-      "paper_count": 2,
+      "current_coauthors": [
+        "Blanka Horvath",
+        "Haitz Sáez de Ocáriz Borde",
+        "Hans Buehler",
+        "Raeid Saqur"
+      ],
+      "paper_count": 10,
       "papers": [
+        {
+          "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
+          "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2601.11209",
+          "coauthors": [
+            "Blanka Horvath",
+            "Hans Buehler",
+            "Raeid Saqur"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "lora-fine-tuning-without-gpus-a-cpu-efficient-meta-generation-framework-",
+          "title": "LoRA Fine-Tuning Without GPUs: A CPU-Efficient Meta-Generation Framework for LLMs",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2507.01806",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "approximation-rates-and-vc-dimension-bounds-for-p-relu-mlp-mixture-of-ex",
+          "title": "Approximation Rates and VC-Dimension Bounds for (P)ReLU MLP Mixture of Experts",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.03460",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
@@ -659,6 +3185,52 @@
           "coauthors": [
             "Blanka Horvath",
             "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.16563",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "neural-spacetimes-for-dag-representation-learning",
+          "title": "Neural Spacetimes for DAG Representation Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2408.13885",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde",
+            "Michael Bronstein",
+            "Xiaowen Dong"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
+          "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2411.00835",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde",
+            "Michael Bronstein",
+            "Xiaowen Dong"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -668,12 +3240,125 @@
           "url": "https://arxiv.org/abs/2308.09250",
           "coauthors": [
             "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
+        },
+        {
+          "id": "neural-snowflakes-universal-latent-graph-inference-via-trainable-latent-",
+          "title": "Neural Snowflakes: Universal Latent Graph Inference via Trainable Latent Geometries",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.15003",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Haitz Sáez de Ocáriz Borde",
+          "source_type": "linkedin",
+          "source_url": "https://www.linkedin.com/posts/ocariz_geometricdeeplearning-representationlearning-activity-7438943563805048832-PgE4",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "LinkedIn describes him as an AI Researcher at Oxford and Cambridge."
+        },
+        {
+          "person": "Raeid Saqur",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Blanka Horvath",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
+        },
+        {
+          "person": "Hans Buehler",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "Visiting Professor; recent XTX Markets role ended in 2026."
         }
       ]
     },
     {
-      "id": "https://openalex.org/I3129591023",
+      "id": "inst:university-of-pau",
+      "openalex_id": "",
+      "name": "University of Pau",
+      "city": "Pau",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 43.2951,
+      "longitude": -0.3708,
+      "coauthors": [
+        "Florian Faucher"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Florian Faucher"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:university-of-shimane",
+      "openalex_id": "https://openalex.org/I3129591023",
       "name": "University of Shimane",
       "city": "Hamada",
       "region": "Shimane",
@@ -684,6 +3369,7 @@
       "coauthors": [
         "Takashi Furuya"
       ],
+      "current_coauthors": [],
       "paper_count": 1,
       "papers": [
         {
@@ -693,24 +3379,153 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Takashi Furuya"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:university-of-tokyo",
+      "openalex_id": "",
+      "name": "University of Tokyo",
+      "city": "Tokyo",
+      "region": "Tokyo",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "coauthors": [
+        "Bum Jun Kim"
+      ],
+      "current_coauthors": [
+        "Bum Jun Kim"
+      ],
+      "paper_count": 2,
+      "papers": [
+        {
+          "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
+          "title": "Every Feedforward Neural Network Definable in an o-Minimal Structure Has Finite Sample Complexity",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07097",
+          "coauthors": [
+            "Bum Jun Kim"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
+          "title": "Approximation Rates in Besov Norms and Sample-Complexity of Kolmogorov-Arnold Networks with Residual Connections",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2504.15110",
+          "coauthors": [
+            "Bum Jun Kim"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback"
+      ],
+      "current_sources": [
+        {
+          "person": "Bum Jun Kim",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I185261750",
+      "id": "inst:university-of-toronto",
+      "openalex_id": "https://openalex.org/I185261750",
       "name": "University of Toronto",
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
       "country_code": "CA",
-      "latitude": 43.70643,
-      "longitude": -79.39864,
+      "latitude": 43.6532,
+      "longitude": -79.3832,
       "coauthors": [
-        "Raeid Saqur"
+        "Daniel M. Roy",
+        "Dena Firoozi",
+        "Qiang Sun",
+        "Raeid Saqur",
+        "Wenhao Li",
+        "Xiaofei Shi"
       ],
-      "paper_count": 1,
+      "current_coauthors": [
+        "Daniel M. Roy",
+        "Dena Firoozi"
+      ],
+      "paper_count": 6,
       "papers": [
+        {
+          "id": "certifiable-boolean-reasoning-is-universal",
+          "title": "Certifiable Boolean Reasoning Is Universal",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.05120",
+          "coauthors": [
+            "Wenhao Li"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "beyond-universal-approximation-theorems-algorithmic-uniform-approximatio",
+          "title": "Beyond Universal Approximation Theorems: Algorithmic Uniform Approximation by Neural Networks Trained with Noisy Data",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.00924",
+          "coauthors": [
+            "Daniel M. Roy"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "generative-market-equilibrium-models-with-stable-adversarial-learning-vi",
+          "title": "Generative Market Equilibrium Models with Stable Adversarial Learning via Reinforcement",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2504.04300",
+          "coauthors": [
+            "Qiang Sun",
+            "Xiaofei Shi"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "simultaneously-solving-infinitely-many-lq-mean-field-games-in-hilbert-sp",
+          "title": "Simultaneously Solving Infinitely Many LQ Mean Field Games In Hilbert Spaces: The Power of Neural Operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2510.20017",
+          "coauthors": [
+            "Dena Firoozi"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
@@ -718,23 +3533,142 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Raeid Saqur"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
+        },
+        {
+          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.16563",
+          "coauthors": [
+            "Raeid Saqur"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Daniel M. Roy",
+          "source_type": "linkedin",
+          "source_url": "https://ca.linkedin.com/in/danroy",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": "Professor at University of Toronto; currently on leave during DeepMind visit."
+        },
+        {
+          "person": "Dena Firoozi",
+          "source_type": "linkedin/official",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "high",
+          "note": ""
         }
       ]
     },
     {
-      "id": "https://openalex.org/I202697423",
-      "name": "University of Zurich",
-      "city": "Zurich",
-      "region": "Zurich",
+      "id": "inst:university-of-vienna",
+      "openalex_id": "",
+      "name": "University of Vienna",
+      "city": "Vienna",
+      "region": "Vienna",
+      "country": "Austria",
+      "country_code": "AT",
+      "latitude": 48.2082,
+      "longitude": 16.3738,
+      "coauthors": [
+        "A. Martina Neuman",
+        "Philipp Petersen"
+      ],
+      "current_coauthors": [],
+      "paper_count": 4,
+      "papers": [
+        {
+          "id": "adaptivity-under-realizability-constraints-comparing-in-context-and-agen",
+          "title": "Adaptivity Under Realizability Constraints: Comparing In-Context and Agentic Learning",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.04995",
+          "coauthors": [
+            "A. Martina Neuman",
+            "Philipp Petersen"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
+          "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.03970",
+          "coauthors": [
+            "A. Martina Neuman"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+          "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.06894",
+          "coauthors": [
+            "A. Martina Neuman"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "tighter-learning-guarantees-on-digital-computers-via-concentration-of-me",
+          "title": "Tighter Learning Guarantees on Digital Computers via Concentration of Measure on Finite Spaces",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2402.05576",
+          "coauthors": [
+            "A. Martina Neuman"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:university-of-zurich",
+      "openalex_id": "https://openalex.org/I202697423",
+      "name": "University of Zürich",
+      "city": "Zürich",
+      "region": "Zürich",
       "country": "Switzerland",
       "country_code": "CH",
-      "latitude": 47.36667,
-      "longitude": 8.55,
+      "latitude": 47.3769,
+      "longitude": 8.5417,
       "coauthors": [
         "Behnoosh Zamanlooy"
       ],
-      "paper_count": 1,
+      "current_coauthors": [],
+      "paper_count": 2,
       "papers": [
         {
           "id": "learning-sub-patterns-in-piecewise-continuous-functions",
@@ -743,27 +3677,207 @@
           "url": "https://arxiv.org/abs/2010.15571",
           "coauthors": [
             "Behnoosh Zamanlooy"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "universal-approximation-under-constraints-is-possible-with-transformers",
+          "title": "Universal Approximation Under Constraints is Possible with Transformers",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2110.03303",
+          "coauthors": [
+            "Behnoosh Zamanlooy"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
           ]
         }
-      ]
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
-      "id": "https://openalex.org/I4210127509",
+      "id": "inst:vector-institute",
+      "openalex_id": "https://openalex.org/I4210127509",
       "name": "Vector Institute",
       "city": "Toronto",
       "region": "Ontario",
       "country": "Canada",
       "country_code": "CA",
-      "latitude": 43.70643,
-      "longitude": -79.39864,
+      "latitude": 43.6532,
+      "longitude": -79.3832,
       "coauthors": [
+        "Daniel M. Roy",
+        "David B. Emerson",
+        "Dennis Zvigelsky",
+        "Fatemeh Tavakoli",
         "Frank Rudzicz",
+        "Hossein Rouhvarzi",
+        "Hrad Ghoukasian",
         "Jacob-Junqi Tian",
         "John Willes",
-        "Ruiyang Hong"
+        "Paul D. McNicholas",
+        "Paul David McNicholas",
+        "Raeid Saqur",
+        "Reza Arabpour",
+        "Ruiyang Hong",
+        "Xuwei Yang",
+        "Yicen Li"
       ],
-      "paper_count": 2,
+      "current_coauthors": [
+        "Yicen Li"
+      ],
+      "paper_count": 16,
       "papers": [
+        {
+          "id": "certifiable-boolean-reasoning-is-universal",
+          "title": "Certifiable Boolean Reasoning Is Universal",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.05120",
+          "coauthors": [
+            "Dennis Zvigelsky",
+            "Hrad Ghoukasian"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "classification-fields-arbitrarily-fine-recursive-hierarchical-clustering",
+          "title": "Classification Fields: Arbitrarily Fine Recursive Hierarchical Clustering From Few Examples",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.07119",
+          "coauthors": [
+            "Paul D. McNicholas",
+            "Ruiyang Hong",
+            "Yicen Li"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "memoa-massive-mixtures-of-online-agents-via-mean-field-decentralized-nas",
+          "title": "MEMOA: Massive Mixtures of Online Agents via Mean-Field Decentralized Nash Equilibria",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2605.05492",
+          "coauthors": [
+            "David B. Emerson",
+            "Fatemeh Tavakoli"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "neural-operators-can-discover-functional-clusters",
+          "title": "Neural Operators Can Discover Functional Clusters",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.23528",
+          "coauthors": [
+            "Paul David McNicholas",
+            "Ruiyang Hong",
+            "Yicen Li"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "beyond-universal-approximation-theorems-algorithmic-uniform-approximatio",
+          "title": "Beyond Universal Approximation Theorems: Algorithmic Uniform Approximation by Neural Networks Trained with Noisy Data",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.00924",
+          "coauthors": [
+            "Daniel M. Roy"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "incremental-generation-is-necessary-and-sufficient-for-universality-in-f",
+          "title": "Incremental Generation is Necessary and Sufficient for Universality in Flow-Based Modelling",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.09902",
+          "coauthors": [
+            "Hossein Rouhvarzi"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "lora-fine-tuning-without-gpus-a-cpu-efficient-meta-generation-framework-",
+          "title": "LoRA Fine-Tuning Without GPUs: A CPU-Efficient Meta-Generation Framework for LLMs",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2507.01806",
+          "coauthors": [
+            "Reza Arabpour"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "online-federation-for-mixtures-of-proprietary-agents-with-black-box-enco",
+          "title": "Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2505.00216",
+          "coauthors": [
+            "David B. Emerson",
+            "Fatemeh Tavakoli"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
+          "title": "Quantifying The Limits of AI Reasoning: Systematic Neural Network Representations of Algorithms",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2508.18526",
+          "coauthors": [
+            "Dennis Zvigelsky"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "simultaneously-solving-infinitely-many-lq-mean-field-games-in-hilbert-sp",
+          "title": "Simultaneously Solving Infinitely Many LQ Mean Field Games In Hilbert Spaces: The Power of Neural Operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2510.20017",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "bridging-the-gap-between-approximation-and-learning-via-optimal-approxim",
+          "title": "Bridging the Gap Between Approximation and Learning via Optimal Approximation by ReLU MLPs of Maximal Regularity",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2409.12335",
+          "coauthors": [
+            "Ruiyang Hong"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
@@ -772,7 +3886,37 @@
           "coauthors": [
             "Frank Rudzicz",
             "Jacob-Junqi Tian",
-            "John Willes"
+            "John Willes",
+            "Raeid Saqur"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.16563",
+          "coauthors": [
+            "Raeid Saqur"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "low-dimensional-approximations-of-the-conditional-law-of-volterra-proces",
+          "title": "Low-dimensional approximations of the conditional law of Volterra processes: a non-positive curvature approach",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.20094",
+          "coauthors": [
+            "Reza Arabpour"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -782,9 +3926,119 @@
           "url": "https://arxiv.org/abs/2308.09250",
           "coauthors": [
             "Ruiyang Hong"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
+          "coauthors": [
+            "Xuwei Yang"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
           ]
         }
+      ],
+      "has_historical": true,
+      "has_current": true,
+      "sources": [
+        "curated-arxiv-fallback",
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
+      ],
+      "current_sources": [
+        {
+          "person": "Yicen Li",
+          "source_type": "linkedin",
+          "source_url": "",
+          "secondary_url": "",
+          "verified_at": "2026-08-21",
+          "confidence": "medium",
+          "note": ""
+        }
       ]
+    },
+    {
+      "id": "inst:yandex-research",
+      "openalex_id": "",
+      "name": "Yandex Research",
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coauthors": [
+        "Dmitry Baranchuk",
+        "Nikita Starodubcev"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+          "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.02628",
+          "coauthors": [
+            "Dmitry Baranchuk",
+            "Nikita Starodubcev"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:yandex-school-of-data-analysis",
+      "openalex_id": "",
+      "name": "Yandex School of Data Analysis",
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "coauthors": [
+        "Mikhail Persiianov"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+          "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.02628",
+          "coauthors": [
+            "Mikhail Persiianov"
+          ],
+          "evidence": [
+            "curated-arxiv-fallback"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "curated-arxiv-fallback"
+      ],
+      "current_sources": []
     }
   ],
   "unmatched_publications": [
@@ -792,61 +4046,71 @@
       "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
       "title": "Guiding Two-Layer Neural Networks toward Lipschitzness via Gradient Descent Learning Rate Constraints",
       "year": 2025,
-      "best_title_match_score": 0.29
+      "best_title_match_score": 0.29,
+      "openalex_status": "unmatched"
     },
     {
       "id": "online-federation-for-mixtures-of-proprietary-agents-with-black-box-enco",
       "title": "Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders",
       "year": 2025,
-      "best_title_match_score": 0.322
+      "best_title_match_score": 0.322,
+      "openalex_status": "unmatched"
     },
     {
       "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
       "title": "Quantifying The Limits of AI Reasoning: Systematic Neural Network Representations of Algorithms",
       "year": 2025,
-      "best_title_match_score": 0.404
+      "best_title_match_score": 0.404,
+      "openalex_status": "unmatched"
     },
     {
       "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
       "title": "Step by Step: Adaptive Gradient Descent for Training L-Lipschitz Neural Networks",
       "year": 2025,
-      "best_title_match_score": 0.26
+      "best_title_match_score": 0.26,
+      "openalex_status": "unmatched"
     },
     {
       "id": "mixture-of-experts-soften-the-curse-of-dimensionality-in-operator-learni",
       "title": "Mixture of Experts Soften the Curse of Dimensionality in Operator Learning",
       "year": 2024,
-      "best_title_match_score": 0.492
+      "best_title_match_score": 0.492,
+      "openalex_status": "unmatched"
     },
     {
       "id": "mixture-of-experts-softens-the-curse-of-dimensionality-in-operator-learn",
       "title": "Mixture of Experts Softens the Curse of Dimensionality in Operator Learning",
       "year": 2024,
-      "best_title_match_score": 0.489
+      "best_title_match_score": 0.489,
+      "openalex_status": "unmatched"
     },
     {
       "id": "reality-only-happens-once-single-path-generalization-bounds-for-transfor",
       "title": "Reality Only Happens Once: Single-Path Generalization Bounds for Transformers",
       "year": 2024,
-      "best_title_match_score": 0.395
+      "best_title_match_score": 0.395,
+      "openalex_status": "unmatched"
     },
     {
       "id": "tighter-generalization-bounds-on-digital-computers-via-discrete-optimal-",
       "title": "Tighter Generalization Bounds on Digital Computers via Discrete Optimal Transport",
       "year": 2024,
-      "best_title_match_score": 0.541
+      "best_title_match_score": 0.541,
+      "openalex_status": "unmatched"
     },
     {
       "id": "deep-kalman-filters-can-filter",
       "title": "Deep Kalman Filters Can Filter",
       "year": 2023,
-      "best_title_match_score": 0.258
+      "best_title_match_score": 0.258,
+      "openalex_status": "unmatched"
     },
     {
       "id": "replication-of-a-real-estate-market-index-teranet-national-bank-of-canad",
       "title": "Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)",
       "year": 2017,
-      "best_title_match_score": 0.254
+      "best_title_match_score": 0.254,
+      "openalex_status": "unmatched"
     }
   ]
 }
