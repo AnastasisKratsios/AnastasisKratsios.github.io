@@ -1,0 +1,12 @@
+{
+  "generated_at": "not-yet-generated",
+  "source": "Run python scripts/update_collaborations.py",
+  "author": {
+    "name": "Anastasis Kratsios",
+    "openalex_id": ""
+  },
+  "matched_publications": 0,
+  "total_publications": 0,
+  "institutions": [],
+  "unmatched_publications": []
+}
