@@ -17,7 +17,9 @@
 			#scroll-background {
 				position: fixed;
 				inset: 0;
-				background: url("images/background_image_faded.jpg") center center / cover no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
 				opacity: 0;
 				pointer-events: none;
 				z-index: 0;
@@ -591,6 +593,19 @@
 			<script>
 				(function () {
 					var background = document.getElementById("scroll-background");
+					var backgrounds = [
+						"images/Backgrounds/An then it happened.jpeg",
+						"images/Backgrounds/Facekid.jpg",
+						"images/Backgrounds/PurpleOnes.jpg",
+						"images/Backgrounds/background_image_faded.jpg",
+						"images/Backgrounds/background_image_faded2.jpg",
+						"images/Backgrounds/flux.gif",
+						"images/Backgrounds/fluxface.gif",
+						"images/Backgrounds/unnamed.jpg",
+						"images/Backgrounds/us_njns.gif"
+					];
+					var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+					background.style.backgroundImage = 'url("' + randomBackground + '")';
 					var maxOpacity = 0.30;
 					var ticking = false;
 
