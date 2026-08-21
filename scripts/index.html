@@ -17,7 +17,9 @@
 			#scroll-background {
 				position: fixed;
 				inset: 0;
-				background: url("images/background_image_faded.jpg") center center / cover no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
 				opacity: 0;
 				pointer-events: none;
 				z-index: 0;
@@ -591,8 +593,46 @@
 			<script>
 				(function () {
 					var background = document.getElementById("scroll-background");
+					var backgrounds = [
+						"images/Backgrounds/An then it happened.jpeg",
+						"images/Backgrounds/Facekid.jpg",
+						"images/Backgrounds/PurpleOnes.jpg",
+						"images/Backgrounds/background_image_faded.jpg",
+						"images/Backgrounds/background_image_faded2.jpg",
+						"images/Backgrounds/flux.gif",
+						"images/Backgrounds/fluxface.gif",
+						"images/Backgrounds/unnamed.jpg",
+						"images/Backgrounds/us_njns.gif"
+					];
 					var maxOpacity = 0.30;
 					var ticking = false;
+
+					function shuffle(array) {
+						var shuffled = array.slice();
+						for (var i = shuffled.length - 1; i > 0; i--) {
+							var j = Math.floor(Math.random() * (i + 1));
+							var temp = shuffled[i];
+							shuffled[i] = shuffled[j];
+							shuffled[j] = temp;
+						}
+						return shuffled;
+					}
+
+					function tryBackgrounds(candidates, index) {
+						if (index >= candidates.length) {
+							return;
+						}
+
+						var candidate = candidates[index];
+						var tester = new Image();
+						tester.onload = function () {
+							background.style.backgroundImage = 'url("' + candidate + '")';
+						};
+						tester.onerror = function () {
+							tryBackgrounds(candidates, index + 1);
+						};
+						tester.src = candidate;
+					}
 
 					function updateBackgroundOpacity() {
 						var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
@@ -608,6 +648,7 @@
 						}
 					}
 
+					tryBackgrounds(shuffle(backgrounds), 0);
 					window.addEventListener("scroll", requestUpdate, { passive: true });
 					window.addEventListener("resize", requestUpdate);
 					updateBackgroundOpacity();
