@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Certifiably Safe AI - Built on Reliable Mathematical Foundations: From Interpretability to No-Arbitrage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/research-map.css" />
+		<link rel="stylesheet" href="assets/css/collaboration-map.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#scroll-background {
+				position: fixed;
+				inset: 0;
+				background: url("images/background_image_faded.jpg") center center / cover no-repeat;
+				opacity: 0;
+				pointer-events: none;
+				z-index: 0;
+			}
+
+			#wrapper {
+				position: relative;
+				z-index: 1;
+				background-color: transparent !important;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="scroll-background" aria-hidden="true"></div>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Certifiably Safe AI</h1>
+							<h2>Built on Reliable Mathematical Foundations</h2>
+							<p class="major">We study the foundations of deep learning and build them back up with reliable guardrails.<br>Applications to interpretable reasoning, efficient scientific computing, and safe AI in finance.</p>
+							<ul class="actions stacked">
+								<!-- <li><a href="#first" class="button big wide smooth-scroll-middle">Papers To Read</a></li> -->
+								<!-- <ul class="icons"> -->
+									<li><a href="https://www.linkedin.com/in/anastasiskratsios/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/AnastasisKratsios" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+									<li><a href="https://scholar.google.ca/citations?user=9D-bHFgAAAAJ&hl=en" class="icon brands style2 fa fa-google"><span class="label">Scholar</span></a></li>
+								<!-- </ul> -->
+							</ul>
+						</div>
+						<div class="image">
+<!-- 							<img src="images/NonEuclidean_Universal_Approximation.jpg" alt="" /> -->
+							<img src="images/gallery/MoEFDyna.gif" alt="" />
+						</div>
+					</section>
+
+				<section class="wrapper style1 align-center research-map-section research-map-wide" id="papers">
+					<div class="inner">
+						<h1>Research Map</h1>
+						<p class="research-map-intro">
+							A dynamically updated directed map of publications and preprints, organized by arXiv subjects, title keywords, and the high-level AI Theory / Applications hierarchy.
+						</p>
+
+						<div class="research-map-layout">
+							<div class="research-map-canvas-wrap">
+								<svg id="research-map-canvas" role="img" aria-label="Interactive publication DAG"></svg>
+							</div>
+						</div>
+
+						<div class="research-map-bottom-panel" id="research-map-details">
+							<h3>Click a paper node to read its title here.</h3>
+							<p>Topic nodes summarize visible papers; paper nodes are automatically classified from arXiv subjects, titles, and metadata.</p>
+						</div>
+
+						<div class="research-map-controls" aria-label="Research map filters">
+							<button type="button" class="is-active" data-research-filter="all">All</button>
+							<button type="button" data-research-filter="AI Theory">AI Theory</button>
+							<button type="button" data-research-filter="Applications">Applications</button>
+							<button type="button" data-research-filter="Finance">Finance</button>
+							<button type="button" data-research-filter="Universal Neural Approximation">Universal Neural Approximation</button>
+							<button type="button" data-research-filter="Statistical Learning Theory">Learning Theory</button>
+							<button type="button" data-research-filter="Operator Learning">Operator Learning</button>
+							<button type="button" data-research-filter="Geometric Deep Learning">Geometric DL</button>
+							<select id="research-map-year" aria-label="Filter by year">
+								<option value="all">All years</option>
+							</select>
+							<input id="research-map-search" type="search" placeholder="Search title, author, venue, topic, or arXiv subject" aria-label="Search publications" />
+						</div>
+
+						<p class="research-map-status" id="research-map-status">Loading publication map...</p>
+
+						<div class="research-map-legend" aria-label="Research map legend">
+							<span class="legend-root">root topic</span>
+							<span class="legend-topic">research topic</span>
+							<span class="legend-paper">paper; size grows with citations</span>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- The Team -->
+		
+			<!-- Gallery of People -->
+			<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>Who we are</h2>
+				<p>Past and present group members.</p>
+			</div>
+					<div class="gallery style1 medium lightbox onscroll-fade-in" id="theteam">
+						<article>
+							<a href="https://azarlouzi.github.io/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Azar Louzi's profile">
+								<img src="images/gallery/AzarLouzi.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://azarlouzi.github.io/" target="_blank" rel="noopener noreferrer">Azar Louzi</a></h3>
+								<p>Postdoctoral Researcher (2026-2028) - Certifiable AI and Stochastics</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.linkedin.com/in/xuwei-yang-4b786852/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Xuwei Yang profile">
+								<img src="images/gallery/Xuwei.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.linkedin.com/in/xuwei-yang-4b786852/" target="_blank" rel="noopener noreferrer">Xuwei Yang</a></h3>
+								<p>Postdoctoral Researcher (2022-2025) - AI in Game Theory and Stochastics</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.researchgate.net/profile/Ruiyang-Hong" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Ruiyang Hong profile">
+								<img src="images/gallery/RuiyangHong.png" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.researchgate.net/profile/Ruiyang-Hong" target="_blank" rel="noopener noreferrer">Ruiyang Hong</a></h3>
+								<p>PhD Candidate (2023-2027) - Foundations of AI</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.linkedin.com/in/yicen-li-04260126b/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Yicen Li profile">
+								<img src="images/gallery/YicenLi.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.linkedin.com/in/yicen-li-04260126b/" target="_blank" rel="noopener noreferrer">Yicen Li</a></h3>
+								<p>PhD Candidate (2022-2026) - Deep Clustering</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://scholar.google.com/citations?user=-4sxbcQAAAAJ&hl=en" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Hossein Rouhvarzi profile">
+								<img src="images/gallery/Hossein.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://scholar.google.com/citations?user=-4sxbcQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Hossein Rouhvarzi</a></h3>
+								<p>MSc to PhD Candidate (2024-2028) - Foundations of Geometric Deep Learning</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://scholar.google.com/citations?user=JHmJC7oAAAAJ&hl=en" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Dennis Zvigelsky profile">
+								<img src="images/Dennis_Yankovsky.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://scholar.google.com/citations?user=JHmJC7oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dennis Zvigelsky</a></h3>
+								<p>PhD Candidate (2025-2029) - AI Reasoning (Joint: Bradd Hart)</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://scholar.google.ca/citations?user=FPG1O6gAAAAJ&hl=en" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Hrad Ghoukasian's profile">
+								<img src="images/gallery/Hrad_Photo.JPG" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://scholar.google.ca/citations?user=FPG1O6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Hrad Ghoukasian</a></h3>
+								<p>Visiting PhD Student (2026) - AI Safety and Fairness</p>
+								<p>(University of Toronto)</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://scholar.google.com/citations?user=Xmr-06oAAAAJ&hl=en" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Alessio Spagnoletti profile">
+								<img src="images/gallery/Alessio.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://scholar.google.com/citations?user=Xmr-06oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Alessio Spagnoletti</a></h3>
+								<p>MSc Candidate (2022-2024) - Operator Learning in Finance</p>
+								<p>Co-Supervised at: Scuola Normale Superiore di Pisa</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.linkedin.com/in/arabporr/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Reza Arabpour profile">
+								<img src="images/gallery/Reza.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.linkedin.com/in/arabporr/" target="_blank" rel="noopener noreferrer">Reza Arabpour</a></h3>
+								<!-- <h3><a href="https://github.com/arabporr">Reza Arabpour</a></h3> -->
+								<p>MSc (2023-2025) - Hypernetworks for time-series prediction (CSE)</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.linkedin.com/in/kyleosung/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Kyle Sung profile">
+								<img src="images/gallery/Kyle.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.linkedin.com/in/kyleosung/" target="_blank" rel="noopener noreferrer">Kyle Sung</a></h3>
+								<p>NSERC BSc Math (2024-2028) - Statistical Learning Theory</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://arxiv.org/search/stat?searchtype=author&query=Khalil,+K" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Kholood Khalil profile">
+								<img src="images/Kholood_Khalil.png" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://arxiv.org/search/stat?searchtype=author&query=Khalil,+K" target="_blank" rel="noopener noreferrer">Kholood Khalil</a></h3>
+								<p>BSc Math 2024, Summer Researcher - Adaptive Gradient Descent</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.linkedin.com/in/stevensamu/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Steven Samu profile">
+								<img src="images/Steven.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.linkedin.com/in/stevensamu/" target="_blank" rel="noopener noreferrer">Steven Samu</a></h3>
+								<p>Computer Engineering 2025, Summer Researcher - Deep Learning</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="https://www.linkedin.com/in/trevortidy/" class="image" target="_blank" rel="noopener noreferrer" aria-label="Open Trevor Tidy profile">
+								<img src="images/gallery/TrevorT.jpg" alt="" />
+							</a>
+							<div class="caption">
+								<h3><a class="student-profile-link" href="https://www.linkedin.com/in/trevortidy/" target="_blank" rel="noopener noreferrer">Trevor Tidy</a></h3>
+								<p>Honors BSc Math (2024-2025) - Foundations of Geometric Deep Learning</p>
+								<ul class="actions fixed">
+									<!--<li><span class="button small">Details</span></li>-->
+								</ul>
+							</div>
+						</article>
+					</div>
+					</section>					
+
+
+				
+
+				<!-- Research snapshots -->
+				<section class="wrapper style1 align-center" id="research-snapshots">
+					<!-- Gallery of Papers -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/RepLearning.jpg" class="image">
+										<img src="images/RepLearning.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Small Transformers Compute Universal Metric Embeddings</h3>
+										<p>A Kratsios, V Debarnot, I Dokmanić, 2022</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/BannerFilter.jpg" class="image">
+<!-- 										<img src="images/GeometricTransformer.jpg" alt="" /> -->
+										<img src="images/BannerFilter.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Designing Universal Causal Deep Learning Models: The Geometric (Hyper) Transformer</h3>
+										<p>A. Accaio, A. Kratsios and G. Pammer, Mathematical Finance, 2022.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/ReLUvsSigmoid.jpg" class="image">
+										<img src="images/ReLUvsSigmoid.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Do ReLU Networks Have An Edge When Approximating Compactly-Supported Functions?</h3>
+										<p>A. Kratsios and B. Zamanlooy, TMLR, 2022.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/hat_oursfocused.png" class="image">
+										<img src="images/hat_ours.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Bridging the Gap Between Approximation and Learning via Optimal Approximation by ReLU MLPs of Maximal Regularity</h3>
+										<p>R. Hong and A. Kratsios</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/MoEF.jpg" class="image">
+										<img src="images/gallery/MoEF.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models</h3>
+										<p>R. Saquer, Y. Limmer, A. Kratsios, F. Krach, B. Horvath, etc, ICLR, 2025.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/NeuralSpaceTimes.jpg" class="image">
+										<img src="images/gallery/NeuralSpaceTimes.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Neural Spacetimes for DAG Representation Learning</h3>
+										<p>H. Borde Ocariz, A. Kratsios, T. Law, X. Dong, M. Bronstein, ICLR, 2025.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/phase_diagram.jpg" class="image">
+										<img src="images/gallery/phase_diagram.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>A Comprehensive Analysis on the Learning Curve in Kernel Ridge Regression</h3>
+										<p>T. Cheng, A. Lucci, A. Kratsios, D. Belius, NeurIPS, 2024.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/OTSemi.png" class="image">
+										<img src="images/gallery/OTSemi.png" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization</h3>
+										<p>M. Persiianov, A. Asadulaev, N. Andreev, A. Kratsios, A. Korotin, E. Burnaev, etc</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/RegretOptimal.jpg" class="image">
+										<img src="images/RegretOptimal.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Optimizing Optimizers: Regret-optimal gradient descent algorithms</h3>
+										<p>P. Casgrain and A. Kratsios, COLT, 2021.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/CNO_Design.jpg" class="image">
+										<img src="images/CNO_Design.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis</h3>
+										<p>L Galimberti, G Livieri, A Kratsios, 2022.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/NEU.jpg" class="image">
+										<img src="images/NEU.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>NEU: A meta-algorithm for universal uap-invariant feature representation</h3>
+										<p>A. Kratsios and C. Hyndman, JMLR, 2021.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/RandomProjections.jpg" class="image">
+										<img src="images/RandomProjections.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Universal Approximation Under Constraints is Possible with Transformers</h3>
+										<p>A. Kratsios, B. Zamanlooy, I. Dokmanic, T. Liu, ICLR (Spotlight), 2022</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/PW_Neurocomputing.jpg" class="image">
+										<img src="images/PW_Neurocomputing.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Learning Sub-Patterns in Piece-Wise Continuous Functions</h3>
+										<p>A. Kratsios and B. Zamanlooy, Neurocomputing, 2022.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/GENB.jpg" class="image">
+										<img src="images/GENB.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Instance-Dependent Generalization Bounds via Optimal Transport</h3>
+										<p>S Hou, P Kassraie, A Kratsios, J Rothfuss, A Krause, 2022.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/TallTransformers.jpg" class="image">
+										<img src="images/TallTransformers.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Universal Regular Conditional Distributions</h3>
+										<p>A. Kratsios, 2021.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+									<article>
+									<a href="images/Denise.jpg" class="image">
+										<img src="images/Denise.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Denise: Deep Robust Principal Component Analysis for Positive Semidefinite Matrices</h3>
+										<p>LC Herrera, F Krach, A Kratsios, P Ruyssen, J Teichmann, 2021.</p>
+										<ul class="actions fixed">
+											<!--<li><span class="button small">Details</span></li>-->
+										</ul>
+									</div>
+								</article>
+							</div>
+				</section>
+
+
+
+			<!-- Collaborations -->
+				<section class="wrapper style1 align-center collaboration-map-section" id="collaborations">
+					<div class="inner">
+						<h2>Our Collaborations Around the World</h2>
+						<p class="collaboration-map-intro">Institutions listed by our co-authors on joint publications.</p>
+
+						<div class="collaboration-map-canvas-wrap">
+							<svg id="collaboration-map-canvas" role="img" aria-label="Interactive world map of co-author institutions"></svg>
+						</div>
+
+						<p class="collaboration-map-status" id="collaboration-map-status">Loading collaboration map...</p>
+
+						<div class="collaboration-map-bottom-panel" id="collaboration-map-details">
+							<p>Hover over or select an institution to explore our collaborations.</p>
+						</div>
+					</div>
+				</section>
+
+			<!-- Seminar -->
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="fourth">
+					<div class="content">
+						<h2>We run the Fields Institute's AI Theory Seminar</h2>
+						<p>We organize the Fields Institute's AI Theory Seminar, focused on mathematical foundations of AI, approximation and learning theory, reasoning, stochastic analysis, control, games, PDEs, and finance.</p>
+						<ul class="actions stacked">
+							<li><a href="https://www.youtube.com/watch?v=-cXlK4M_XZA&amp;list=PLArBKNfJxuumIT2kUXZOEamghPnnvIHjL" class="button" target="_blank" rel="noopener">Watch the seminar playlist</a></li>
+							<li><a href="https://www.fields.utoronto.ca/activities/25-26/mathai" class="button" target="_blank" rel="noopener">Open the Fields seminar page</a></li>
+						</ul>
+						<div class="upcoming-talk-inline">
+							<h3>Upcoming Talk We've Organized</h3>
+							<div id="upcoming-talks-list" class="dynamic-talk-list talk-bubble-wrap">
+								<p>Loading upcoming talk...</p>
+							</div>
+						</div>
+					</div>
+					<div class="seminar-video">
+						<iframe width="560" 
+							height="375" 
+							src="https://www.youtube.com/embed/videoseries?list=PLArBKNfJxuumIT2kUXZOEamghPnnvIHjL" 
+							title="Fields Institute AI Theory Seminar playlist" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+							referrerpolicy="strict-origin-when-cross-origin" 
+							allowfullscreen></iframe>
+					</div>
+
+				</section>
+<!-- Hot off the press -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
+						<div class="content">
+							<h2>Hot off the press</h2>
+							<p>The three most recent papers/preprints, refreshed automatically from the publication metadata.</p>
+							<div id="hot-off-press-list" class="dynamic-paper-list">
+								<p>Loading latest papers...</p>
+							</div>
+							<ul class="actions stacked">
+								<li><a href="#papers" class="button big wide smooth-scroll-middle">Explore the research map</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/NonEuclidean_Universal_Approximation.jpg" alt="" />
+						</div>
+					</section>
+
+<!-- Select Publications -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Select Publications</h2>
+							<div id="select-publications-list" class="dynamic-paper-list selected-publications-list">
+								<p>Loading JMLR papers...</p>
+							</div>
+							<ul class="actions stacked">
+								<li><a href="#second" class="button big wide smooth-scroll-middle">See what's new</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<!-- <img src="images/local_transport_cost-1.jpg" alt="" /> -->
+							<img src="/Files/I_review_JMLR.gif" alt="I review for JMLR" />
+						</div>
+					</section>
+
+
+<!-- Footer -->
+					<footer class="wrapper style1 align-center" id="links">
+						<div class="image perfect-day-footer">
+							<b>A Perfect Day</b>
+							<img src="images/PerfectDay.jpeg" alt="A Perfect Day" />
+						</div>
+						<div class="inner">
+							<iframe style="border: 0; 
+								width: 175px; 
+								height: 42px;" 
+								src="https://bandcamp.com/EmbeddedPlayer/album=3916461324/size=small/bgcol=ffffff/linkcol=7137dc/transparent=true/" seamless><a href="https://whererealitybends.bandcamp.com/album/--4">ت̷̤̝͖̼͓̩̉̈́̒͝ͅک̴̤̘̯͛̊͂ن̸̨̪̭̃̍ͅو̷̰̗͙̔̆̒͂̾̈́̈͂͝͝ف̴̨̩̫̖̳͎̌̓̚و̴̛̠̹̺̯ب̸̥̭̤͚̗͚̳̏͐̅̀̐̇͐́͒̕͜ی̵̨̧̡̫̣̙͍̆̚ by Ω̵h̴ε̶r̸ε̵ ̶R̴ε̵α̴l̴ι̶t̸η̵ ̷Β̵ε̵n̸δ̷s̷.̸.̶.̸</a></iframe>
+						</div>
+					</footer>
+			</div>
+
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+			<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+			<script src="assets/js/home-dynamic.js"></script>
+			<script src="assets/js/research-map.js"></script>
+			<script src="assets/js/collaboration-map.js"></script>
+			<script src="assets/js/page-effects.js"></script>
+			<script>
+				(function () {
+					var background = document.getElementById("scroll-background");
+					var maxOpacity = 0.30;
+					var ticking = false;
+
+					function updateBackgroundOpacity() {
+						var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+						var progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+						background.style.opacity = progress * maxOpacity;
+						ticking = false;
+					}
+
+					function requestUpdate() {
+						if (!ticking) {
+							window.requestAnimationFrame(updateBackgroundOpacity);
+							ticking = true;
+						}
+					}
+
+					window.addEventListener("scroll", requestUpdate, { passive: true });
+					window.addEventListener("resize", requestUpdate);
+					updateBackgroundOpacity();
+				})();
+			</script>
+
+	</body>
+</html>
