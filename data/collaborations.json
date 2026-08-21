@@ -1,13 +1,43 @@
 {
-  "generated_at": "2026-08-21T04:56:14Z",
-  "source": "OpenAlex paper-level authorships matched to data/publications.json",
+  "generated_at": "2026-08-21T05:07:50Z",
+  "source": "OpenAlex structured paper-level authorships plus raw paper-affiliation fallback",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
   "matched_publications": 60,
+  "publications_with_resolved_affiliations": 12,
   "total_publications": 70,
+  "raw_affiliations_resolved": 3,
+  "match_methods": {
+    "author-profile": 60
+  },
   "institutions": [
+    {
+      "id": "https://openalex.org/I4210131512",
+      "name": "Centre Inria de l'université de Bordeaux",
+      "city": "Talence",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 44.80849,
+      "longitude": -0.58915,
+      "coauthors": [
+        "Florian Faucher"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Florian Faucher"
+          ]
+        }
+      ]
+    },
     {
       "id": "https://openalex.org/I60158472",
       "name": "Concordia University",
@@ -167,6 +197,31 @@
       ]
     },
     {
+      "id": "https://openalex.org/I4210153325",
+      "name": "Institute of Mathematical Statistics",
+      "city": "Beachwood",
+      "region": "Ohio",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.473087310791016,
+      "longitude": -81.53370666503906,
+      "coauthors": [
+        "Blanka Horvath"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
+          "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath"
+          ]
+        }
+      ]
+    },
+    {
       "id": "https://openalex.org/I183935753",
       "name": "King's College London",
       "city": "London",
@@ -269,6 +324,56 @@
       ]
     },
     {
+      "id": "https://openalex.org/I98251732",
+      "name": "McMaster University",
+      "city": "Hamilton",
+      "region": "Ontario",
+      "country": "Canada",
+      "country_code": "CA",
+      "latitude": 43.25011,
+      "longitude": -79.84963,
+      "coauthors": [
+        "Ruiyang Hong"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
+          "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2308.09250",
+          "coauthors": [
+            "Ruiyang Hong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I117015748",
+      "name": "Purdue University Northwest",
+      "city": "Hammond",
+      "region": "Indiana",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.617530822753906,
+      "longitude": -87.47512817382812,
+      "coauthors": [
+        "Xavier Tricoche"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Xavier Tricoche"
+          ]
+        }
+      ]
+    },
+    {
       "id": "https://openalex.org/I219193219",
       "name": "Purdue University West Lafayette",
       "city": "West Lafayette",
@@ -355,9 +460,10 @@
       "latitude": 51.751075744628906,
       "longitude": -1.2386599779129028,
       "coauthors": [
+        "Haitz Sáez de Ocáriz Borde",
         "Yannick Limmer"
       ],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
@@ -366,6 +472,15 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Yannick Limmer"
+          ]
+        },
+        {
+          "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
+          "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2308.09250",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
           ]
         }
       ]
@@ -446,6 +561,56 @@
       ]
     },
     {
+      "id": "https://openalex.org/I103084370",
+      "name": "Total (France)",
+      "city": "Paris",
+      "region": "",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 48.85340881347656,
+      "longitude": 2.34879994392395,
+      "coauthors": [
+        "Florian Faucher"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Florian Faucher"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I144889574",
+      "name": "Université de Pau et des Pays de l'Adour",
+      "city": "Pau",
+      "region": "Nouvelle-Aquitaine",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 43.31117,
+      "longitude": -0.35583,
+      "coauthors": [
+        "Florian Faucher"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Florian Faucher"
+          ]
+        }
+      ]
+    },
+    {
       "id": "https://openalex.org/I154425047",
       "name": "University of Alberta",
       "city": "Edmonton",
@@ -481,9 +646,10 @@
       "longitude": -1.25596,
       "coauthors": [
         "Blanka Horvath",
+        "Haitz Sáez de Ocáriz Borde",
         "Yannick Limmer"
       ],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
@@ -493,6 +659,40 @@
           "coauthors": [
             "Blanka Horvath",
             "Yannick Limmer"
+          ]
+        },
+        {
+          "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
+          "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2308.09250",
+          "coauthors": [
+            "Haitz Sáez de Ocáriz Borde"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/I3129591023",
+      "name": "University of Shimane",
+      "city": "Hamada",
+      "region": "Shimane",
+      "country": "Japan",
+      "country_code": "JP",
+      "latitude": 34.88333,
+      "longitude": 132.08333,
+      "coauthors": [
+        "Takashi Furuya"
+      ],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Takashi Furuya"
           ]
         }
       ]
@@ -559,9 +759,10 @@
       "coauthors": [
         "Frank Rudzicz",
         "Jacob-Junqi Tian",
-        "John Willes"
+        "John Willes",
+        "Ruiyang Hong"
       ],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
@@ -572,6 +773,15 @@
             "Frank Rudzicz",
             "Jacob-Junqi Tian",
             "John Willes"
+          ]
+        },
+        {
+          "id": "capacity-bounds-for-hyperbolic-neural-network-representations-of-latent-",
+          "title": "Capacity Bounds for Hyperbolic Neural Network Representations of Latent Tree Structures",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2308.09250",
+          "coauthors": [
+            "Ruiyang Hong"
           ]
         }
       ]
