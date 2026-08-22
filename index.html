@@ -613,85 +613,63 @@
 			<script src="assets/js/page-effects.js"></script>
 			<script src="assets/js/ai-lander.js"></script>
 			<script>
-				(function () {
+				(async function () {
 					var background = document.getElementById("scroll-background");
-					var video = document.getElementById("scroll-background-video");
-					var backgrounds = [
-						"images/Backgrounds/An then it happened.jpeg",
-						"images/Backgrounds/Facekid.jpg",
-						"images/Backgrounds/PurpleOnes.jpg",
-						"images/Backgrounds/background_image_faded.jpg",
-						"images/Backgrounds/background_image_faded2.jpg",
-						"images/Backgrounds/flux.mp4",
-						"images/Backgrounds/fluxface.mp4",
-						"images/Backgrounds/unnamed.jpg",
-						"images/Backgrounds/us_njns.mp4"
-					];
+			
+					try {
+						var response = await fetch(
+							"https://api.github.com/repos/AnastasisKratsios/AnastasisKratsios.github.io/contents/images/Backgrounds?ref=master"
+						);
+			
+						if (!response.ok) throw new Error("Could not read background folder");
+			
+						var files = await response.json();
+			
+						var backgrounds = files
+							.filter(function (file) {
+								return file.type === "file" &&
+									/\.(jpg|jpeg|png|gif|webp)$/i.test(file.name);
+							})
+							.map(function (file) {
+								return file.download_url;
+							});
+			
+						if (backgrounds.length > 0) {
+							var randomBackground =
+								backgrounds[Math.floor(Math.random() * backgrounds.length)];
+			
+							background.style.backgroundImage =
+								'url("' + randomBackground + '")';
+						}
+					} catch (error) {
+						console.error("Random background failed:", error);
+			
+						background.style.backgroundImage =
+							'url("images/Backgrounds/background_image_faded.jpg")';
+					}
+			
 					var maxOpacity = 0.30;
 					var ticking = false;
-
-					function shuffle(array) {
-						var shuffled = array.slice();
-						for (var i = shuffled.length - 1; i > 0; i--) {
-							var j = Math.floor(Math.random() * (i + 1));
-							var temp = shuffled[i];
-							shuffled[i] = shuffled[j];
-							shuffled[j] = temp;
-						}
-						return shuffled;
-					}
-
-					function tryBackgrounds(candidates, index) {
-						if (index >= candidates.length) return;
-
-						var candidate = candidates[index];
-						var isVideo = /\.(mp4|webm)$/i.test(candidate);
-
-						if (isVideo) {
-							var failed = false;
-							video.onloadeddata = function () {
-								if (failed) return;
-								background.style.backgroundImage = "none";
-								video.style.display = "block";
-								video.play().catch(function () {});
-							};
-							video.onerror = function () {
-								failed = true;
-								video.removeAttribute("src");
-								video.load();
-								tryBackgrounds(candidates, index + 1);
-							};
-							video.src = candidate;
-							video.load();
-						} else {
-							var tester = new Image();
-							tester.onload = function () {
-								video.pause();
-								video.style.display = "none";
-								background.style.backgroundImage = 'url("' + candidate + '")';
-							};
-							tester.onerror = function () {
-								tryBackgrounds(candidates, index + 1);
-							};
-							tester.src = candidate;
-						}
-					}
-
+			
 					function updateBackgroundOpacity() {
-						var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-						var progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+						var maxScroll =
+							document.documentElement.scrollHeight - window.innerHeight;
+			
+						var progress = maxScroll > 0
+							? Math.min(1, Math.max(0, window.scrollY / maxScroll))
+							: 0;
+			
 						background.style.opacity = progress * maxOpacity;
 						ticking = false;
 					}
-
+			
 					function requestUpdate() {
 						if (!ticking) {
 							window.requestAnimationFrame(updateBackgroundOpacity);
 							ticking = true;
 						}
 					}
-
-					tryBackgrounds(shuffle(backgrounds), 0);
+			
 					window.addEventListener("scroll", requestUpdate, { passive: true });
 					window.addEventListener("resize", requestUpdate);
 					updateBackgroundOpacity();
