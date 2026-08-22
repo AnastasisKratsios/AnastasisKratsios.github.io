@@ -1,0 +1,89 @@
+/* AI lander: intentionally isolated from the rest of the site. */
+
+#perfect-day-trigger {
+	cursor: pointer;
+}
+
+.ai-lander[hidden] {
+	display: none !important;
+}
+
+.ai-lander {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	overflow: hidden;
+	background: #fff;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 180ms ease;
+	-webkit-user-select: none;
+	user-select: none;
+	touch-action: none;
+}
+
+.ai-lander.is-open {
+	opacity: 1;
+}
+
+.ai-lander-background,
+.ai-lander-bg-image,
+.ai-lander-bg-video {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ai-lander-background {
+	opacity: 0.30;
+	pointer-events: none;
+}
+
+.ai-lander-bg-image {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ai-lander-bg-video {
+	display: none;
+	object-fit: cover;
+}
+
+.ai-lander-word {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0;
+	color: #111;
+	font-family: inherit;
+	font-size: clamp(11rem, 43vw, 44rem);
+	font-weight: 500;
+	line-height: 0.72;
+	letter-spacing: -0.13em;
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+.ai-lander-letter {
+	display: inline-block;
+	will-change: transform;
+	transform-origin: center center;
+}
+
+body.ai-lander-open {
+	overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ai-lander {
+		transition: none;
+	}
+
+	.ai-lander-letter {
+		transform: none !important;
+	}
+}
