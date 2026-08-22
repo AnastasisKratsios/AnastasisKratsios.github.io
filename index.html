@@ -591,38 +591,44 @@
 			<script src="assets/js/collaboration-map.js"></script>
 			<script src="assets/js/page-effects.js"></script>
 			<script>
-				(function () {
+				(async function () {
 					var background = document.getElementById("scroll-background");
-					var backgrounds = [
-						"images/Backgrounds/An then it happened.jpeg",
-						"images/Backgrounds/Facekid.jpg",
-						"images/Backgrounds/PurpleOnes.jpg",
-						"images/Backgrounds/background_image_faded.jpg",
-						"images/Backgrounds/background_image_faded2.jpg",
-						"images/Backgrounds/flux.gif",
-						"images/Backgrounds/fluxface.gif",
-						"images/Backgrounds/unnamed.jpg",
-						"images/Backgrounds/us_njns.gif"
-					];
+			
+					var response = await fetch(
+						"https://api.github.com/repos/AnastasisKratsios/AnastasisKratsios.github.io/contents/images/Backgrounds?ref=master"
+					);
+			
+					var files = await response.json();
+			
+					var backgrounds = files
+						.filter(function (file) {
+							return file.type === "file" &&
+								/\.(jpg|jpeg|png|gif|webp)$/i.test(file.name);
+						})
+						.map(function (file) {
+							return file.download_url;
+						});
+			
 					var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 					background.style.backgroundImage = 'url("' + randomBackground + '")';
+			
 					var maxOpacity = 0.30;
 					var ticking = false;
-
+			
 					function updateBackgroundOpacity() {
 						var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 						var progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
 						background.style.opacity = progress * maxOpacity;
 						ticking = false;
 					}
-
+			
 					function requestUpdate() {
 						if (!ticking) {
 							window.requestAnimationFrame(updateBackgroundOpacity);
 							ticking = true;
 						}
 					}
-
+			
 					window.addEventListener("scroll", requestUpdate, { passive: true });
 					window.addEventListener("resize", requestUpdate);
 					updateBackgroundOpacity();
