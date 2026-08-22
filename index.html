@@ -594,30 +594,49 @@
 				(async function () {
 					var background = document.getElementById("scroll-background");
 			
-					var response = await fetch(
-						"https://api.github.com/repos/AnastasisKratsios/AnastasisKratsios.github.io/contents/images/Backgrounds?ref=master"
-					);
+					try {
+						var response = await fetch(
+							"https://api.github.com/repos/AnastasisKratsios/AnastasisKratsios.github.io/contents/images/Backgrounds?ref=master"
+						);
 			
-					var files = await response.json();
+						if (!response.ok) throw new Error("Could not read background folder");
 			
-					var backgrounds = files
-						.filter(function (file) {
-							return file.type === "file" &&
-								/\.(jpg|jpeg|png|gif|webp)$/i.test(file.name);
-						})
-						.map(function (file) {
-							return file.download_url;
-						});
+						var files = await response.json();
 			
-					var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-					background.style.backgroundImage = 'url("' + randomBackground + '")';
+						var backgrounds = files
+							.filter(function (file) {
+								return file.type === "file" &&
+									/\.(jpg|jpeg|png|gif|webp)$/i.test(file.name);
+							})
+							.map(function (file) {
+								return file.download_url;
+							});
+			
+						if (backgrounds.length > 0) {
+							var randomBackground =
+								backgrounds[Math.floor(Math.random() * backgrounds.length)];
+			
+							background.style.backgroundImage =
+								'url("' + randomBackground + '")';
+						}
+					} catch (error) {
+						console.error("Random background failed:", error);
+			
+						background.style.backgroundImage =
+							'url("images/Backgrounds/background_image_faded.jpg")';
+					}
 			
 					var maxOpacity = 0.30;
 					var ticking = false;
 			
 					function updateBackgroundOpacity() {
-						var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-						var progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
+						var maxScroll =
+							document.documentElement.scrollHeight - window.innerHeight;
+			
+						var progress = maxScroll > 0
+							? Math.min(1, Math.max(0, window.scrollY / maxScroll))
+							: 0;
+			
 						background.style.opacity = progress * maxOpacity;
 						ticking = false;
 					}
