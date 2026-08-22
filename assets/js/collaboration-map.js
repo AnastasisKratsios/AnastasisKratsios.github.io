@@ -65,14 +65,6 @@
     const historicalNames = (d.coauthors || []).map(escapeHtml).join(", ");
     const currentNames = (d.current_coauthors || []).map(escapeHtml).join(", ");
 
-    const papers = (d.papers || []).slice(0, 12).map(p => {
-      const title = p.url
-        ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.title)}</a>`
-        : escapeHtml(p.title);
-      const names = (p.coauthors || []).map(escapeHtml).join(", ");
-      return `<li>${title}${p.year ? ` (${escapeHtml(p.year)})` : ""}${names ? `<br><span>${names}</span>` : ""}</li>`;
-    }).join("");
-
     const currentEvidence = (d.current_sources || []).map(source => {
       const person = escapeHtml(source.person || "");
       const note = source.note ? ` — ${escapeHtml(source.note)}` : "";
@@ -91,7 +83,6 @@
         <div class="collaboration-detail-section">
           <h4>On joint publications</h4>
           ${historicalNames ? `<p><strong>Co-authors:</strong> ${historicalNames}</p>` : ""}
-          ${papers ? `<ul class="collaboration-paper-list">${papers}</ul>` : ""}
         </div>
       ` : ""}
 
