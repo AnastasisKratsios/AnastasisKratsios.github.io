@@ -615,7 +615,10 @@
 			<script>
 				(async function () {
 					var background = document.getElementById("scroll-background");
-			
+				
+					background.style.backgroundImage =
+						'url("images/Backgrounds/background_image_faded.jpg")';
+				
 					try {
 						var response = await fetch(
 							"https://api.github.com/repos/AnastasisKratsios/AnastasisKratsios.github.io/contents/images/Backgrounds?ref=master"
