@@ -12,8 +12,12 @@
 	if (!trigger || !lander || !landerImage || !landerVideo || !pageBackground) return;
 
 	var pointer = { x: -10000, y: -10000, inside: false };
+	var interactionMode = "repel";
 	var state = letters.map(function () {
-		return { x: 0, y: 0, r: 0, tx: 0, ty: 0, tr: 0 };
+		return {
+			x: 0, y: 0, r: 0, sx: 1, sy: 1,
+			tx: 0, ty: 0, tr: 0, tsx: 1, tsy: 1
+		};
 	});
 	var animationFrame = null;
 
@@ -47,6 +51,22 @@
 				state[i].tx = 0;
 				state[i].ty = 0;
 				state[i].tr = 0;
+				state[i].tsx = 1;
+				state[i].tsy = 1;
+				return;
+			}
+
+			if (interactionMode === "stretch") {
+				var nx = (pointer.x - window.innerWidth / 2) / Math.max(1, window.innerWidth / 2);
+				var ny = (pointer.y - window.innerHeight / 2) / Math.max(1, window.innerHeight / 2);
+
+				state[i].tx = 0;
+				state[i].ty = 0;
+				state[i].tr = 0;
+
+				/* Cursor position elastically stretches/contracts the word. */
+				state[i].tsx = Math.max(0.55, Math.min(1.55, 1 + 0.48 * nx));
+				state[i].tsy = Math.max(0.60, Math.min(1.45, 1 - 0.38 * ny));
 				return;
 			}
 
@@ -62,6 +82,8 @@
 			state[i].tx = (dx / distance) * force;
 			state[i].ty = (dy / distance) * force;
 			state[i].tr = (pointer.x - cx) / Math.max(1, window.innerWidth) * -9 * influence;
+			state[i].tsx = 1;
+			state[i].tsy = 1;
 		});
 	}
 
@@ -73,16 +95,21 @@
 			s.x += (s.tx - s.x) * 0.16;
 			s.y += (s.ty - s.y) * 0.16;
 			s.r += (s.tr - s.r) * 0.16;
+			s.sx += (s.tsx - s.sx) * 0.14;
+			s.sy += (s.tsy - s.sy) * 0.14;
 
 			if (
 				Math.abs(s.tx - s.x) > 0.05 ||
 				Math.abs(s.ty - s.y) > 0.05 ||
-				Math.abs(s.tr - s.r) > 0.02
+				Math.abs(s.tr - s.r) > 0.02 ||
+				Math.abs(s.tsx - s.sx) > 0.002 ||
+				Math.abs(s.tsy - s.sy) > 0.002
 			) moving = true;
 
 			letter.style.transform =
 				"translate3d(" + s.x.toFixed(2) + "px," + s.y.toFixed(2) + "px,0) " +
-				"rotate(" + s.r.toFixed(2) + "deg)";
+				"rotate(" + s.r.toFixed(2) + "deg) " +
+				"scale(" + s.sx.toFixed(3) + "," + s.sy.toFixed(3) + ")";
 		});
 
 		animationFrame = (moving || pointer.inside)
@@ -101,6 +128,13 @@
 			event.preventDefault();
 			event.stopPropagation();
 		}
+
+		/* Fresh 50/50 interaction choice every time the hidden lander opens. */
+		interactionMode = Math.random() < 0.5 ? "repel" : "stretch";
+
+		pointer.inside = false;
+		setTargets();
+		ensureAnimation();
 
 		syncChosenBackground();
 		lander.hidden = false;
