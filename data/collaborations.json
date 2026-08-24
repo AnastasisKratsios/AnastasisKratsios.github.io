@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T05:58:31Z",
+  "generated_at": "2026-08-24T10:05:14Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
@@ -9,8 +9,8 @@
   "matched_publications": 60,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
-  "raw_affiliations_resolved": 3,
-  "fallback_paper_links_added": 184,
+  "raw_affiliations_resolved": 4,
+  "fallback_paper_links_added": 181,
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
@@ -988,13 +988,25 @@
         "Blanka Horvath"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
           "year": 2024,
           "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
           "coauthors": [
             "Blanka Horvath"
           ],
@@ -1255,13 +1267,25 @@
         "Blanka Horvath"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
           "year": 2024,
           "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
           "coauthors": [
             "Blanka Horvath"
           ],
@@ -1328,13 +1352,26 @@
         "Yannick Limmer"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
           "year": 2024,
           "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath",
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
           "coauthors": [
             "Blanka Horvath",
             "Yannick Limmer"
@@ -1630,7 +1667,8 @@
             "Xuwei Yang"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -2133,13 +2171,25 @@
         "Yannick Limmer"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
           "year": 2024,
           "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Yannick Limmer"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
           "coauthors": [
             "Yannick Limmer"
           ],
@@ -2276,7 +2326,7 @@
         "Yannick Limmer"
       ],
       "current_coauthors": [],
-      "paper_count": 2,
+      "paper_count": 3,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
@@ -2297,6 +2347,18 @@
           "url": "https://arxiv.org/abs/2308.09250",
           "coauthors": [
             "Haitz Sáez de Ocáriz Borde"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
+          "coauthors": [
+            "Yannick Limmer"
           ],
           "evidence": [
             "openalex-structured"
@@ -2527,13 +2589,26 @@
         "Blanka Horvath"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
           "title": "Filtered not Mixed: Stochastic Filtering-Based Online Gating for Mixture of Large Language Models",
           "year": 2024,
           "url": "https://arxiv.org/abs/2406.02969",
+          "coauthors": [
+            "Blanka Horvath"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
+          "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2310.19603",
           "coauthors": [
             "Blanka Horvath"
           ],
@@ -3269,7 +3344,9 @@
             "Yannick Limmer"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
       ],
