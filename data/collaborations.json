@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:05:14Z",
+  "generated_at": "2026-08-31T17:05:16Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
