@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:05:16Z",
+  "generated_at": "2026-09-07T15:04:24Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
@@ -4144,7 +4144,7 @@
       "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
       "title": "Step by Step: Adaptive Gradient Descent for Training L-Lipschitz Neural Networks",
       "year": 2025,
-      "best_title_match_score": 0.26,
+      "best_title_match_score": 0.273,
       "openalex_status": "unmatched"
     },
     {
