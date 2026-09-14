@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07T15:04:24Z",
+  "generated_at": "2026-09-14T15:54:29Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
   "openalex_available": true,
-  "matched_publications": 60,
+  "matched_publications": 59,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
   "raw_affiliations_resolved": 4,
@@ -14,7 +14,7 @@
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
-    "author-profile": 60
+    "author-profile": 59
   },
   "institutions": [
     {
@@ -4124,6 +4124,13 @@
       "title": "Guiding Two-Layer Neural Networks toward Lipschitzness via Gradient Descent Learning Rate Constraints",
       "year": 2025,
       "best_title_match_score": 0.29,
+      "openalex_status": "unmatched"
+    },
+    {
+      "id": "incremental-generation-is-necessary-and-sufficient-for-universality-in-f",
+      "title": "Incremental Generation is Necessary and Sufficient for Universality in Flow-Based Modelling",
+      "year": 2025,
+      "best_title_match_score": 0.295,
       "openalex_status": "unmatched"
     },
     {
