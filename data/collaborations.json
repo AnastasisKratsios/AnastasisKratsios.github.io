@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T17:39:59Z",
+  "generated_at": "2026-10-05T18:30:17Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
@@ -9,8 +9,8 @@
   "matched_publications": 59,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
-  "raw_affiliations_resolved": 4,
-  "fallback_paper_links_added": 183,
+  "raw_affiliations_resolved": 7,
+  "fallback_paper_links_added": 150,
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
@@ -56,6 +56,42 @@
       "has_current": false,
       "sources": [
         "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:aithyra-gmbh-research-institute-for-biomedical-artificial-intelligence-austria",
+      "openalex_id": "https://openalex.org/I4405253208",
+      "name": "AITHYRA GmbH- Research Institute for Biomedical Artificial Intelligence (Austria)",
+      "city": "Vienna",
+      "region": "Vienna",
+      "country": "Austria",
+      "country_code": "AT",
+      "latitude": 48.20849,
+      "longitude": 16.37208,
+      "coauthors": [
+        "Michael M. Bronstein"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
+          "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2411.00835",
+          "coauthors": [
+            "Michael M. Bronstein"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -137,12 +173,12 @@
     },
     {
       "id": "inst:concordia-university",
-      "openalex_id": "https://openalex.org/I60158472",
+      "openalex_id": "https://openalex.org/I4210148195",
       "name": "Concordia University",
       "city": "Montreal",
       "region": "Quebec",
       "country": "Canada",
-      "country_code": "CA",
+      "country_code": "US",
       "latitude": 45.5017,
       "longitude": -73.5673,
       "coauthors": [
@@ -165,7 +201,9 @@
             "Simone Brugiapaglia"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -177,7 +215,9 @@
             "Cody Hyndman"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -398,7 +438,9 @@
             "Takashi Furuya"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -410,7 +452,9 @@
             "Takashi Furuya"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
       ],
@@ -626,6 +670,7 @@
         "Gudmund Pammer",
         "Jonas Rothfuss",
         "Josef Teichmann",
+        "Krach, Florian",
         "Parnian Kassraie",
         "Philippe Casgrain",
         "Songyan Hou"
@@ -647,7 +692,9 @@
             "Dylan Possamaï"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -716,7 +763,8 @@
             "Songyan Hou"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -725,10 +773,12 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2309.04557",
           "coauthors": [
-            "Florian Krach"
+            "Florian Krach",
+            "Krach, Florian"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -975,6 +1025,78 @@
       "current_sources": []
     },
     {
+      "id": "inst:institut-national-de-recherche-en-sciences-et-technologies-du-numerique",
+      "openalex_id": "https://openalex.org/I1326498283",
+      "name": "Institut national de recherche en sciences et technologies du numérique",
+      "city": "Le Chesnay-Rocquencourt",
+      "region": "Île-de-France",
+      "country": "France",
+      "country_code": "FR",
+      "latitude": 48.8205,
+      "longitude": 2.1311,
+      "coauthors": [
+        "Florian Faucher"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "out-of-distributional-risk-bounds-for-neural-operators-with-applications",
+          "title": "Out-of-distributional risk bounds for neural operators with applications to the Helmholtz equation",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2301.11509",
+          "coauthors": [
+            "Florian Faucher"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:institute-for-biomedical-engineering",
+      "openalex_id": "https://openalex.org/I4210090941",
+      "name": "Institute for Biomedical Engineering",
+      "city": "Zurich",
+      "region": "",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.37746047973633,
+      "longitude": 8.55285930633545,
+      "coauthors": [
+        "Bogdan Raonić"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
+          "title": "One model to solve them all: 2BSDE families via neural operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.01125",
+          "coauthors": [
+            "Bogdan Raonić"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
       "id": "inst:institute-of-mathematical-sciences",
       "openalex_id": "https://openalex.org/I59611059",
       "name": "Institute of Mathematical Sciences",
@@ -985,10 +1107,11 @@
       "latitude": 13.08784,
       "longitude": 80.27847,
       "coauthors": [
-        "Blanka N. Horvath"
+        "Blanka N. Horvath",
+        "Chong Liu"
       ],
       "current_coauthors": [],
-      "paper_count": 2,
+      "paper_count": 3,
       "papers": [
         {
           "id": "filtered-not-mixed-stochastic-filtering-based-online-gating-for-mixture-",
@@ -997,6 +1120,18 @@
           "url": "https://arxiv.org/abs/2406.02969",
           "coauthors": [
             "Blanka N. Horvath"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation"
+          ]
+        },
+        {
+          "id": "an-approximation-theory-for-metric-space-valued-functions-with-a-view-to",
+          "title": "An Approximation Theory for Metric Space-Valued Functions With A View Towards Deep Learning",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2304.12231",
+          "coauthors": [
+            "Chong Liu"
           ],
           "evidence": [
             "openalex-raw-affiliation"
@@ -1033,6 +1168,7 @@
       "latitude": 51.5074,
       "longitude": -0.1278,
       "coauthors": [
+        "Giulia Livieri",
         "John Armstrong",
         "Luca Galimberti"
       ],
@@ -1059,11 +1195,14 @@
           "year": 2024,
           "url": "https://arxiv.org/abs/2405.20094",
           "coauthors": [
+            "Giulia Livieri",
             "John Armstrong",
             "Luca Galimberti"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -1085,6 +1224,7 @@
       "sources": [
         "curated-arxiv-fallback",
         "current-affiliation-fallback",
+        "openalex-raw-affiliation",
         "openalex-structured"
       ],
       "current_sources": [
@@ -1231,8 +1371,20 @@
         "Giulia Livieri"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
+        {
+          "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
+          "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2602.03970",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
         {
           "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
           "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
@@ -1290,8 +1442,44 @@
       "current_sources": []
     },
     {
+      "id": "inst:mansfield-university",
+      "openalex_id": "https://openalex.org/I131579929",
+      "name": "Mansfield University",
+      "city": "Mansfield",
+      "region": "Pennsylvania",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 41.806800842285156,
+      "longitude": -77.07080078125,
+      "coauthors": [
+        "Blanka N. Horvath"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
+          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2405.16563",
+          "coauthors": [
+            "Blanka N. Horvath"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
       "id": "inst:massachusetts-institute-of-technology",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I63966007",
       "name": "Massachusetts Institute of Technology",
       "city": "Cambridge",
       "region": "Massachusetts",
@@ -1314,14 +1502,18 @@
             "Artem Lukoianov"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
       ],
       "has_historical": true,
       "has_current": false,
       "sources": [
-        "curated-arxiv-fallback"
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -1336,6 +1528,7 @@
       "latitude": 43.2609,
       "longitude": -79.9192,
       "coauthors": [
+        "Aurélien Lucchi",
         "Behnoosh Zamanlooy",
         "Bradd Hart",
         "Dennis Zvigelsky",
@@ -1345,6 +1538,7 @@
         "Kholood Khalil",
         "Kyle Sung",
         "Matheus Grasselli",
+        "Matheus R. Grasselli",
         "Noah Forman",
         "Paul D. McNicholas",
         "Paul David McNicholas",
@@ -1402,7 +1596,9 @@
             "Gregory Cousins"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -1414,7 +1610,8 @@
             "Xuwei Yang"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -1477,7 +1674,8 @@
             "Xuwei Yang"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -1565,7 +1763,8 @@
             "Reza Arabpour"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation"
           ]
         },
         {
@@ -1588,11 +1787,14 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2309.04557",
           "coauthors": [
+            "Aurélien Lucchi",
             "Matheus Grasselli",
+            "Matheus R. Grasselli",
             "Xuwei Yang"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -1617,7 +1819,8 @@
             "Behnoosh Zamanlooy"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         }
       ],
@@ -1739,7 +1942,7 @@
     },
     {
       "id": "inst:mohamed-bin-zayed-university-of-artificial-intelligence",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I4210113480",
       "name": "Mohamed bin Zayed University of Artificial Intelligence",
       "city": "Abu Dhabi",
       "region": "Abu Dhabi",
@@ -1762,14 +1965,16 @@
             "Arip Asadulaev"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         }
       ],
       "has_historical": true,
       "has_current": false,
       "sources": [
-        "curated-arxiv-fallback"
+        "curated-arxiv-fallback",
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -2095,6 +2300,42 @@
       "current_sources": []
     },
     {
+      "id": "inst:quantitative-biosciences",
+      "openalex_id": "https://openalex.org/I4210098931",
+      "name": "Quantitative BioSciences",
+      "city": "Solana Beach",
+      "region": "California",
+      "country": "United States",
+      "country_code": "US",
+      "latitude": 32.99115,
+      "longitude": -117.27115,
+      "coauthors": [
+        "Blanka N. Horvath"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
+          "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2601.11209",
+          "coauthors": [
+            "Blanka N. Horvath"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
+    },
+    {
       "id": "inst:rice-university",
       "openalex_id": "https://openalex.org/I74775410",
       "name": "Rice University",
@@ -2161,7 +2402,9 @@
             "Maarten V. de Hoop"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -2235,7 +2478,7 @@
     },
     {
       "id": "inst:shanghaitech-university",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I30809798",
       "name": "ShanghaiTech University",
       "city": "Shanghai",
       "region": "Shanghai",
@@ -2258,14 +2501,16 @@
             "Chong Liu"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         }
       ],
       "has_historical": true,
       "has_current": false,
       "sources": [
-        "curated-arxiv-fallback"
+        "curated-arxiv-fallback",
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -2294,7 +2539,9 @@
             "Takashi Furuya"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -2306,7 +2553,9 @@
             "Takashi Furuya"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -2643,7 +2892,7 @@
     },
     {
       "id": "inst:university-of-basel",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I1850255",
       "name": "University of Basel",
       "city": "Basel",
       "region": "Basel-Stadt",
@@ -2653,6 +2902,7 @@
       "longitude": 7.5886,
       "coauthors": [
         "Aurelien Lucchi",
+        "Aurélien Lucchi",
         "Ivan Dokmanić",
         "Tianlin Liu",
         "Tin Sum Cheng",
@@ -2709,10 +2959,12 @@
           "url": "https://arxiv.org/abs/2402.01297",
           "coauthors": [
             "Aurelien Lucchi",
+            "Aurélien Lucchi",
             "Tin Sum Cheng"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -2747,10 +2999,12 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2309.04557",
           "coauthors": [
-            "Aurelien Lucchi"
+            "Aurelien Lucchi",
+            "Aurélien Lucchi"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -2763,7 +3017,8 @@
             "Valentin Debarnot"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -2784,7 +3039,8 @@
       "has_current": true,
       "sources": [
         "curated-arxiv-fallback",
-        "current-affiliation-fallback"
+        "current-affiliation-fallback",
+        "openalex-structured"
       ],
       "current_sources": [
         {
@@ -2870,7 +3126,7 @@
     },
     {
       "id": "inst:university-of-helsinki",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I133731052",
       "name": "University of Helsinki",
       "city": "Helsinki",
       "region": "Uusimaa",
@@ -2879,6 +3135,7 @@
       "latitude": 60.1699,
       "longitude": 24.9384,
       "coauthors": [
+        "Matti J. Lassas",
         "Matti Lassas"
       ],
       "current_coauthors": [
@@ -2916,10 +3173,13 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2304.12231",
           "coauthors": [
+            "Matti J. Lassas",
             "Matti Lassas"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
       ],
@@ -2927,7 +3187,9 @@
       "has_current": true,
       "sources": [
         "curated-arxiv-fallback",
-        "current-affiliation-fallback"
+        "current-affiliation-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
       ],
       "current_sources": [
         {
@@ -2943,7 +3205,7 @@
     },
     {
       "id": "inst:university-of-michigan",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I27837315",
       "name": "University of Michigan",
       "city": "Ann Arbor",
       "region": "Michigan",
@@ -2952,6 +3214,7 @@
       "latitude": 42.2808,
       "longitude": -83.743,
       "coauthors": [
+        "Guillermo Alonso Alvarez",
         "Guillermo Alvarez",
         "Ibrahim Ekren"
       ],
@@ -2964,18 +3227,21 @@
           "year": 2025,
           "url": "https://www.jmlr.org/papers/v26/24-1985.html",
           "coauthors": [
+            "Guillermo Alonso Alvarez",
             "Guillermo Alvarez",
             "Ibrahim Ekren"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         }
       ],
       "has_historical": true,
       "has_current": false,
       "sources": [
-        "curated-arxiv-fallback"
+        "curated-arxiv-fallback",
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -2994,7 +3260,9 @@
         "Blanka N. Horvath",
         "Haitz Sáez de Ocáriz Borde",
         "Hans Buehler",
+        "Law, Marc T.",
         "Michael Bronstein",
+        "Michael M. Bronstein",
         "Raeid Saqur",
         "Xiaowen Dong",
         "Yannick Limmer"
@@ -3014,11 +3282,14 @@
           "url": "https://arxiv.org/abs/2601.11209",
           "coauthors": [
             "Blanka Horvath",
+            "Blanka N. Horvath",
             "Hans Buehler",
             "Raeid Saqur"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3068,10 +3339,12 @@
           "url": "https://arxiv.org/abs/2405.16563",
           "coauthors": [
             "Blanka Horvath",
+            "Blanka N. Horvath",
             "Yannick Limmer"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation"
           ]
         },
         {
@@ -3081,11 +3354,14 @@
           "url": "https://arxiv.org/abs/2408.13885",
           "coauthors": [
             "Haitz Sáez de Ocáriz Borde",
+            "Law, Marc T.",
             "Michael Bronstein",
             "Xiaowen Dong"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3096,10 +3372,13 @@
           "coauthors": [
             "Haitz Sáez de Ocáriz Borde",
             "Michael Bronstein",
+            "Michael M. Bronstein",
             "Xiaowen Dong"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3418,7 +3697,7 @@
     },
     {
       "id": "inst:university-of-vienna",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I129774422",
       "name": "University of Vienna",
       "city": "Vienna",
       "region": "Vienna",
@@ -3428,6 +3707,7 @@
       "longitude": 16.3738,
       "coauthors": [
         "A. Martina Neuman",
+        "Anh  Martina Neuman",
         "Philipp Petersen"
       ],
       "current_coauthors": [],
@@ -3443,7 +3723,9 @@
             "Philipp Petersen"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3452,10 +3734,13 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.03970",
           "coauthors": [
-            "A. Martina Neuman"
+            "A. Martina Neuman",
+            "Anh  Martina Neuman"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3486,7 +3771,9 @@
       "has_historical": true,
       "has_current": false,
       "sources": [
-        "curated-arxiv-fallback"
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -3553,6 +3840,7 @@
       "latitude": 43.6532,
       "longitude": -79.3832,
       "coauthors": [
+        "D. B. Emerson",
         "Daniel M. Roy",
         "David B. Emerson",
         "Dennis Zvigelsky",
@@ -3562,6 +3850,7 @@
         "Hrad Ghoukasian",
         "Jacob-Junqi Tian",
         "John Willes",
+        "Krach, Florian",
         "Paul D. McNicholas",
         "Paul David McNicholas",
         "Raeid Saqur",
@@ -3573,7 +3862,7 @@
       "current_coauthors": [
         "Yicen Li"
       ],
-      "paper_count": 16,
+      "paper_count": 18,
       "papers": [
         {
           "id": "certifiable-boolean-reasoning-is-universal",
@@ -3608,11 +3897,13 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2605.05492",
           "coauthors": [
+            "D. B. Emerson",
             "David B. Emerson",
             "Fatemeh Tavakoli"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -3627,6 +3918,18 @@
           ],
           "evidence": [
             "curated-arxiv-fallback"
+          ]
+        },
+        {
+          "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
+          "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2601.11209",
+          "coauthors": [
+            "Raeid Saqur"
+          ],
+          "evidence": [
+            "openalex-structured"
           ]
         },
         {
@@ -3752,7 +4055,8 @@
             "Reza Arabpour"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -3766,6 +4070,18 @@
           "evidence": [
             "curated-arxiv-fallback",
             "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
+          "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
+          "year": 2023,
+          "url": "https://arxiv.org/abs/2309.04557",
+          "coauthors": [
+            "Krach, Florian"
+          ],
+          "evidence": [
             "openalex-structured"
           ]
         },
@@ -3837,6 +4153,44 @@
       "has_current": false,
       "sources": [
         "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:yandex-russia",
+      "openalex_id": "https://openalex.org/I58957048",
+      "name": "Yandex (Russia)",
+      "city": "Moscow",
+      "region": "Moscow",
+      "country": "Russia",
+      "country_code": "RU",
+      "latitude": 55.75204,
+      "longitude": 37.61781,
+      "coauthors": [
+        "Dmitry Baranchuk",
+        "Nikita Starodubcev"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "inverse-entropic-optimal-transport-solves-semi-supervised-learning-via-d",
+          "title": "Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2410.02628",
+          "coauthors": [
+            "Dmitry Baranchuk",
+            "Nikita Starodubcev"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -3952,7 +4306,7 @@
       "id": "replication-of-a-real-estate-market-index-teranet-national-bank-of-canad",
       "title": "Replication of a Real-Estate Market Index (Teranet – National Bank of Canada)",
       "year": 2017,
-      "best_title_match_score": 0.254,
+      "best_title_match_score": 0.251,
       "openalex_status": "unmatched"
     }
   ]
