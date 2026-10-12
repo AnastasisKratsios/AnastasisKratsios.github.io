@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-05T18:30:17Z",
+  "generated_at": "2026-10-12T19:04:43Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
   "openalex_available": true,
-  "matched_publications": 59,
+  "matched_publications": 57,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
-  "raw_affiliations_resolved": 7,
-  "fallback_paper_links_added": 150,
+  "raw_affiliations_resolved": 5,
+  "fallback_paper_links_added": 147,
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
-    "author-profile": 59
+    "author-profile": 57
   },
   "institutions": [
     {
@@ -670,7 +670,6 @@
         "Gudmund Pammer",
         "Jonas Rothfuss",
         "Josef Teichmann",
-        "Krach, Florian",
         "Parnian Kassraie",
         "Philippe Casgrain",
         "Songyan Hou"
@@ -720,7 +719,8 @@
             "Gudmund Pammer"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -773,12 +773,10 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2309.04557",
           "coauthors": [
-            "Florian Krach",
-            "Krach, Florian"
+            "Florian Krach"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -1442,42 +1440,6 @@
       "current_sources": []
     },
     {
-      "id": "inst:mansfield-university",
-      "openalex_id": "https://openalex.org/I131579929",
-      "name": "Mansfield University",
-      "city": "Mansfield",
-      "region": "Pennsylvania",
-      "country": "United States",
-      "country_code": "US",
-      "latitude": 41.806800842285156,
-      "longitude": -77.07080078125,
-      "coauthors": [
-        "Blanka N. Horvath"
-      ],
-      "current_coauthors": [],
-      "paper_count": 1,
-      "papers": [
-        {
-          "id": "higher-order-transformer-derivative-estimates-for-explicit-pathwise-lear",
-          "title": "Higher-Order Transformer Derivative Estimates for Explicit Pathwise Learning Guarantees",
-          "year": 2024,
-          "url": "https://arxiv.org/abs/2405.16563",
-          "coauthors": [
-            "Blanka N. Horvath"
-          ],
-          "evidence": [
-            "openalex-structured"
-          ]
-        }
-      ],
-      "has_historical": true,
-      "has_current": false,
-      "sources": [
-        "openalex-structured"
-      ],
-      "current_sources": []
-    },
-    {
       "id": "inst:massachusetts-institute-of-technology",
       "openalex_id": "https://openalex.org/I63966007",
       "name": "Massachusetts Institute of Technology",
@@ -1528,7 +1490,6 @@
       "latitude": 43.2609,
       "longitude": -79.9192,
       "coauthors": [
-        "Aurélien Lucchi",
         "Behnoosh Zamanlooy",
         "Bradd Hart",
         "Dennis Zvigelsky",
@@ -1538,7 +1499,6 @@
         "Kholood Khalil",
         "Kyle Sung",
         "Matheus Grasselli",
-        "Matheus R. Grasselli",
         "Noah Forman",
         "Paul D. McNicholas",
         "Paul David McNicholas",
@@ -1764,7 +1724,8 @@
           ],
           "evidence": [
             "curated-arxiv-fallback",
-            "openalex-raw-affiliation"
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -1787,14 +1748,11 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2309.04557",
           "coauthors": [
-            "Aurélien Lucchi",
             "Matheus Grasselli",
-            "Matheus R. Grasselli",
             "Xuwei Yang"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -2743,7 +2701,7 @@
     },
     {
       "id": "inst:unidistance-suisse",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I4210134521",
       "name": "UniDistance Suisse",
       "city": "Brig",
       "region": "Valais",
@@ -2780,7 +2738,8 @@
             "David Belius"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -2800,7 +2759,8 @@
       "has_current": true,
       "sources": [
         "curated-arxiv-fallback",
-        "current-affiliation-fallback"
+        "current-affiliation-fallback",
+        "openalex-structured"
       ],
       "current_sources": [
         {
@@ -2999,12 +2959,10 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2309.04557",
           "coauthors": [
-            "Aurelien Lucchi",
-            "Aurélien Lucchi"
+            "Aurelien Lucchi"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -3265,6 +3223,7 @@
         "Michael M. Bronstein",
         "Raeid Saqur",
         "Xiaowen Dong",
+        "Xuwei Yang",
         "Yannick Limmer"
       ],
       "current_coauthors": [
@@ -3340,11 +3299,14 @@
           "coauthors": [
             "Blanka Horvath",
             "Blanka N. Horvath",
+            "Raeid Saqur",
+            "Xuwei Yang",
             "Yannick Limmer"
           ],
           "evidence": [
             "curated-arxiv-fallback",
-            "openalex-raw-affiliation"
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3761,10 +3723,13 @@
           "year": 2024,
           "url": "https://arxiv.org/abs/2402.05576",
           "coauthors": [
-            "A. Martina Neuman"
+            "A. Martina Neuman",
+            "Anh  Martina Neuman"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
       ],
@@ -3850,7 +3815,6 @@
         "Hrad Ghoukasian",
         "Jacob-Junqi Tian",
         "John Willes",
-        "Krach, Florian",
         "Paul D. McNicholas",
         "Paul David McNicholas",
         "Raeid Saqur",
@@ -3862,7 +3826,7 @@
       "current_coauthors": [
         "Yicen Li"
       ],
-      "paper_count": 18,
+      "paper_count": 17,
       "papers": [
         {
           "id": "certifiable-boolean-reasoning-is-universal",
@@ -4074,18 +4038,6 @@
           ]
         },
         {
-          "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
-          "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
-          "year": 2023,
-          "url": "https://arxiv.org/abs/2309.04557",
-          "coauthors": [
-            "Krach, Florian"
-          ],
-          "evidence": [
-            "openalex-structured"
-          ]
-        },
-        {
           "id": "transformers-can-solve-non-linear-and-non-markovian-filtering-problems-i",
           "title": "Transformers Can Solve Non-Linear and Non-Markovian Filtering Problems in Continuous Time For Conditionally Gaussian Signals",
           "year": 2023,
@@ -4233,6 +4185,13 @@
   ],
   "unmatched_publications": [
     {
+      "id": "beyond-universal-approximation-theorems-algorithmic-uniform-approximatio",
+      "title": "Beyond Universal Approximation Theorems: Algorithmic Uniform Approximation by Neural Networks Trained with Noisy Data",
+      "year": 2025,
+      "best_title_match_score": 0.295,
+      "openalex_status": "unmatched"
+    },
+    {
       "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
       "title": "Guiding Two-Layer Neural Networks toward Lipschitzness via Gradient Descent Learning Rate Constraints",
       "year": 2025,
@@ -4300,6 +4259,13 @@
       "title": "Deep Kalman Filters Can Filter",
       "year": 2023,
       "best_title_match_score": 0.258,
+      "openalex_status": "unmatched"
+    },
+    {
+      "id": "regret-optimal-federated-transfer-learning-for-kernel-regression-with-ap",
+      "title": "Regret-Optimal Federated Transfer Learning for Kernel Regression with Applications in American Option Pricing",
+      "year": 2023,
+      "best_title_match_score": 0.446,
       "openalex_status": "unmatched"
     },
     {
