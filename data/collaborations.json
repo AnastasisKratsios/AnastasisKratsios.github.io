@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-12T19:04:43Z",
+  "generated_at": "2026-10-19T16:29:28Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
   "openalex_available": true,
-  "matched_publications": 57,
+  "matched_publications": 58,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
   "raw_affiliations_resolved": 5,
-  "fallback_paper_links_added": 147,
+  "fallback_paper_links_added": 146,
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
-    "author-profile": 57
+    "author-profile": 58
   },
   "institutions": [
     {
@@ -73,8 +73,20 @@
         "Michael M. Bronstein"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 2,
       "papers": [
+        {
+          "id": "neural-spacetimes-for-dag-representation-learning",
+          "title": "Neural Spacetimes for DAG Representation Learning",
+          "year": 2024,
+          "url": "https://arxiv.org/abs/2408.13885",
+          "coauthors": [
+            "Michael M. Bronstein"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
         {
           "id": "scalable-message-passing-neural-networks-no-need-for-attention-in-large-",
           "title": "Scalable Message Passing Neural Networks: No Need for Attention in Large Graph Representation Learning",
@@ -190,7 +202,7 @@
         "Cody Hyndman",
         "Simone Brugiapaglia"
       ],
-      "paper_count": 5,
+      "paper_count": 4,
       "papers": [
         {
           "id": "every-feedforward-neural-network-definable-in-an-o-minimal-structure-has",
@@ -230,19 +242,6 @@
           ],
           "evidence": [
             "curated-arxiv-fallback"
-          ]
-        },
-        {
-          "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
-          "title": "Deep Arbitrage-Free Learning in a Generalized HJM Framework via Arbitrage-Regularization",
-          "year": 2020,
-          "url": "https://www.mdpi.com/2227-9091/8/2/40",
-          "coauthors": [
-            "Cody Hyndman"
-          ],
-          "evidence": [
-            "openalex-raw-affiliation",
-            "openalex-structured"
           ]
         },
         {
@@ -665,6 +664,7 @@
         "Beatrice Acciaio",
         "Bogdan Raonić",
         "Calypso Herrera",
+        "Cody Hyndman",
         "Dylan Possamaï",
         "Florian Krach",
         "Gudmund Pammer",
@@ -679,7 +679,7 @@
         "Dylan Possamaï",
         "Philipp Schmocker"
       ],
-      "paper_count": 8,
+      "paper_count": 9,
       "papers": [
         {
           "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
@@ -789,6 +789,19 @@
           ],
           "evidence": [
             "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "deep-arbitrage-free-learning-in-a-generalized-hjm-framework-via-arbitrag",
+          "title": "Deep Arbitrage-Free Learning in a Generalized HJM Framework via Arbitrage-Regularization",
+          "year": 2020,
+          "url": "https://www.mdpi.com/2227-9091/8/2/40",
+          "coauthors": [
+            "Cody Hyndman"
+          ],
+          "evidence": [
             "openalex-raw-affiliation",
             "openalex-structured"
           ]
@@ -1045,42 +1058,6 @@
           "url": "https://arxiv.org/abs/2301.11509",
           "coauthors": [
             "Florian Faucher"
-          ],
-          "evidence": [
-            "openalex-structured"
-          ]
-        }
-      ],
-      "has_historical": true,
-      "has_current": false,
-      "sources": [
-        "openalex-structured"
-      ],
-      "current_sources": []
-    },
-    {
-      "id": "inst:institute-for-biomedical-engineering",
-      "openalex_id": "https://openalex.org/I4210090941",
-      "name": "Institute for Biomedical Engineering",
-      "city": "Zurich",
-      "region": "",
-      "country": "Switzerland",
-      "country_code": "CH",
-      "latitude": 47.37746047973633,
-      "longitude": 8.55285930633545,
-      "coauthors": [
-        "Bogdan Raonić"
-      ],
-      "current_coauthors": [],
-      "paper_count": 1,
-      "papers": [
-        {
-          "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
-          "title": "One model to solve them all: 2BSDE families via neural operators",
-          "year": 2025,
-          "url": "https://arxiv.org/abs/2511.01125",
-          "coauthors": [
-            "Bogdan Raonić"
           ],
           "evidence": [
             "openalex-structured"
@@ -1369,25 +1346,13 @@
         "Giulia Livieri"
       ],
       "current_coauthors": [],
-      "paper_count": 2,
+      "paper_count": 1,
       "papers": [
         {
           "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
           "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.03970",
-          "coauthors": [
-            "Giulia Livieri"
-          ],
-          "evidence": [
-            "openalex-structured"
-          ]
-        },
-        {
-          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
-          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
-          "year": 2022,
-          "url": "https://arxiv.org/abs/2210.13300",
           "coauthors": [
             "Giulia Livieri"
           ],
@@ -1498,6 +1463,7 @@
         "Hrad Ghoukasian",
         "Kholood Khalil",
         "Kyle Sung",
+        "Luca Galimberti",
         "Matheus Grasselli",
         "Noah Forman",
         "Paul D. McNicholas",
@@ -1505,6 +1471,7 @@
         "Reza Arabpour",
         "Ruiyang Hong",
         "Steven Samu",
+        "Sung, Kyle",
         "Xuwei Yang",
         "Yicen Li"
       ],
@@ -1518,7 +1485,7 @@
         "Ruiyang Hong",
         "Yicen Li"
       ],
-      "paper_count": 20,
+      "paper_count": 21,
       "papers": [
         {
           "id": "certifiable-boolean-reasoning-is-universal",
@@ -1684,10 +1651,13 @@
             "Kholood Khalil",
             "Kyle Sung",
             "Noah Forman",
-            "Steven Samu"
+            "Steven Samu",
+            "Sung, Kyle"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -1765,6 +1735,18 @@
           ],
           "evidence": [
             "curated-arxiv-fallback",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
+          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2210.13300",
+          "coauthors": [
+            "Luca Galimberti"
+          ],
+          "evidence": [
             "openalex-structured"
           ]
         },
@@ -2433,6 +2415,42 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "inst:seminar-for-applied-mathematics",
+      "openalex_id": "https://openalex.org/I4405253140",
+      "name": "Seminar for Applied Mathematics",
+      "city": "Zurich",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "latitude": 47.36667,
+      "longitude": 8.55,
+      "coauthors": [
+        "Bogdan Raonić"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "one-model-to-solve-them-all-2bsde-families-via-neural-operators",
+          "title": "One model to solve them all: 2BSDE families via neural operators",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2511.01125",
+          "coauthors": [
+            "Bogdan Raonić"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-structured"
+      ],
+      "current_sources": []
     },
     {
       "id": "inst:shanghaitech-university",
@@ -3318,6 +3336,7 @@
             "Haitz Sáez de Ocáriz Borde",
             "Law, Marc T.",
             "Michael Bronstein",
+            "Michael M. Bronstein",
             "Xiaowen Dong"
           ],
           "evidence": [
@@ -4195,7 +4214,7 @@
       "id": "guiding-two-layer-neural-networks-toward-lipschitzness-via-gradient-desc",
       "title": "Guiding Two-Layer Neural Networks toward Lipschitzness via Gradient Descent Learning Rate Constraints",
       "year": 2025,
-      "best_title_match_score": 0.29,
+      "best_title_match_score": 0.345,
       "openalex_status": "unmatched"
     },
     {
@@ -4216,14 +4235,7 @@
       "id": "quantifying-the-limits-of-ai-reasoning-systematic-neural-network-represe",
       "title": "Quantifying The Limits of AI Reasoning: Systematic Neural Network Representations of Algorithms",
       "year": 2025,
-      "best_title_match_score": 0.404,
-      "openalex_status": "unmatched"
-    },
-    {
-      "id": "step-by-step-adaptive-gradient-descent-for-training-l-lipschitz-neural-n",
-      "title": "Step by Step: Adaptive Gradient Descent for Training L-Lipschitz Neural Networks",
-      "year": 2025,
-      "best_title_match_score": 0.273,
+      "best_title_match_score": 0.622,
       "openalex_status": "unmatched"
     },
     {
