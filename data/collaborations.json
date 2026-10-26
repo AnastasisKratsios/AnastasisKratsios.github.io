@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19T16:29:28Z",
+  "generated_at": "2026-10-26T16:09:18Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
   "openalex_available": true,
-  "matched_publications": 58,
+  "matched_publications": 57,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
   "raw_affiliations_resolved": 5,
@@ -14,7 +14,7 @@
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
-    "author-profile": 58
+    "author-profile": 57
   },
   "institutions": [
     {
@@ -4208,6 +4208,13 @@
       "title": "Beyond Universal Approximation Theorems: Algorithmic Uniform Approximation by Neural Networks Trained with Noisy Data",
       "year": 2025,
       "best_title_match_score": 0.295,
+      "openalex_status": "unmatched"
+    },
+    {
+      "id": "generative-neural-operators-of-log-complexity-can-simultaneously-solve-i",
+      "title": "Generative Neural Operators of Log-Complexity Can Simultaneously Solve Infinitely Many Convex Programs",
+      "year": 2025,
+      "best_title_match_score": 0.58,
       "openalex_status": "unmatched"
     },
     {
