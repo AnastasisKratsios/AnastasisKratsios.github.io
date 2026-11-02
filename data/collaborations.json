@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T16:09:18Z",
+  "generated_at": "2026-11-02T19:31:14Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
@@ -10,7 +10,7 @@
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
   "raw_affiliations_resolved": 5,
-  "fallback_paper_links_added": 146,
+  "fallback_paper_links_added": 150,
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
@@ -1143,7 +1143,6 @@
       "latitude": 51.5074,
       "longitude": -0.1278,
       "coauthors": [
-        "Giulia Livieri",
         "John Armstrong",
         "Luca Galimberti"
       ],
@@ -1170,14 +1169,11 @@
           "year": 2024,
           "url": "https://arxiv.org/abs/2405.20094",
           "coauthors": [
-            "Giulia Livieri",
             "John Armstrong",
             "Luca Galimberti"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-raw-affiliation",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -1199,7 +1195,6 @@
       "sources": [
         "curated-arxiv-fallback",
         "current-affiliation-fallback",
-        "openalex-raw-affiliation",
         "openalex-structured"
       ],
       "current_sources": [
@@ -1693,9 +1688,7 @@
             "Reza Arabpour"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-raw-affiliation",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -4038,8 +4031,7 @@
             "Reza Arabpour"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
