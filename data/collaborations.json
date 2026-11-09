@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-02T19:31:14Z",
+  "generated_at": "2026-11-09T19:51:13Z",
   "source": "OpenAlex structured/raw paper affiliations + curated arXiv paper-version fallback + separately tracked current LinkedIn/official affiliations",
   "author": {
     "name": "Anastasis Kratsios",
     "openalex_id": "https://openalex.org/A5036113771"
   },
   "openalex_available": true,
-  "matched_publications": 57,
+  "matched_publications": 56,
   "publications_with_resolved_affiliations": 61,
   "total_publications": 70,
-  "raw_affiliations_resolved": 5,
-  "fallback_paper_links_added": 150,
+  "raw_affiliations_resolved": 6,
+  "fallback_paper_links_added": 136,
   "fallback_papers_used": 58,
   "current_affiliation_people": 33,
   "match_methods": {
-    "author-profile": 57
+    "author-profile": 56
   },
   "institutions": [
     {
@@ -185,12 +185,12 @@
     },
     {
       "id": "inst:concordia-university",
-      "openalex_id": "https://openalex.org/I4210148195",
+      "openalex_id": "https://openalex.org/I60158472",
       "name": "Concordia University",
       "city": "Montreal",
       "region": "Quebec",
       "country": "Canada",
-      "country_code": "US",
+      "country_code": "CA",
       "latitude": 45.5017,
       "longitude": -73.5673,
       "coauthors": [
@@ -289,7 +289,7 @@
     },
     {
       "id": "inst:cornell-university",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I205783295",
       "name": "Cornell University",
       "city": "Ithaca",
       "region": "New York",
@@ -312,14 +312,18 @@
             "Zhanhao Zhang"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         }
       ],
       "has_historical": true,
       "has_current": false,
       "sources": [
-        "curated-arxiv-fallback"
+        "curated-arxiv-fallback",
+        "openalex-raw-affiliation",
+        "openalex-structured"
       ],
       "current_sources": []
     },
@@ -412,7 +416,7 @@
       "current_coauthors": [
         "Takashi Furuya"
       ],
-      "paper_count": 3,
+      "paper_count": 4,
       "papers": [
         {
           "id": "approximation-rates-in-besov-norms-and-sample-complexity-of-kolmogorov-a",
@@ -424,6 +428,19 @@
           ],
           "evidence": [
             "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "is-in-context-universality-enough-mlps-are-also-universal-in-context",
+          "title": "Is In-Context Universality Enough? MLPs are Also Universal In-Context",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2502.03327",
+          "coauthors": [
+            "Takashi Furuya"
+          ],
+          "evidence": [
             "openalex-raw-affiliation",
             "openalex-structured"
           ]
@@ -559,6 +576,42 @@
       "has_current": false,
       "sources": [
         "curated-arxiv-fallback"
+      ],
+      "current_sources": []
+    },
+    {
+      "id": "inst:dusseldorf-university-hospital",
+      "openalex_id": "https://openalex.org/I4210089242",
+      "name": "Düsseldorf University Hospital",
+      "city": "Düsseldorf",
+      "region": "North Rhine-Westphalia",
+      "country": "Germany",
+      "country_code": "DE",
+      "latitude": 51.22172,
+      "longitude": 6.77616,
+      "coauthors": [
+        "Nils Detering"
+      ],
+      "current_coauthors": [],
+      "paper_count": 1,
+      "papers": [
+        {
+          "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+          "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.06894",
+          "coauthors": [
+            "Nils Detering"
+          ],
+          "evidence": [
+            "openalex-raw-affiliation"
+          ]
+        }
+      ],
+      "has_historical": true,
+      "has_current": false,
+      "sources": [
+        "openalex-raw-affiliation"
       ],
       "current_sources": []
     },
@@ -763,8 +816,7 @@
             "Songyan Hou"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -952,7 +1004,7 @@
     },
     {
       "id": "inst:heinrich-heine-university-dusseldorf",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/I44260953",
       "name": "Heinrich Heine University Düsseldorf",
       "city": "Düsseldorf",
       "region": "North Rhine-Westphalia",
@@ -977,7 +1029,8 @@
             "Nils Detering"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         }
       ],
@@ -985,7 +1038,8 @@
       "has_current": true,
       "sources": [
         "curated-arxiv-fallback",
-        "current-affiliation-fallback"
+        "current-affiliation-fallback",
+        "openalex-structured"
       ],
       "current_sources": [
         {
@@ -1160,7 +1214,8 @@
             "Luca Galimberti"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -1341,13 +1396,37 @@
         "Giulia Livieri"
       ],
       "current_coauthors": [],
-      "paper_count": 1,
+      "paper_count": 3,
       "papers": [
         {
           "id": "statistical-guarantees-for-reasoning-probes-on-looped-boolean-circuits",
           "title": "Statistical Guarantees for Reasoning Probes on Looped Boolean Circuits",
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.03970",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "learning-from-one-graph-transductive-learning-guarantees-via-the-geometr",
+          "title": "Learning from one graph: transductive learning guarantees via the geometry of small random worlds",
+          "year": 2025,
+          "url": "https://arxiv.org/abs/2509.06894",
+          "coauthors": [
+            "Giulia Livieri"
+          ],
+          "evidence": [
+            "openalex-structured"
+          ]
+        },
+        {
+          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
+          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2210.13300",
           "coauthors": [
             "Giulia Livieri"
           ],
@@ -1452,13 +1531,13 @@
       "coauthors": [
         "Behnoosh Zamanlooy",
         "Bradd Hart",
+        "Dennis Y. Zvigelsky",
         "Dennis Zvigelsky",
         "Gregory Cousins",
         "Hossein Rouhvarzi",
         "Hrad Ghoukasian",
         "Kholood Khalil",
         "Kyle Sung",
-        "Luca Galimberti",
         "Matheus Grasselli",
         "Noah Forman",
         "Paul D. McNicholas",
@@ -1467,6 +1546,7 @@
         "Ruiyang Hong",
         "Steven Samu",
         "Sung, Kyle",
+        "Wenhao Li",
         "Xuwei Yang",
         "Yicen Li"
       ],
@@ -1480,7 +1560,7 @@
         "Ruiyang Hong",
         "Yicen Li"
       ],
-      "paper_count": 21,
+      "paper_count": 20,
       "papers": [
         {
           "id": "certifiable-boolean-reasoning-is-universal",
@@ -1488,11 +1568,14 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.05120",
           "coauthors": [
+            "Dennis Y. Zvigelsky",
             "Dennis Zvigelsky",
-            "Hrad Ghoukasian"
+            "Hrad Ghoukasian",
+            "Wenhao Li"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -1506,7 +1589,9 @@
             "Yicen Li"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -1542,12 +1627,14 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.23528",
           "coauthors": [
+            "Paul D. McNicholas",
             "Paul David McNicholas",
             "Ruiyang Hong",
             "Yicen Li"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -1572,7 +1659,9 @@
             "Yicen Li"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -1728,18 +1817,6 @@
           ],
           "evidence": [
             "curated-arxiv-fallback",
-            "openalex-structured"
-          ]
-        },
-        {
-          "id": "designing-universal-causal-deep-learning-models-the-case-of-infinite-dim",
-          "title": "Designing Universal Causal Deep Learning Models: The Case of Infinite-Dimensional Dynamical Systems from Stochastic Analysis",
-          "year": 2022,
-          "url": "https://arxiv.org/abs/2210.13300",
-          "coauthors": [
-            "Luca Galimberti"
-          ],
-          "evidence": [
             "openalex-structured"
           ]
         },
@@ -2233,42 +2310,6 @@
       "current_sources": []
     },
     {
-      "id": "inst:quantitative-biosciences",
-      "openalex_id": "https://openalex.org/I4210098931",
-      "name": "Quantitative BioSciences",
-      "city": "Solana Beach",
-      "region": "California",
-      "country": "United States",
-      "country_code": "US",
-      "latitude": 32.99115,
-      "longitude": -117.27115,
-      "coauthors": [
-        "Blanka N. Horvath"
-      ],
-      "current_coauthors": [],
-      "paper_count": 1,
-      "papers": [
-        {
-          "id": "sanos-smooth-strictly-arbitrage-free-non-parametric-option-surfaces",
-          "title": "SANOS Smooth strictly Arbitrage-free Non-parametric Option Surfaces",
-          "year": 2026,
-          "url": "https://arxiv.org/abs/2601.11209",
-          "coauthors": [
-            "Blanka N. Horvath"
-          ],
-          "evidence": [
-            "openalex-structured"
-          ]
-        }
-      ],
-      "has_historical": true,
-      "has_current": false,
-      "sources": [
-        "openalex-structured"
-      ],
-      "current_sources": []
-    },
-    {
       "id": "inst:rice-university",
       "openalex_id": "https://openalex.org/I74775410",
       "name": "Rice University",
@@ -2297,7 +2338,9 @@
             "Maarten V. de Hoop"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -2508,9 +2551,7 @@
             "Takashi Furuya"
           ],
           "evidence": [
-            "curated-arxiv-fallback",
-            "openalex-raw-affiliation",
-            "openalex-structured"
+            "curated-arxiv-fallback"
           ]
         },
         {
@@ -3600,7 +3641,9 @@
             "Xiaofei Shi"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3612,7 +3655,9 @@
             "Dena Firoozi"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -3646,6 +3691,7 @@
       "sources": [
         "curated-arxiv-fallback",
         "current-affiliation-fallback",
+        "openalex-raw-affiliation",
         "openalex-structured"
       ],
       "current_sources": [
@@ -3681,7 +3727,6 @@
       "longitude": 16.3738,
       "coauthors": [
         "A. Martina Neuman",
-        "Anh  Martina Neuman",
         "Philipp Petersen"
       ],
       "current_coauthors": [],
@@ -3708,8 +3753,7 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.03970",
           "coauthors": [
-            "A. Martina Neuman",
-            "Anh  Martina Neuman"
+            "A. Martina Neuman"
           ],
           "evidence": [
             "curated-arxiv-fallback",
@@ -3735,8 +3779,7 @@
           "year": 2024,
           "url": "https://arxiv.org/abs/2402.05576",
           "coauthors": [
-            "A. Martina Neuman",
-            "Anh  Martina Neuman"
+            "A. Martina Neuman"
           ],
           "evidence": [
             "curated-arxiv-fallback",
@@ -3820,6 +3863,7 @@
         "D. B. Emerson",
         "Daniel M. Roy",
         "David B. Emerson",
+        "Dennis Y. Zvigelsky",
         "Dennis Zvigelsky",
         "Fatemeh Tavakoli",
         "Frank Rudzicz",
@@ -3832,6 +3876,7 @@
         "Raeid Saqur",
         "Reza Arabpour",
         "Ruiyang Hong",
+        "Wenhao Li",
         "Xuwei Yang",
         "Yicen Li"
       ],
@@ -3846,11 +3891,14 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2602.05120",
           "coauthors": [
+            "Dennis Y. Zvigelsky",
             "Dennis Zvigelsky",
-            "Hrad Ghoukasian"
+            "Hrad Ghoukasian",
+            "Wenhao Li"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-structured"
           ]
         },
         {
@@ -3864,7 +3912,9 @@
             "Yicen Li"
           ],
           "evidence": [
-            "curated-arxiv-fallback"
+            "curated-arxiv-fallback",
+            "openalex-raw-affiliation",
+            "openalex-structured"
           ]
         },
         {
@@ -4255,14 +4305,14 @@
       "id": "reality-only-happens-once-single-path-generalization-bounds-for-transfor",
       "title": "Reality Only Happens Once: Single-Path Generalization Bounds for Transformers",
       "year": 2024,
-      "best_title_match_score": 0.395,
+      "best_title_match_score": 0.323,
       "openalex_status": "unmatched"
     },
     {
       "id": "tighter-generalization-bounds-on-digital-computers-via-discrete-optimal-",
       "title": "Tighter Generalization Bounds on Digital Computers via Discrete Optimal Transport",
       "year": 2024,
-      "best_title_match_score": 0.541,
+      "best_title_match_score": 0.434,
       "openalex_status": "unmatched"
     },
     {
@@ -4270,6 +4320,13 @@
       "title": "Deep Kalman Filters Can Filter",
       "year": 2023,
       "best_title_match_score": 0.258,
+      "openalex_status": "unmatched"
+    },
+    {
+      "id": "instance-dependent-generalization-bounds-via-optimal-transport",
+      "title": "Instance-Dependent Generalization Bounds via Optimal Transport",
+      "year": 2023,
+      "best_title_match_score": 0.323,
       "openalex_status": "unmatched"
     },
     {
